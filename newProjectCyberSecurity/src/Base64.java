@@ -3,6 +3,14 @@
 import java.io.ByteArrayOutputStream;
 
 public class Base64 {
+
+    private int d;
+
+    public Base64() {
+
+    }
+
+
     public static String encode(byte[] data) {
         char[] tbl = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
                 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W',
