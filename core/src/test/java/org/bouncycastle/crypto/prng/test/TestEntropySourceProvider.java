@@ -1,7 +1,7 @@
-package org.bouncycastle.crypto.prng.test;
+package ru.mipt.cybersecurity.crypto.prng.test;
 
-import org.bouncycastle.crypto.prng.EntropySource;
-import org.bouncycastle.crypto.prng.EntropySourceProvider;
+import ru.mipt.cybersecurity.crypto.prng.EntropySource;
+import ru.mipt.cybersecurity.crypto.prng.EntropySourceProvider;
 
 public class TestEntropySourceProvider
     implements EntropySourceProvider

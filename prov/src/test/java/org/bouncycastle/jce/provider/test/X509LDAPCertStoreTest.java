@@ -1,14 +1,14 @@
-package org.bouncycastle.jce.provider.test;
+package ru.mipt.cybersecurity.jce.provider.test;
 
-import org.bouncycastle.jce.PrincipalUtil;
-import org.bouncycastle.jce.X509LDAPCertStoreParameters;
-import org.bouncycastle.jce.X509Principal;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.x509.X509CRLStoreSelector;
-import org.bouncycastle.x509.X509CertStoreSelector;
-import org.bouncycastle.x509.X509Store;
+import ru.mipt.cybersecurity.jce.PrincipalUtil;
+import ru.mipt.cybersecurity.jce.X509LDAPCertStoreParameters;
+import ru.mipt.cybersecurity.jce.X509Principal;
+import ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider;
+import ru.mipt.cybersecurity.util.encoders.Base64;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
+import ru.mipt.cybersecurity.x509.X509CRLStoreSelector;
+import ru.mipt.cybersecurity.x509.X509CertStoreSelector;
+import ru.mipt.cybersecurity.x509.X509Store;
 
 import java.io.ByteArrayInputStream;
 import java.security.Security;

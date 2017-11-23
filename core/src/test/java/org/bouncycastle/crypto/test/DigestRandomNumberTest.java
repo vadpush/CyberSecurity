@@ -1,12 +1,12 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.crypto.prng.DigestRandomGenerator;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.Digest;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.crypto.prng.DigestRandomGenerator;
+import ru.mipt.cybersecurity.crypto.digests.SHA1Digest;
+import ru.mipt.cybersecurity.crypto.digests.SHA256Digest;
+import ru.mipt.cybersecurity.crypto.Digest;
 
 public class DigestRandomNumberTest
     extends SimpleTest

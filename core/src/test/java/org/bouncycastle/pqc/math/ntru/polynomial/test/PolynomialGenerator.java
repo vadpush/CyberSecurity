@@ -1,8 +1,8 @@
-package org.bouncycastle.pqc.math.ntru.polynomial.test;
+package ru.mipt.cybersecurity.pqc.math.ntru.polynomial.test;
 
 import java.util.Random;
 
-import org.bouncycastle.pqc.math.ntru.polynomial.IntegerPolynomial;
+import ru.mipt.cybersecurity.pqc.math.ntru.polynomial.IntegerPolynomial;
 
 public class PolynomialGenerator
 {

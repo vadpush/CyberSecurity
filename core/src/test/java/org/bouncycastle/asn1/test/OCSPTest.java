@@ -1,17 +1,17 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.io.ByteArrayInputStream;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.ocsp.BasicOCSPResponse;
-import org.bouncycastle.asn1.ocsp.OCSPRequest;
-import org.bouncycastle.asn1.ocsp.OCSPResponse;
-import org.bouncycastle.asn1.ocsp.ResponseBytes;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.Test;
-import org.bouncycastle.util.test.TestResult;
-import org.bouncycastle.util.test.SimpleTestResult;
+import ru.mipt.cybersecurity.asn1.ASN1InputStream;
+import ru.mipt.cybersecurity.asn1.DEROctetString;
+import ru.mipt.cybersecurity.asn1.ocsp.BasicOCSPResponse;
+import ru.mipt.cybersecurity.asn1.ocsp.OCSPRequest;
+import ru.mipt.cybersecurity.asn1.ocsp.OCSPResponse;
+import ru.mipt.cybersecurity.asn1.ocsp.ResponseBytes;
+import ru.mipt.cybersecurity.util.encoders.Base64;
+import ru.mipt.cybersecurity.util.test.Test;
+import ru.mipt.cybersecurity.util.test.TestResult;
+import ru.mipt.cybersecurity.util.test.SimpleTestResult;
 
 public class OCSPTest
     implements Test

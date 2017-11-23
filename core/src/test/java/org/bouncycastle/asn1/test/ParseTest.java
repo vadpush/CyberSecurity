@@ -1,19 +1,19 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.io.IOException;
 
 import junit.framework.TestCase;
-import org.bouncycastle.asn1.ASN1OctetStringParser;
-import org.bouncycastle.asn1.ASN1SequenceParser;
-import org.bouncycastle.asn1.ASN1StreamParser;
-import org.bouncycastle.asn1.ASN1TaggedObjectParser;
-import org.bouncycastle.asn1.BERTags;
-import org.bouncycastle.asn1.cms.ContentInfoParser;
-import org.bouncycastle.asn1.cms.EncryptedContentInfoParser;
-import org.bouncycastle.asn1.cms.EnvelopedDataParser;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.io.Streams;
+import ru.mipt.cybersecurity.asn1.ASN1OctetStringParser;
+import ru.mipt.cybersecurity.asn1.ASN1SequenceParser;
+import ru.mipt.cybersecurity.asn1.ASN1StreamParser;
+import ru.mipt.cybersecurity.asn1.ASN1TaggedObjectParser;
+import ru.mipt.cybersecurity.asn1.BERTags;
+import ru.mipt.cybersecurity.asn1.cms.ContentInfoParser;
+import ru.mipt.cybersecurity.asn1.cms.EncryptedContentInfoParser;
+import ru.mipt.cybersecurity.asn1.cms.EnvelopedDataParser;
+import ru.mipt.cybersecurity.util.encoders.Base64;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.io.Streams;
 
 public class ParseTest
     extends TestCase

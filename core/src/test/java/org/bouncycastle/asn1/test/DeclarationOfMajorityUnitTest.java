@@ -1,11 +1,11 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1GeneralizedTime;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.DERTaggedObject;
-import org.bouncycastle.asn1.isismtt.x509.DeclarationOfMajority;
+import ru.mipt.cybersecurity.asn1.ASN1GeneralizedTime;
+import ru.mipt.cybersecurity.asn1.ASN1InputStream;
+import ru.mipt.cybersecurity.asn1.DERTaggedObject;
+import ru.mipt.cybersecurity.asn1.isismtt.x509.DeclarationOfMajority;
 
 public class DeclarationOfMajorityUnitTest
     extends ASN1UnitTest

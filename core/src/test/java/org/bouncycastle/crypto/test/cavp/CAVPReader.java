@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.test.cavp;
+package ru.mipt.cybersecurity.crypto.test.cavp;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,18 +7,18 @@ import java.util.Properties;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.Mac;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.digests.SHA224Digest;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.digests.SHA384Digest;
-import org.bouncycastle.crypto.digests.SHA512Digest;
-import org.bouncycastle.crypto.engines.AESEngine;
-import org.bouncycastle.crypto.engines.DESedeEngine;
-import org.bouncycastle.crypto.macs.CMac;
-import org.bouncycastle.crypto.macs.HMac;
+import ru.mipt.cybersecurity.crypto.BlockCipher;
+import ru.mipt.cybersecurity.crypto.Digest;
+import ru.mipt.cybersecurity.crypto.Mac;
+import ru.mipt.cybersecurity.crypto.digests.SHA1Digest;
+import ru.mipt.cybersecurity.crypto.digests.SHA224Digest;
+import ru.mipt.cybersecurity.crypto.digests.SHA256Digest;
+import ru.mipt.cybersecurity.crypto.digests.SHA384Digest;
+import ru.mipt.cybersecurity.crypto.digests.SHA512Digest;
+import ru.mipt.cybersecurity.crypto.engines.AESEngine;
+import ru.mipt.cybersecurity.crypto.engines.DESedeEngine;
+import ru.mipt.cybersecurity.crypto.macs.CMac;
+import ru.mipt.cybersecurity.crypto.macs.HMac;
 
 public class CAVPReader
 {

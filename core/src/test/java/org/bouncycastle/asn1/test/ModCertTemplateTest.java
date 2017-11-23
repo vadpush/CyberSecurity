@@ -1,16 +1,16 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.DERTaggedObject;
-import org.bouncycastle.asn1.DLSequence;
-import org.bouncycastle.asn1.cmc.BodyPartID;
-import org.bouncycastle.asn1.cmc.BodyPartList;
-import org.bouncycastle.asn1.cmc.BodyPartPath;
-import org.bouncycastle.asn1.cmc.ModCertTemplate;
-import org.bouncycastle.asn1.crmf.CertTemplate;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1Encodable;
+import ru.mipt.cybersecurity.asn1.ASN1Integer;
+import ru.mipt.cybersecurity.asn1.DERSequence;
+import ru.mipt.cybersecurity.asn1.DERTaggedObject;
+import ru.mipt.cybersecurity.asn1.DLSequence;
+import ru.mipt.cybersecurity.asn1.cmc.BodyPartID;
+import ru.mipt.cybersecurity.asn1.cmc.BodyPartList;
+import ru.mipt.cybersecurity.asn1.cmc.BodyPartPath;
+import ru.mipt.cybersecurity.asn1.cmc.ModCertTemplate;
+import ru.mipt.cybersecurity.asn1.crmf.CertTemplate;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 
 public class ModCertTemplateTest

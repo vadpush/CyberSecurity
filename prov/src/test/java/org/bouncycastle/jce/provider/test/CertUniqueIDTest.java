@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package ru.mipt.cybersecurity.jce.provider.test;
 
 import java.math.BigInteger;
 import java.security.KeyFactory;
@@ -12,11 +12,11 @@ import java.util.Date;
 import java.util.Set;
 import java.util.Vector;
 
-import org.bouncycastle.jce.X509Principal;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.x509.X509V3CertificateGenerator;
+import ru.mipt.cybersecurity.jce.X509Principal;
+import ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
+import ru.mipt.cybersecurity.x509.X509V3CertificateGenerator;
 
 public class CertUniqueIDTest
     extends SimpleTest

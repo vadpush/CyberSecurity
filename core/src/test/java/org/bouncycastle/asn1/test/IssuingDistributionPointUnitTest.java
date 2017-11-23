@@ -1,16 +1,16 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x509.DistributionPointName;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.asn1.x509.GeneralNames;
-import org.bouncycastle.asn1.x509.IssuingDistributionPoint;
-import org.bouncycastle.asn1.x509.ReasonFlags;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1Primitive;
+import ru.mipt.cybersecurity.asn1.ASN1Sequence;
+import ru.mipt.cybersecurity.asn1.x500.X500Name;
+import ru.mipt.cybersecurity.asn1.x509.DistributionPointName;
+import ru.mipt.cybersecurity.asn1.x509.GeneralName;
+import ru.mipt.cybersecurity.asn1.x509.GeneralNames;
+import ru.mipt.cybersecurity.asn1.x509.IssuingDistributionPoint;
+import ru.mipt.cybersecurity.asn1.x509.ReasonFlags;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class IssuingDistributionPointUnitTest 
     extends SimpleTest

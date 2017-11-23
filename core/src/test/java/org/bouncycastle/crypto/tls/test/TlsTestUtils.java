@@ -1,28 +1,28 @@
-package org.bouncycastle.crypto.tls.test;
+package ru.mipt.cybersecurity.crypto.tls.test;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Vector;
 
-import org.bouncycastle.asn1.pkcs.RSAPrivateKey;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.RSAPrivateCrtKeyParameters;
-import org.bouncycastle.crypto.tls.Certificate;
-import org.bouncycastle.crypto.tls.DefaultTlsAgreementCredentials;
-import org.bouncycastle.crypto.tls.DefaultTlsEncryptionCredentials;
-import org.bouncycastle.crypto.tls.DefaultTlsSignerCredentials;
-import org.bouncycastle.crypto.tls.SignatureAndHashAlgorithm;
-import org.bouncycastle.crypto.tls.TlsAgreementCredentials;
-import org.bouncycastle.crypto.tls.TlsContext;
-import org.bouncycastle.crypto.tls.TlsEncryptionCredentials;
-import org.bouncycastle.crypto.tls.TlsSignerCredentials;
-import org.bouncycastle.crypto.util.PrivateKeyFactory;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.io.pem.PemObject;
-import org.bouncycastle.util.io.pem.PemReader;
+import ru.mipt.cybersecurity.asn1.pkcs.RSAPrivateKey;
+import ru.mipt.cybersecurity.crypto.digests.SHA256Digest;
+import ru.mipt.cybersecurity.crypto.params.AsymmetricKeyParameter;
+import ru.mipt.cybersecurity.crypto.params.RSAPrivateCrtKeyParameters;
+import ru.mipt.cybersecurity.crypto.tls.Certificate;
+import ru.mipt.cybersecurity.crypto.tls.DefaultTlsAgreementCredentials;
+import ru.mipt.cybersecurity.crypto.tls.DefaultTlsEncryptionCredentials;
+import ru.mipt.cybersecurity.crypto.tls.DefaultTlsSignerCredentials;
+import ru.mipt.cybersecurity.crypto.tls.SignatureAndHashAlgorithm;
+import ru.mipt.cybersecurity.crypto.tls.TlsAgreementCredentials;
+import ru.mipt.cybersecurity.crypto.tls.TlsContext;
+import ru.mipt.cybersecurity.crypto.tls.TlsEncryptionCredentials;
+import ru.mipt.cybersecurity.crypto.tls.TlsSignerCredentials;
+import ru.mipt.cybersecurity.crypto.util.PrivateKeyFactory;
+import ru.mipt.cybersecurity.util.encoders.Base64;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.io.pem.PemObject;
+import ru.mipt.cybersecurity.util.io.pem.PemReader;
 
 public class TlsTestUtils
 {
@@ -48,7 +48,7 @@ public class TlsTestUtils
             + "0lAQH/BAgwBgYEVR0lADAcBgNVHREBAf8EEjAQgQ50ZXN0QHRlc3QudGVzdDANBgkqhkiG9w0BAQQFAANBAJg55PBS"
             + "weg6obRUKF4FF6fCrWFi6oCYSQ99LWcAeupc5BofW5MstFMhCOaEucuGVqunwT5G7/DweazzCIrSzB0=");
 
-    static String fingerprint(org.bouncycastle.asn1.x509.Certificate c)
+    static String fingerprint(ru.mipt.cybersecurity.asn1.x509.Certificate c)
         throws IOException
     {
         byte[] der = c.getEncoded();
@@ -142,7 +142,7 @@ public class TlsTestUtils
     static Certificate loadCertificateChain(String[] resources)
         throws IOException
     {
-        org.bouncycastle.asn1.x509.Certificate[] chain = new org.bouncycastle.asn1.x509.Certificate[resources.length];
+        ru.mipt.cybersecurity.asn1.x509.Certificate[] chain = new ru.mipt.cybersecurity.asn1.x509.Certificate[resources.length];
         for (int i = 0; i < resources.length; ++i)
         {
             chain[i] = loadCertificateResource(resources[i]);
@@ -150,13 +150,13 @@ public class TlsTestUtils
         return new Certificate(chain);
     }
 
-    static org.bouncycastle.asn1.x509.Certificate loadCertificateResource(String resource)
+    static ru.mipt.cybersecurity.asn1.x509.Certificate loadCertificateResource(String resource)
         throws IOException
     {
         PemObject pem = loadPemResource(resource);
         if (pem.getType().endsWith("CERTIFICATE"))
         {
-            return org.bouncycastle.asn1.x509.Certificate.getInstance(pem.getContent());
+            return ru.mipt.cybersecurity.asn1.x509.Certificate.getInstance(pem.getContent());
         }
         throw new IllegalArgumentException("'resource' doesn't specify a valid certificate");
     }

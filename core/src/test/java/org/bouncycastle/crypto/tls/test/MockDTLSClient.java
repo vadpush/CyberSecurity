@@ -1,24 +1,24 @@
-package org.bouncycastle.crypto.tls.test;
+package ru.mipt.cybersecurity.crypto.tls.test;
 
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Hashtable;
 
-import org.bouncycastle.asn1.x509.Certificate;
-import org.bouncycastle.crypto.tls.AlertDescription;
-import org.bouncycastle.crypto.tls.AlertLevel;
-import org.bouncycastle.crypto.tls.CertificateRequest;
-import org.bouncycastle.crypto.tls.ClientCertificateType;
-import org.bouncycastle.crypto.tls.DefaultTlsClient;
-import org.bouncycastle.crypto.tls.MaxFragmentLength;
-import org.bouncycastle.crypto.tls.ProtocolVersion;
-import org.bouncycastle.crypto.tls.SignatureAlgorithm;
-import org.bouncycastle.crypto.tls.TlsAuthentication;
-import org.bouncycastle.crypto.tls.TlsCredentials;
-import org.bouncycastle.crypto.tls.TlsExtensionsUtils;
-import org.bouncycastle.crypto.tls.TlsSession;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
+import ru.mipt.cybersecurity.asn1.x509.Certificate;
+import ru.mipt.cybersecurity.crypto.tls.AlertDescription;
+import ru.mipt.cybersecurity.crypto.tls.AlertLevel;
+import ru.mipt.cybersecurity.crypto.tls.CertificateRequest;
+import ru.mipt.cybersecurity.crypto.tls.ClientCertificateType;
+import ru.mipt.cybersecurity.crypto.tls.DefaultTlsClient;
+import ru.mipt.cybersecurity.crypto.tls.MaxFragmentLength;
+import ru.mipt.cybersecurity.crypto.tls.ProtocolVersion;
+import ru.mipt.cybersecurity.crypto.tls.SignatureAlgorithm;
+import ru.mipt.cybersecurity.crypto.tls.TlsAuthentication;
+import ru.mipt.cybersecurity.crypto.tls.TlsCredentials;
+import ru.mipt.cybersecurity.crypto.tls.TlsExtensionsUtils;
+import ru.mipt.cybersecurity.crypto.tls.TlsSession;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.encoders.Hex;
 
 public class MockDTLSClient
     extends DefaultTlsClient
@@ -104,7 +104,7 @@ public class MockDTLSClient
     {
         return new TlsAuthentication()
         {
-            public void notifyServerCertificate(org.bouncycastle.crypto.tls.Certificate serverCertificate)
+            public void notifyServerCertificate(ru.mipt.cybersecurity.crypto.tls.Certificate serverCertificate)
                 throws IOException
             {
                 Certificate[] chain = serverCertificate.getCertificateList();

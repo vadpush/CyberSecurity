@@ -1,16 +1,16 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.DERTaggedObject;
-import org.bouncycastle.asn1.DERUTF8String;
-import org.bouncycastle.asn1.esf.SignerLocation;
-import org.bouncycastle.asn1.x500.DirectoryString;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1EncodableVector;
+import ru.mipt.cybersecurity.asn1.ASN1InputStream;
+import ru.mipt.cybersecurity.asn1.ASN1Sequence;
+import ru.mipt.cybersecurity.asn1.DERSequence;
+import ru.mipt.cybersecurity.asn1.DERTaggedObject;
+import ru.mipt.cybersecurity.asn1.DERUTF8String;
+import ru.mipt.cybersecurity.asn1.esf.SignerLocation;
+import ru.mipt.cybersecurity.asn1.x500.DirectoryString;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class SignerLocationUnitTest 
     extends SimpleTest

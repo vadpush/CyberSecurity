@@ -1,17 +1,17 @@
-package org.bouncycastle.crypto.ec.test;
+package ru.mipt.cybersecurity.crypto.ec.test;
 
 import junit.extensions.TestSetup;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.util.test.SimpleTestResult;
+import ru.mipt.cybersecurity.util.test.SimpleTestResult;
 
 public class AllTests
     extends TestCase
 {
     public void testCrypto()
     {
-        org.bouncycastle.util.test.Test[] tests = { new ECElGamalTest(), new ECTransformationTest() };
+        ru.mipt.cybersecurity.util.test.Test[] tests = { new ECElGamalTest(), new ECTransformationTest() };
 
         for (int i = 0; i != tests.length; i++)
         {

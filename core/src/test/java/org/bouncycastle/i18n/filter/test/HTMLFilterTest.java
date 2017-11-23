@@ -1,7 +1,7 @@
-package org.bouncycastle.i18n.filter.test;
+package ru.mipt.cybersecurity.i18n.filter.test;
 
-import org.bouncycastle.i18n.filter.Filter;
-import org.bouncycastle.i18n.filter.HTMLFilter;
+import ru.mipt.cybersecurity.i18n.filter.Filter;
+import ru.mipt.cybersecurity.i18n.filter.HTMLFilter;
 
 import junit.framework.TestCase;
 

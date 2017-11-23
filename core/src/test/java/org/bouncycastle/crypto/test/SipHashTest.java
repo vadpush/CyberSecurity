@@ -1,12 +1,12 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.macs.SipHash;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.util.Pack;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.macs.SipHash;
+import ru.mipt.cybersecurity.crypto.params.KeyParameter;
+import ru.mipt.cybersecurity.util.Pack;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 /*
  * SipHash test values from "SipHash: a fast short-input PRF", by Jean-Philippe

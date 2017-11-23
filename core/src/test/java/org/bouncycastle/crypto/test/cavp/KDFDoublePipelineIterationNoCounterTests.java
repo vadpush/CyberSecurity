@@ -1,17 +1,17 @@
-package org.bouncycastle.crypto.test.cavp;
+package ru.mipt.cybersecurity.crypto.test.cavp;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Properties;
 
-import org.bouncycastle.crypto.Mac;
-import org.bouncycastle.crypto.generators.KDFDoublePipelineIterationBytesGenerator;
-import org.bouncycastle.crypto.params.KDFDoublePipelineIterationParameters;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTestResult;
-import org.bouncycastle.util.test.TestFailedException;
+import ru.mipt.cybersecurity.crypto.Mac;
+import ru.mipt.cybersecurity.crypto.generators.KDFDoublePipelineIterationBytesGenerator;
+import ru.mipt.cybersecurity.crypto.params.KDFDoublePipelineIterationParameters;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTestResult;
+import ru.mipt.cybersecurity.util.test.TestFailedException;
 
 public final class KDFDoublePipelineIterationNoCounterTests
     implements CAVPListener

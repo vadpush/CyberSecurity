@@ -1,9 +1,9 @@
-package org.bouncycastle.crypto.tls.test;
+package ru.mipt.cybersecurity.crypto.tls.test;
 
 import java.io.IOException;
 import java.util.Random;
 
-import org.bouncycastle.crypto.tls.DatagramTransport;
+import ru.mipt.cybersecurity.crypto.tls.DatagramTransport;
 
 public class UnreliableDatagramTransport
     implements DatagramTransport

@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package ru.mipt.cybersecurity.jce.provider.test;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -24,19 +24,19 @@ import java.util.HashSet;
 import java.util.Hashtable;
 import java.util.Set;
 
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.x509.BasicConstraints;
-import org.bouncycastle.asn1.x509.CertificatePolicies;
-import org.bouncycastle.asn1.x509.PolicyInformation;
-import org.bouncycastle.asn1.x509.PolicyMappings;
-import org.bouncycastle.asn1.x509.X509Extensions;
-import org.bouncycastle.jce.X509Principal;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.util.test.TestFailedException;
-import org.bouncycastle.x509.X509V3CertificateGenerator;
+import ru.mipt.cybersecurity.asn1.ASN1EncodableVector;
+import ru.mipt.cybersecurity.asn1.ASN1ObjectIdentifier;
+import ru.mipt.cybersecurity.asn1.DERSequence;
+import ru.mipt.cybersecurity.asn1.x509.BasicConstraints;
+import ru.mipt.cybersecurity.asn1.x509.CertificatePolicies;
+import ru.mipt.cybersecurity.asn1.x509.PolicyInformation;
+import ru.mipt.cybersecurity.asn1.x509.PolicyMappings;
+import ru.mipt.cybersecurity.asn1.x509.X509Extensions;
+import ru.mipt.cybersecurity.jce.X509Principal;
+import ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
+import ru.mipt.cybersecurity.util.test.TestFailedException;
+import ru.mipt.cybersecurity.x509.X509V3CertificateGenerator;
 
 public class PKIXPolicyMappingTest
     extends SimpleTest

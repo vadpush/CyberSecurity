@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package ru.mipt.cybersecurity.jce.provider.test;
 
 import java.math.BigInteger;
 import java.security.KeyPair;
@@ -11,13 +11,13 @@ import java.security.spec.EllipticCurve;
 
 import javax.crypto.KeyAgreement;
 
-import org.bouncycastle.jcajce.spec.MQVParameterSpec;
-import org.bouncycastle.jce.ECPointUtil;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.spec.MQVPrivateKeySpec;
-import org.bouncycastle.jce.spec.MQVPublicKeySpec;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.jcajce.spec.MQVParameterSpec;
+import ru.mipt.cybersecurity.jce.ECPointUtil;
+import ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider;
+import ru.mipt.cybersecurity.jce.spec.MQVPrivateKeySpec;
+import ru.mipt.cybersecurity.jce.spec.MQVPublicKeySpec;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class MQVTest
     extends SimpleTest

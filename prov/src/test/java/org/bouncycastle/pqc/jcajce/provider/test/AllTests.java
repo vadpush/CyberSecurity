@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.jcajce.provider.test;
+package ru.mipt.cybersecurity.pqc.jcajce.provider.test;
 
 import java.security.Security;
 
@@ -6,7 +6,7 @@ import junit.extensions.TestSetup;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.pqc.jcajce.provider.BouncyCastlePQCProvider;
+import ru.mipt.cybersecurity.pqc.jcajce.provider.BouncyCastlePQCProvider;
 
 /**
  * Full test suite for the BCPQC provider.

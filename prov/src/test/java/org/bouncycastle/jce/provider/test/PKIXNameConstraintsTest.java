@@ -1,11 +1,11 @@
-package org.bouncycastle.jce.provider.test;
+package ru.mipt.cybersecurity.jce.provider.test;
 
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.asn1.x509.GeneralSubtree;
-import org.bouncycastle.jce.provider.PKIXNameConstraintValidator;
-import org.bouncycastle.jce.provider.PKIXNameConstraintValidatorException;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.DEROctetString;
+import ru.mipt.cybersecurity.asn1.x509.GeneralName;
+import ru.mipt.cybersecurity.asn1.x509.GeneralSubtree;
+import ru.mipt.cybersecurity.jce.provider.PKIXNameConstraintValidator;
+import ru.mipt.cybersecurity.jce.provider.PKIXNameConstraintValidatorException;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 /**
  * Test class for {@link PKIXNameConstraintValidator}.

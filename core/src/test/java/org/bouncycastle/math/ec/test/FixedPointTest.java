@@ -1,4 +1,4 @@
-package org.bouncycastle.math.ec.test;
+package ru.mipt.cybersecurity.math.ec.test;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
@@ -9,12 +9,12 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import org.bouncycastle.asn1.x9.ECNamedCurveTable;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.crypto.ec.CustomNamedCurves;
-import org.bouncycastle.math.ec.ECAlgorithms;
-import org.bouncycastle.math.ec.ECPoint;
-import org.bouncycastle.math.ec.FixedPointCombMultiplier;
+import ru.mipt.cybersecurity.asn1.x9.ECNamedCurveTable;
+import ru.mipt.cybersecurity.asn1.x9.X9ECParameters;
+import ru.mipt.cybersecurity.crypto.ec.CustomNamedCurves;
+import ru.mipt.cybersecurity.math.ec.ECAlgorithms;
+import ru.mipt.cybersecurity.math.ec.ECPoint;
+import ru.mipt.cybersecurity.math.ec.FixedPointCombMultiplier;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

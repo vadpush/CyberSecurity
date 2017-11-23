@@ -1,17 +1,17 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.Commitment;
-import org.bouncycastle.crypto.Committer;
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.commitments.GeneralHashCommitter;
-import org.bouncycastle.crypto.commitments.HashCommitter;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.Commitment;
+import ru.mipt.cybersecurity.crypto.Committer;
+import ru.mipt.cybersecurity.crypto.DataLengthException;
+import ru.mipt.cybersecurity.crypto.commitments.GeneralHashCommitter;
+import ru.mipt.cybersecurity.crypto.commitments.HashCommitter;
+import ru.mipt.cybersecurity.crypto.digests.SHA1Digest;
+import ru.mipt.cybersecurity.crypto.digests.SHA256Digest;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class HashCommitmentTest
     extends SimpleTest

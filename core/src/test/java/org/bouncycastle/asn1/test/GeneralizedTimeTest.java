@@ -1,12 +1,12 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.SimpleTimeZone;
 import java.util.TimeZone;
 
-import org.bouncycastle.asn1.DERGeneralizedTime;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.DERGeneralizedTime;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 /**
  * X.690 test example

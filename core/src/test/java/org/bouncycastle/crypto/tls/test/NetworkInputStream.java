@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.tls.test;
+package ru.mipt.cybersecurity.crypto.tls.test;
 
 import java.io.FilterInputStream;
 import java.io.IOException;

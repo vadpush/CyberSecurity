@@ -1,13 +1,13 @@
-package org.bouncycastle.crypto.prng.test;
+package ru.mipt.cybersecurity.crypto.prng.test;
 
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.digests.SHA384Digest;
-import org.bouncycastle.crypto.digests.SHA512Digest;
-import org.bouncycastle.crypto.prng.drbg.HashSP800DRBG;
-import org.bouncycastle.crypto.prng.drbg.SP80090DRBG;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.digests.SHA1Digest;
+import ru.mipt.cybersecurity.crypto.digests.SHA256Digest;
+import ru.mipt.cybersecurity.crypto.digests.SHA384Digest;
+import ru.mipt.cybersecurity.crypto.digests.SHA512Digest;
+import ru.mipt.cybersecurity.crypto.prng.drbg.HashSP800DRBG;
+import ru.mipt.cybersecurity.crypto.prng.drbg.SP80090DRBG;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 /**
  * DRBG Test

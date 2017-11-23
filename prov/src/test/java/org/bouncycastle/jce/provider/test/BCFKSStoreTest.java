@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package ru.mipt.cybersecurity.jce.provider.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -26,25 +26,25 @@ import java.util.Enumeration;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 
-import org.bouncycastle.asn1.bc.EncryptedObjectStoreData;
-import org.bouncycastle.asn1.bc.ObjectStore;
-import org.bouncycastle.asn1.bc.ObjectStoreIntegrityCheck;
-import org.bouncycastle.asn1.bc.PbkdMacIntegrityCheck;
-import org.bouncycastle.asn1.misc.MiscObjectIdentifiers;
-import org.bouncycastle.asn1.misc.ScryptParams;
-import org.bouncycastle.asn1.pkcs.PBES2Parameters;
-import org.bouncycastle.asn1.pkcs.PBKDF2Params;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.crypto.util.PBKDF2Config;
-import org.bouncycastle.crypto.util.PBKDFConfig;
-import org.bouncycastle.crypto.util.ScryptConfig;
-import org.bouncycastle.jcajce.BCFKSStoreParameter;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.bc.EncryptedObjectStoreData;
+import ru.mipt.cybersecurity.asn1.bc.ObjectStore;
+import ru.mipt.cybersecurity.asn1.bc.ObjectStoreIntegrityCheck;
+import ru.mipt.cybersecurity.asn1.bc.PbkdMacIntegrityCheck;
+import ru.mipt.cybersecurity.asn1.misc.MiscObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.misc.ScryptParams;
+import ru.mipt.cybersecurity.asn1.pkcs.PBES2Parameters;
+import ru.mipt.cybersecurity.asn1.pkcs.PBKDF2Params;
+import ru.mipt.cybersecurity.asn1.pkcs.PKCSObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.x509.AlgorithmIdentifier;
+import ru.mipt.cybersecurity.crypto.util.PBKDF2Config;
+import ru.mipt.cybersecurity.crypto.util.PBKDFConfig;
+import ru.mipt.cybersecurity.crypto.util.ScryptConfig;
+import ru.mipt.cybersecurity.jcajce.BCFKSStoreParameter;
+import ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.encoders.Base64;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 /**
  * Exercise the  BCFKS KeyStore,

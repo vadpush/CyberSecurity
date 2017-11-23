@@ -1,22 +1,22 @@
-package org.bouncycastle.crypto.tls.test;
+package ru.mipt.cybersecurity.crypto.tls.test;
 
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Vector;
 
-import org.bouncycastle.asn1.x509.Certificate;
-import org.bouncycastle.crypto.tls.AlertDescription;
-import org.bouncycastle.crypto.tls.AlertLevel;
-import org.bouncycastle.crypto.tls.CertificateRequest;
-import org.bouncycastle.crypto.tls.ClientCertificateType;
-import org.bouncycastle.crypto.tls.ConnectionEnd;
-import org.bouncycastle.crypto.tls.DefaultTlsServer;
-import org.bouncycastle.crypto.tls.ProtocolVersion;
-import org.bouncycastle.crypto.tls.SignatureAlgorithm;
-import org.bouncycastle.crypto.tls.TlsEncryptionCredentials;
-import org.bouncycastle.crypto.tls.TlsFatalAlert;
-import org.bouncycastle.crypto.tls.TlsSignerCredentials;
-import org.bouncycastle.crypto.tls.TlsUtils;
+import ru.mipt.cybersecurity.asn1.x509.Certificate;
+import ru.mipt.cybersecurity.crypto.tls.AlertDescription;
+import ru.mipt.cybersecurity.crypto.tls.AlertLevel;
+import ru.mipt.cybersecurity.crypto.tls.CertificateRequest;
+import ru.mipt.cybersecurity.crypto.tls.ClientCertificateType;
+import ru.mipt.cybersecurity.crypto.tls.ConnectionEnd;
+import ru.mipt.cybersecurity.crypto.tls.DefaultTlsServer;
+import ru.mipt.cybersecurity.crypto.tls.ProtocolVersion;
+import ru.mipt.cybersecurity.crypto.tls.SignatureAlgorithm;
+import ru.mipt.cybersecurity.crypto.tls.TlsEncryptionCredentials;
+import ru.mipt.cybersecurity.crypto.tls.TlsFatalAlert;
+import ru.mipt.cybersecurity.crypto.tls.TlsSignerCredentials;
+import ru.mipt.cybersecurity.crypto.tls.TlsUtils;
 
 class TlsTestServerImpl
     extends DefaultTlsServer
@@ -139,7 +139,7 @@ class TlsTestServerImpl
         return new CertificateRequest(certificateTypes, serverSigAlgs, certificateAuthorities);
     }
 
-    public void notifyClientCertificate(org.bouncycastle.crypto.tls.Certificate clientCertificate)
+    public void notifyClientCertificate(ru.mipt.cybersecurity.crypto.tls.Certificate clientCertificate)
         throws IOException
     {
         boolean isEmpty = (clientCertificate == null || clientCertificate.isEmpty());

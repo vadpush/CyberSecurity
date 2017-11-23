@@ -1,14 +1,14 @@
-package org.bouncycastle.jce.provider.test;
+package ru.mipt.cybersecurity.jce.provider.test;
 
 import java.security.MessageDigest;
 import java.security.Security;
 
-import org.bouncycastle.asn1.misc.MiscObjectIdentifiers;
-import org.bouncycastle.asn1.rosstandart.RosstandartObjectIdentifiers;
-import org.bouncycastle.asn1.ua.UAObjectIdentifiers;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.misc.MiscObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.rosstandart.RosstandartObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.ua.UAObjectIdentifiers;
+import ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class DigestTest
     extends SimpleTest

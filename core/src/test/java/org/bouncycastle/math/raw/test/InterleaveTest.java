@@ -1,8 +1,8 @@
-package org.bouncycastle.math.raw.test;
+package ru.mipt.cybersecurity.math.raw.test;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.math.raw.Interleave;
+import ru.mipt.cybersecurity.math.raw.Interleave;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

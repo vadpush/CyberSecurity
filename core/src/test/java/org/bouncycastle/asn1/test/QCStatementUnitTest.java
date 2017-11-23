@@ -1,15 +1,15 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.x509.qualified.QCStatement;
-import org.bouncycastle.asn1.x509.qualified.RFC3739QCObjectIdentifiers;
-import org.bouncycastle.asn1.x509.qualified.SemanticsInformation;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1Encodable;
+import ru.mipt.cybersecurity.asn1.ASN1InputStream;
+import ru.mipt.cybersecurity.asn1.ASN1ObjectIdentifier;
+import ru.mipt.cybersecurity.asn1.ASN1Sequence;
+import ru.mipt.cybersecurity.asn1.x509.qualified.QCStatement;
+import ru.mipt.cybersecurity.asn1.x509.qualified.RFC3739QCObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.x509.qualified.SemanticsInformation;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class QCStatementUnitTest 
     extends SimpleTest

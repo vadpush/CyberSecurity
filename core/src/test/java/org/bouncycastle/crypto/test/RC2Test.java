@@ -1,9 +1,9 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
-import org.bouncycastle.crypto.engines.RC2Engine;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.RC2Parameters;
-import org.bouncycastle.util.encoders.Hex;
+import ru.mipt.cybersecurity.crypto.engines.RC2Engine;
+import ru.mipt.cybersecurity.crypto.params.KeyParameter;
+import ru.mipt.cybersecurity.crypto.params.RC2Parameters;
+import ru.mipt.cybersecurity.util.encoders.Hex;
 
 /**
  * RC2 tester - vectors from  ftp://ftp.isi.edu/in-notes/rfc2268.txt

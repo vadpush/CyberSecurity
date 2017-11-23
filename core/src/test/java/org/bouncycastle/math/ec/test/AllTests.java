@@ -1,4 +1,4 @@
-package org.bouncycastle.math.ec.test;
+package ru.mipt.cybersecurity.math.ec.test;
 
 import java.util.ArrayList;
 import java.util.Enumeration;

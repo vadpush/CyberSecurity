@@ -1,15 +1,15 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.io.IOException;
 
 import junit.framework.TestCase;
 
-import org.bouncycastle.asn1.ASN1Boolean;
-import org.bouncycastle.asn1.ASN1Enumerated;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.util.encoders.Hex;
+import ru.mipt.cybersecurity.asn1.ASN1Boolean;
+import ru.mipt.cybersecurity.asn1.ASN1Enumerated;
+import ru.mipt.cybersecurity.asn1.ASN1ObjectIdentifier;
+import ru.mipt.cybersecurity.asn1.ASN1Primitive;
+import ru.mipt.cybersecurity.asn1.ASN1Sequence;
+import ru.mipt.cybersecurity.util.encoders.Hex;
 
 /**
  * Tests used to verify correct decoding of the ENUMERATED type.

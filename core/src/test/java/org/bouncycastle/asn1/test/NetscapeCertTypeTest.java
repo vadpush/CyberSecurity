@@ -1,9 +1,9 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.misc.NetscapeCertType;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.misc.NetscapeCertType;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class NetscapeCertTypeTest
     extends SimpleTest

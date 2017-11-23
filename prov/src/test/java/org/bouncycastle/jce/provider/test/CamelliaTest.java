@@ -1,8 +1,8 @@
-package org.bouncycastle.jce.provider.test;
+package ru.mipt.cybersecurity.jce.provider.test;
 
-import org.bouncycastle.asn1.ntt.NTTObjectIdentifiers;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.encoders.Hex;
+import ru.mipt.cybersecurity.asn1.ntt.NTTObjectIdentifiers;
+import ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider;
+import ru.mipt.cybersecurity.util.encoders.Hex;
 
 import javax.crypto.Cipher;
 import javax.crypto.CipherInputStream;

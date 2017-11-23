@@ -1,25 +1,25 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.io.ByteArrayInputStream;
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.pkcs.RSAPrivateKey;
-import org.bouncycastle.asn1.pkcs.RSAPublicKey;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.crypto.AsymmetricBlockCipher;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.encodings.OAEPEncoding;
-import org.bouncycastle.crypto.engines.RSAEngine;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.crypto.params.RSAKeyParameters;
-import org.bouncycastle.crypto.params.RSAPrivateCrtKeyParameters;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1InputStream;
+import ru.mipt.cybersecurity.asn1.pkcs.PrivateKeyInfo;
+import ru.mipt.cybersecurity.asn1.pkcs.RSAPrivateKey;
+import ru.mipt.cybersecurity.asn1.pkcs.RSAPublicKey;
+import ru.mipt.cybersecurity.asn1.x509.SubjectPublicKeyInfo;
+import ru.mipt.cybersecurity.crypto.AsymmetricBlockCipher;
+import ru.mipt.cybersecurity.crypto.InvalidCipherTextException;
+import ru.mipt.cybersecurity.crypto.digests.SHA1Digest;
+import ru.mipt.cybersecurity.crypto.digests.SHA256Digest;
+import ru.mipt.cybersecurity.crypto.encodings.OAEPEncoding;
+import ru.mipt.cybersecurity.crypto.engines.RSAEngine;
+import ru.mipt.cybersecurity.crypto.params.ParametersWithRandom;
+import ru.mipt.cybersecurity.crypto.params.RSAKeyParameters;
+import ru.mipt.cybersecurity.crypto.params.RSAPrivateCrtKeyParameters;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class OAEPTest
     extends SimpleTest

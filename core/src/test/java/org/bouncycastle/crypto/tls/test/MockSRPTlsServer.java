@@ -1,25 +1,25 @@
-package org.bouncycastle.crypto.tls.test;
+package ru.mipt.cybersecurity.crypto.tls.test;
 
 import java.io.IOException;
 import java.io.PrintStream;
 import java.math.BigInteger;
 
-import org.bouncycastle.crypto.agreement.srp.SRP6StandardGroups;
-import org.bouncycastle.crypto.agreement.srp.SRP6VerifierGenerator;
-import org.bouncycastle.crypto.params.SRP6GroupParameters;
-import org.bouncycastle.crypto.tls.AlertDescription;
-import org.bouncycastle.crypto.tls.AlertLevel;
-import org.bouncycastle.crypto.tls.HashAlgorithm;
-import org.bouncycastle.crypto.tls.ProtocolVersion;
-import org.bouncycastle.crypto.tls.SRPTlsServer;
-import org.bouncycastle.crypto.tls.SignatureAlgorithm;
-import org.bouncycastle.crypto.tls.SimulatedTlsSRPIdentityManager;
-import org.bouncycastle.crypto.tls.TlsSRPIdentityManager;
-import org.bouncycastle.crypto.tls.TlsSRPLoginParameters;
-import org.bouncycastle.crypto.tls.TlsSignerCredentials;
-import org.bouncycastle.crypto.tls.TlsUtils;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
+import ru.mipt.cybersecurity.crypto.agreement.srp.SRP6StandardGroups;
+import ru.mipt.cybersecurity.crypto.agreement.srp.SRP6VerifierGenerator;
+import ru.mipt.cybersecurity.crypto.params.SRP6GroupParameters;
+import ru.mipt.cybersecurity.crypto.tls.AlertDescription;
+import ru.mipt.cybersecurity.crypto.tls.AlertLevel;
+import ru.mipt.cybersecurity.crypto.tls.HashAlgorithm;
+import ru.mipt.cybersecurity.crypto.tls.ProtocolVersion;
+import ru.mipt.cybersecurity.crypto.tls.SRPTlsServer;
+import ru.mipt.cybersecurity.crypto.tls.SignatureAlgorithm;
+import ru.mipt.cybersecurity.crypto.tls.SimulatedTlsSRPIdentityManager;
+import ru.mipt.cybersecurity.crypto.tls.TlsSRPIdentityManager;
+import ru.mipt.cybersecurity.crypto.tls.TlsSRPLoginParameters;
+import ru.mipt.cybersecurity.crypto.tls.TlsSignerCredentials;
+import ru.mipt.cybersecurity.crypto.tls.TlsUtils;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.Strings;
 
 class MockSRPTlsServer
     extends SRPTlsServer

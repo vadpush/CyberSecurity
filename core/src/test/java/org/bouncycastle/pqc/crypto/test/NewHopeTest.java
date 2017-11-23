@@ -1,15 +1,15 @@
-package org.bouncycastle.pqc.crypto.test;
+package ru.mipt.cybersecurity.pqc.crypto.test;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.KeyGenerationParameters;
-import org.bouncycastle.pqc.crypto.ExchangePair;
-import org.bouncycastle.pqc.crypto.newhope.NHAgreement;
-import org.bouncycastle.pqc.crypto.newhope.NHExchangePairGenerator;
-import org.bouncycastle.pqc.crypto.newhope.NHKeyPairGenerator;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.AsymmetricCipherKeyPair;
+import ru.mipt.cybersecurity.crypto.KeyGenerationParameters;
+import ru.mipt.cybersecurity.pqc.crypto.ExchangePair;
+import ru.mipt.cybersecurity.pqc.crypto.newhope.NHAgreement;
+import ru.mipt.cybersecurity.pqc.crypto.newhope.NHExchangePairGenerator;
+import ru.mipt.cybersecurity.pqc.crypto.newhope.NHKeyPairGenerator;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class NewHopeTest
     extends SimpleTest

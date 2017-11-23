@@ -1,10 +1,10 @@
-package org.bouncycastle.pqc.jcajce.provider.test;
+package ru.mipt.cybersecurity.pqc.jcajce.provider.test;
 
 import java.security.KeyPairGenerator;
 
 import javax.crypto.Cipher;
 
-import org.bouncycastle.pqc.jcajce.spec.McElieceKeyGenParameterSpec;
+import ru.mipt.cybersecurity.pqc.jcajce.spec.McElieceKeyGenParameterSpec;
 
 public class McElieceCipherTest
     extends AsymmetricBlockCipherTest

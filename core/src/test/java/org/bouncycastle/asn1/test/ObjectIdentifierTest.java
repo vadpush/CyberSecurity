@@ -1,8 +1,8 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.util.test.TestResult;
+import ru.mipt.cybersecurity.asn1.ASN1ObjectIdentifier;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
+import ru.mipt.cybersecurity.util.test.TestResult;
 
 public class ObjectIdentifierTest
     extends SimpleTest

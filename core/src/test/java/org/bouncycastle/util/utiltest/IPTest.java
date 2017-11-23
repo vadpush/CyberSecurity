@@ -1,7 +1,7 @@
-package org.bouncycastle.util.utiltest;
+package ru.mipt.cybersecurity.util.utiltest;
 
 import junit.framework.TestCase;
-import org.bouncycastle.util.IPAddress;
+import ru.mipt.cybersecurity.util.IPAddress;
 
 public class IPTest
     extends TestCase

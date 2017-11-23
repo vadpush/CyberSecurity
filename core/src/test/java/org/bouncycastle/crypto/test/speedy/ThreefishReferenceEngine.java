@@ -1,11 +1,11 @@
-package org.bouncycastle.crypto.test.speedy;
+package ru.mipt.cybersecurity.crypto.test.speedy;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.OutputLengthException;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.TweakableBlockCipherParameters;
+import ru.mipt.cybersecurity.crypto.BlockCipher;
+import ru.mipt.cybersecurity.crypto.CipherParameters;
+import ru.mipt.cybersecurity.crypto.DataLengthException;
+import ru.mipt.cybersecurity.crypto.OutputLengthException;
+import ru.mipt.cybersecurity.crypto.params.KeyParameter;
+import ru.mipt.cybersecurity.crypto.params.TweakableBlockCipherParameters;
 
 public class ThreefishReferenceEngine
     implements BlockCipher

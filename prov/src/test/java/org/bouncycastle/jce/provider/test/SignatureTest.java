@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package ru.mipt.cybersecurity.jce.provider.test;
 
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
@@ -6,12 +6,12 @@ import java.security.SecureRandom;
 import java.security.Security;
 import java.security.Signature;
 
-import org.bouncycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.spec.ECNamedCurveGenParameterSpec;
-import org.bouncycastle.jce.spec.GOST3410ParameterSpec;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.cryptopro.CryptoProObjectIdentifiers;
+import ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider;
+import ru.mipt.cybersecurity.jce.spec.ECNamedCurveGenParameterSpec;
+import ru.mipt.cybersecurity.jce.spec.GOST3410ParameterSpec;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class SignatureTest
     extends SimpleTest

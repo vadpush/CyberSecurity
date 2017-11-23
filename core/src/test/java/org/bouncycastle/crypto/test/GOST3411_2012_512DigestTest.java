@@ -1,16 +1,13 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.util.ArrayList;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.GOST3411Digest;
-import org.bouncycastle.crypto.digests.GOST3411_2012_512Digest;
-import org.bouncycastle.crypto.generators.PKCS5S1ParametersGenerator;
-import org.bouncycastle.crypto.macs.HMac;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Hex;
+import ru.mipt.cybersecurity.crypto.Digest;
+import ru.mipt.cybersecurity.crypto.digests.GOST3411_2012_512Digest;
+import ru.mipt.cybersecurity.crypto.macs.HMac;
+import ru.mipt.cybersecurity.crypto.params.KeyParameter;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.encoders.Hex;
 
 public class GOST3411_2012_512DigestTest
     extends DigestTest

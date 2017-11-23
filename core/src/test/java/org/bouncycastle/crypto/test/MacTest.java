@@ -1,15 +1,15 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.Mac;
-import org.bouncycastle.crypto.engines.DESEngine;
-import org.bouncycastle.crypto.macs.CBCBlockCipherMac;
-import org.bouncycastle.crypto.macs.CFBBlockCipherMac;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
-import org.bouncycastle.crypto.paddings.PKCS7Padding;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.BlockCipher;
+import ru.mipt.cybersecurity.crypto.Mac;
+import ru.mipt.cybersecurity.crypto.engines.DESEngine;
+import ru.mipt.cybersecurity.crypto.macs.CBCBlockCipherMac;
+import ru.mipt.cybersecurity.crypto.macs.CFBBlockCipherMac;
+import ru.mipt.cybersecurity.crypto.params.KeyParameter;
+import ru.mipt.cybersecurity.crypto.params.ParametersWithIV;
+import ru.mipt.cybersecurity.crypto.paddings.PKCS7Padding;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 /**
  * MAC tester - vectors from 

@@ -1,15 +1,15 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
-import org.bouncycastle.crypto.KeyGenerationParameters;
-import org.bouncycastle.crypto.Wrapper;
-import org.bouncycastle.crypto.engines.DESedeEngine;
-import org.bouncycastle.crypto.engines.DESedeWrapEngine;
-import org.bouncycastle.crypto.generators.DESedeKeyGenerator;
-import org.bouncycastle.crypto.params.DESedeParameters;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.KeyGenerationParameters;
+import ru.mipt.cybersecurity.crypto.Wrapper;
+import ru.mipt.cybersecurity.crypto.engines.DESedeEngine;
+import ru.mipt.cybersecurity.crypto.engines.DESedeWrapEngine;
+import ru.mipt.cybersecurity.crypto.generators.DESedeKeyGenerator;
+import ru.mipt.cybersecurity.crypto.params.DESedeParameters;
+import ru.mipt.cybersecurity.crypto.params.KeyParameter;
+import ru.mipt.cybersecurity.crypto.params.ParametersWithIV;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 import java.security.SecureRandom;
 

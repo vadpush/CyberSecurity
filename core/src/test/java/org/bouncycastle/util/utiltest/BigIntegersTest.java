@@ -1,13 +1,12 @@
-package org.bouncycastle.util.utiltest;
+package ru.mipt.cybersecurity.util.utiltest;
 
 import java.math.BigInteger;
 
 import junit.framework.Assert;
 import junit.framework.TestCase;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.BigIntegers;
-import org.bouncycastle.util.IPAddress;
-import org.bouncycastle.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.BigIntegers;
+import ru.mipt.cybersecurity.util.encoders.Hex;
 
 public class BigIntegersTest
     extends TestCase

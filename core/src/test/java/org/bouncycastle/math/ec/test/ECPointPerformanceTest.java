@@ -1,4 +1,4 @@
-package org.bouncycastle.math.ec.test;
+package ru.mipt.cybersecurity.math.ec.test;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
@@ -9,13 +9,13 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 
 import junit.framework.TestCase;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.x9.ECNamedCurveTable;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.crypto.ec.CustomNamedCurves;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.math.ec.ECPoint;
-import org.bouncycastle.util.Times;
+import ru.mipt.cybersecurity.asn1.ASN1ObjectIdentifier;
+import ru.mipt.cybersecurity.asn1.x9.ECNamedCurveTable;
+import ru.mipt.cybersecurity.asn1.x9.X9ECParameters;
+import ru.mipt.cybersecurity.crypto.ec.CustomNamedCurves;
+import ru.mipt.cybersecurity.math.ec.ECCurve;
+import ru.mipt.cybersecurity.math.ec.ECPoint;
+import ru.mipt.cybersecurity.util.Times;
 
 /**
  * Compares the performance of the the window NAF point multiplication against conventional point

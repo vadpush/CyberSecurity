@@ -1,14 +1,14 @@
-package org.bouncycastle.crypto.tls.test;
+package ru.mipt.cybersecurity.crypto.tls.test;
 
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.SocketTimeoutException;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.tls.DTLSServerProtocol;
-import org.bouncycastle.crypto.tls.DTLSTransport;
-import org.bouncycastle.crypto.tls.DatagramTransport;
-import org.bouncycastle.crypto.tls.UDPTransport;
+import ru.mipt.cybersecurity.crypto.tls.DTLSServerProtocol;
+import ru.mipt.cybersecurity.crypto.tls.DTLSTransport;
+import ru.mipt.cybersecurity.crypto.tls.DatagramTransport;
+import ru.mipt.cybersecurity.crypto.tls.UDPTransport;
 
 /**
  * A simple test designed to conduct a DTLS handshake with an external DTLS client.

@@ -1,13 +1,13 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.cmc.CMCStatus;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1Integer;
+import ru.mipt.cybersecurity.asn1.cmc.CMCStatus;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 
 public class CMCStatusTest

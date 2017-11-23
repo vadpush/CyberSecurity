@@ -1,14 +1,14 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.io.IOException;
 import java.math.BigInteger;
 
-import org.bouncycastle.asn1.ASN1GeneralizedTime;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.x500.DirectoryString;
-import org.bouncycastle.asn1.x509.sigi.NameOrPseudonym;
-import org.bouncycastle.asn1.x509.sigi.PersonalData;
+import ru.mipt.cybersecurity.asn1.ASN1GeneralizedTime;
+import ru.mipt.cybersecurity.asn1.ASN1InputStream;
+import ru.mipt.cybersecurity.asn1.ASN1Sequence;
+import ru.mipt.cybersecurity.asn1.x500.DirectoryString;
+import ru.mipt.cybersecurity.asn1.x509.sigi.NameOrPseudonym;
+import ru.mipt.cybersecurity.asn1.x509.sigi.PersonalData;
 
 public class PersonalDataUnitTest
     extends ASN1UnitTest

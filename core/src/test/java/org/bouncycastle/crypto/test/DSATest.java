@@ -1,33 +1,33 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.digests.SHA224Digest;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.digests.SHA3Digest;
-import org.bouncycastle.crypto.generators.DSAKeyPairGenerator;
-import org.bouncycastle.crypto.generators.DSAParametersGenerator;
-import org.bouncycastle.crypto.params.DSAKeyGenerationParameters;
-import org.bouncycastle.crypto.params.DSAParameterGenerationParameters;
-import org.bouncycastle.crypto.params.DSAParameters;
-import org.bouncycastle.crypto.params.DSAPrivateKeyParameters;
-import org.bouncycastle.crypto.params.DSAPublicKeyParameters;
-import org.bouncycastle.crypto.params.DSAValidationParameters;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.crypto.signers.DSADigestSigner;
-import org.bouncycastle.crypto.signers.DSASigner;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.BigIntegers;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.FixedSecureRandom;
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.util.test.TestRandomBigInteger;
-import org.bouncycastle.util.test.TestRandomData;
+import ru.mipt.cybersecurity.asn1.ASN1Integer;
+import ru.mipt.cybersecurity.asn1.ASN1Sequence;
+import ru.mipt.cybersecurity.crypto.AsymmetricCipherKeyPair;
+import ru.mipt.cybersecurity.crypto.digests.SHA224Digest;
+import ru.mipt.cybersecurity.crypto.digests.SHA256Digest;
+import ru.mipt.cybersecurity.crypto.digests.SHA3Digest;
+import ru.mipt.cybersecurity.crypto.generators.DSAKeyPairGenerator;
+import ru.mipt.cybersecurity.crypto.generators.DSAParametersGenerator;
+import ru.mipt.cybersecurity.crypto.params.DSAKeyGenerationParameters;
+import ru.mipt.cybersecurity.crypto.params.DSAParameterGenerationParameters;
+import ru.mipt.cybersecurity.crypto.params.DSAParameters;
+import ru.mipt.cybersecurity.crypto.params.DSAPrivateKeyParameters;
+import ru.mipt.cybersecurity.crypto.params.DSAPublicKeyParameters;
+import ru.mipt.cybersecurity.crypto.params.DSAValidationParameters;
+import ru.mipt.cybersecurity.crypto.params.ParametersWithRandom;
+import ru.mipt.cybersecurity.crypto.signers.DSADigestSigner;
+import ru.mipt.cybersecurity.crypto.signers.DSASigner;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.BigIntegers;
+import ru.mipt.cybersecurity.util.Strings;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.FixedSecureRandom;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
+import ru.mipt.cybersecurity.util.test.TestRandomBigInteger;
+import ru.mipt.cybersecurity.util.test.TestRandomData;
 
 /**
  * Test based on FIPS 186-2, Appendix 5, an example of DSA, and FIPS 168-3 test vectors.

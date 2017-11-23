@@ -1,7 +1,7 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
-import org.bouncycastle.asn1.DERUTCTime;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.DERUTCTime;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 import java.text.SimpleDateFormat;
 import java.util.SimpleTimeZone;

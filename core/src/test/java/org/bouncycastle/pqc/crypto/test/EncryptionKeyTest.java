@@ -1,15 +1,15 @@
-package org.bouncycastle.pqc.crypto.test;
+package ru.mipt.cybersecurity.pqc.crypto.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 import junit.framework.TestCase;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.pqc.crypto.ntru.NTRUEncryptionKeyGenerationParameters;
-import org.bouncycastle.pqc.crypto.ntru.NTRUEncryptionKeyPairGenerator;
-import org.bouncycastle.pqc.crypto.ntru.NTRUEncryptionPrivateKeyParameters;
-import org.bouncycastle.pqc.crypto.ntru.NTRUEncryptionPublicKeyParameters;
+import ru.mipt.cybersecurity.crypto.AsymmetricCipherKeyPair;
+import ru.mipt.cybersecurity.pqc.crypto.ntru.NTRUEncryptionKeyGenerationParameters;
+import ru.mipt.cybersecurity.pqc.crypto.ntru.NTRUEncryptionKeyPairGenerator;
+import ru.mipt.cybersecurity.pqc.crypto.ntru.NTRUEncryptionPrivateKeyParameters;
+import ru.mipt.cybersecurity.pqc.crypto.ntru.NTRUEncryptionPublicKeyParameters;
 
 public class EncryptionKeyTest
     extends TestCase

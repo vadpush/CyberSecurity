@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.jcajce.provider.test;
+package ru.mipt.cybersecurity.pqc.jcajce.provider.test;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -19,9 +19,9 @@ import java.security.spec.X509EncodedKeySpec;
 import java.util.Random;
 
 import junit.framework.TestCase;
-import org.bouncycastle.pqc.jcajce.provider.BouncyCastlePQCProvider;
-import org.bouncycastle.pqc.jcajce.spec.RainbowParameterSpec;
-import org.bouncycastle.util.encoders.Hex;
+import ru.mipt.cybersecurity.pqc.jcajce.provider.BouncyCastlePQCProvider;
+import ru.mipt.cybersecurity.pqc.jcajce.spec.RainbowParameterSpec;
+import ru.mipt.cybersecurity.util.encoders.Hex;
 
 /**
  * Test cases for the use of Rainbow with the BCPQC provider.

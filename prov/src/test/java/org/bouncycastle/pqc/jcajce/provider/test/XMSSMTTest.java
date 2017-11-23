@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.jcajce.provider.test;
+package ru.mipt.cybersecurity.pqc.jcajce.provider.test;
 
 import java.security.KeyFactory;
 import java.security.KeyPair;
@@ -12,17 +12,17 @@ import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 
 import junit.framework.TestCase;
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.pqc.jcajce.interfaces.StateAwareSignature;
-import org.bouncycastle.pqc.jcajce.interfaces.XMSSMTKey;
-import org.bouncycastle.pqc.jcajce.provider.BouncyCastlePQCProvider;
-import org.bouncycastle.pqc.jcajce.spec.XMSSMTParameterSpec;
-import org.bouncycastle.pqc.jcajce.spec.XMSSParameterSpec;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
+import ru.mipt.cybersecurity.asn1.ASN1Encodable;
+import ru.mipt.cybersecurity.asn1.ASN1Sequence;
+import ru.mipt.cybersecurity.asn1.DERSequence;
+import ru.mipt.cybersecurity.asn1.pkcs.PrivateKeyInfo;
+import ru.mipt.cybersecurity.pqc.jcajce.interfaces.StateAwareSignature;
+import ru.mipt.cybersecurity.pqc.jcajce.interfaces.XMSSMTKey;
+import ru.mipt.cybersecurity.pqc.jcajce.provider.BouncyCastlePQCProvider;
+import ru.mipt.cybersecurity.pqc.jcajce.spec.XMSSMTParameterSpec;
+import ru.mipt.cybersecurity.pqc.jcajce.spec.XMSSParameterSpec;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.Strings;
 
 /**
  * Test cases for the use of XMSS^MT with the BCPQC provider.

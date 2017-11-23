@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package ru.mipt.cybersecurity.jce.provider.test;
 
 import java.math.BigInteger;
 import java.security.KeyPair;
@@ -6,16 +6,16 @@ import java.security.KeyPairGenerator;
 import java.security.Security;
 import java.security.Signature;
 
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.jcajce.spec.SM2ParameterSpec;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.spec.ECParameterSpec;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.math.ec.ECPoint;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.util.test.TestRandomBigInteger;
+import ru.mipt.cybersecurity.asn1.ASN1Integer;
+import ru.mipt.cybersecurity.asn1.ASN1Sequence;
+import ru.mipt.cybersecurity.jcajce.spec.SM2ParameterSpec;
+import ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider;
+import ru.mipt.cybersecurity.jce.spec.ECParameterSpec;
+import ru.mipt.cybersecurity.math.ec.ECCurve;
+import ru.mipt.cybersecurity.math.ec.ECPoint;
+import ru.mipt.cybersecurity.util.Strings;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
+import ru.mipt.cybersecurity.util.test.TestRandomBigInteger;
 
 public class SM2SignatureTest
     extends SimpleTest

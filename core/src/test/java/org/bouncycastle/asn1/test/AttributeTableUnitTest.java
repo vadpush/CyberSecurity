@@ -1,13 +1,13 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.util.Hashtable;
 
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.DERSet;
-import org.bouncycastle.asn1.cms.Attribute;
-import org.bouncycastle.asn1.cms.AttributeTable;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1EncodableVector;
+import ru.mipt.cybersecurity.asn1.ASN1ObjectIdentifier;
+import ru.mipt.cybersecurity.asn1.DERSet;
+import ru.mipt.cybersecurity.asn1.cms.Attribute;
+import ru.mipt.cybersecurity.asn1.cms.AttributeTable;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class AttributeTableUnitTest 
     extends SimpleTest

@@ -1,11 +1,11 @@
-package org.bouncycastle.util.encoders.test;
+package ru.mipt.cybersecurity.util.encoders.test;
 
 import java.util.Arrays;
 import java.util.Random;
 
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.util.encoders.Base64;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class EncoderTest
     extends SimpleTest
