@@ -1,11 +1,11 @@
-package org.bouncycastle.pqc.crypto.test;
+package ru.mipt.cybersecurity.pqc.crypto.test;
 
 import java.math.BigInteger;
 import java.util.Arrays;
 
 import junit.framework.TestCase;
-import org.bouncycastle.pqc.crypto.xmss.XMSSUtil;
-import org.bouncycastle.util.Pack;
+import ru.mipt.cybersecurity.pqc.crypto.xmss.XMSSUtil;
+import ru.mipt.cybersecurity.util.Pack;
 
 /**
  * Test cases for XMSSUtil class.

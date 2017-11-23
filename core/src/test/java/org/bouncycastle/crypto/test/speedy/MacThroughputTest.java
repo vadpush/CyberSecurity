@@ -1,23 +1,23 @@
-package org.bouncycastle.crypto.test.speedy;
+package ru.mipt.cybersecurity.crypto.test.speedy;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.KeyGenerationParameters;
-import org.bouncycastle.crypto.Mac;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.engines.AESFastEngine;
-import org.bouncycastle.crypto.engines.NullEngine;
-import org.bouncycastle.crypto.generators.Poly1305KeyGenerator;
-import org.bouncycastle.crypto.macs.CMac;
-import org.bouncycastle.crypto.macs.GMac;
-import org.bouncycastle.crypto.macs.HMac;
-import org.bouncycastle.crypto.macs.Poly1305;
-import org.bouncycastle.crypto.macs.SipHash;
-import org.bouncycastle.crypto.macs.SkeinMac;
-import org.bouncycastle.crypto.modes.GCMBlockCipher;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
+import ru.mipt.cybersecurity.crypto.CipherParameters;
+import ru.mipt.cybersecurity.crypto.KeyGenerationParameters;
+import ru.mipt.cybersecurity.crypto.Mac;
+import ru.mipt.cybersecurity.crypto.digests.SHA1Digest;
+import ru.mipt.cybersecurity.crypto.engines.AESFastEngine;
+import ru.mipt.cybersecurity.crypto.engines.NullEngine;
+import ru.mipt.cybersecurity.crypto.generators.Poly1305KeyGenerator;
+import ru.mipt.cybersecurity.crypto.macs.CMac;
+import ru.mipt.cybersecurity.crypto.macs.GMac;
+import ru.mipt.cybersecurity.crypto.macs.HMac;
+import ru.mipt.cybersecurity.crypto.macs.Poly1305;
+import ru.mipt.cybersecurity.crypto.macs.SipHash;
+import ru.mipt.cybersecurity.crypto.macs.SkeinMac;
+import ru.mipt.cybersecurity.crypto.modes.GCMBlockCipher;
+import ru.mipt.cybersecurity.crypto.params.KeyParameter;
+import ru.mipt.cybersecurity.crypto.params.ParametersWithIV;
 
 /**
  * Microbenchmark of MACs on short, medium, long messages, with optional object creation cost.

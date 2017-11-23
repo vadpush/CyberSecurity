@@ -1,9 +1,9 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
-import org.bouncycastle.crypto.engines.TEAEngine;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.engines.TEAEngine;
+import ru.mipt.cybersecurity.crypto.params.KeyParameter;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 /**
  * TEA tester - based on C implementation results from http://www.simonshepherd.supanet.com/tea.htm

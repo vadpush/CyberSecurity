@@ -1,4 +1,4 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 public class BitStringConstantTester
 {

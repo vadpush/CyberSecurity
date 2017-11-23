@@ -1,11 +1,11 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.isismtt.ocsp.RequestedCertificate;
-import org.bouncycastle.asn1.x509.Certificate;
-import org.bouncycastle.util.encoders.Base64;
+import ru.mipt.cybersecurity.asn1.ASN1InputStream;
+import ru.mipt.cybersecurity.asn1.isismtt.ocsp.RequestedCertificate;
+import ru.mipt.cybersecurity.asn1.x509.Certificate;
+import ru.mipt.cybersecurity.util.encoders.Base64;
 
 public class RequestedCertificateUnitTest
     extends ASN1UnitTest

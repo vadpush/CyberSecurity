@@ -1,12 +1,12 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.DERUTF8String;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.test.SimpleTestResult;
-import org.bouncycastle.util.test.Test;
-import org.bouncycastle.util.test.TestResult;
+import ru.mipt.cybersecurity.asn1.DEROctetString;
+import ru.mipt.cybersecurity.asn1.DERUTF8String;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.Strings;
+import ru.mipt.cybersecurity.util.test.SimpleTestResult;
+import ru.mipt.cybersecurity.util.test.Test;
+import ru.mipt.cybersecurity.util.test.TestResult;
 
 public class DERUTF8StringTest 
     implements Test

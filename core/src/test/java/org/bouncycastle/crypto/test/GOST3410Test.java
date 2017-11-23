@@ -1,23 +1,23 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.generators.GOST3410KeyPairGenerator;
-import org.bouncycastle.crypto.generators.GOST3410ParametersGenerator;
-import org.bouncycastle.crypto.params.GOST3410KeyGenerationParameters;
-import org.bouncycastle.crypto.params.GOST3410Parameters;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.crypto.signers.GOST3410Signer;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.FixedSecureRandom;
-import org.bouncycastle.util.test.NumberParsing;
-import org.bouncycastle.util.test.SimpleTestResult;
-import org.bouncycastle.util.test.Test;
-import org.bouncycastle.util.test.TestRandomData;
-import org.bouncycastle.util.test.TestResult;
+import ru.mipt.cybersecurity.crypto.AsymmetricCipherKeyPair;
+import ru.mipt.cybersecurity.crypto.generators.GOST3410KeyPairGenerator;
+import ru.mipt.cybersecurity.crypto.generators.GOST3410ParametersGenerator;
+import ru.mipt.cybersecurity.crypto.params.GOST3410KeyGenerationParameters;
+import ru.mipt.cybersecurity.crypto.params.GOST3410Parameters;
+import ru.mipt.cybersecurity.crypto.params.ParametersWithRandom;
+import ru.mipt.cybersecurity.crypto.signers.GOST3410Signer;
+import ru.mipt.cybersecurity.util.Strings;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.FixedSecureRandom;
+import ru.mipt.cybersecurity.util.test.NumberParsing;
+import ru.mipt.cybersecurity.util.test.SimpleTestResult;
+import ru.mipt.cybersecurity.util.test.Test;
+import ru.mipt.cybersecurity.util.test.TestRandomData;
+import ru.mipt.cybersecurity.util.test.TestResult;
 
 public class GOST3410Test
         implements Test

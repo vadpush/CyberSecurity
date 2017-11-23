@@ -1,23 +1,23 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.engines.SM2Engine;
-import org.bouncycastle.crypto.generators.ECKeyPairGenerator;
-import org.bouncycastle.crypto.params.ECDomainParameters;
-import org.bouncycastle.crypto.params.ECKeyGenerationParameters;
-import org.bouncycastle.crypto.params.ECPrivateKeyParameters;
-import org.bouncycastle.crypto.params.ECPublicKeyParameters;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.math.ec.ECPoint;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.util.test.TestRandomBigInteger;
+import ru.mipt.cybersecurity.crypto.AsymmetricCipherKeyPair;
+import ru.mipt.cybersecurity.crypto.InvalidCipherTextException;
+import ru.mipt.cybersecurity.crypto.engines.SM2Engine;
+import ru.mipt.cybersecurity.crypto.generators.ECKeyPairGenerator;
+import ru.mipt.cybersecurity.crypto.params.ECDomainParameters;
+import ru.mipt.cybersecurity.crypto.params.ECKeyGenerationParameters;
+import ru.mipt.cybersecurity.crypto.params.ECPrivateKeyParameters;
+import ru.mipt.cybersecurity.crypto.params.ECPublicKeyParameters;
+import ru.mipt.cybersecurity.crypto.params.ParametersWithRandom;
+import ru.mipt.cybersecurity.math.ec.ECCurve;
+import ru.mipt.cybersecurity.math.ec.ECPoint;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.Strings;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
+import ru.mipt.cybersecurity.util.test.TestRandomBigInteger;
 
 public class SM2EngineTest
     extends SimpleTest

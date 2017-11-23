@@ -1,18 +1,16 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.Wrapper;
-import org.bouncycastle.crypto.engines.AESWrapEngine;
-import org.bouncycastle.crypto.engines.AESWrapPadEngine;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.util.test.SimpleTestResult;
-import org.bouncycastle.util.test.Test;
-import org.bouncycastle.util.test.TestFailedException;
-import org.bouncycastle.util.test.TestResult;
+import ru.mipt.cybersecurity.crypto.DataLengthException;
+import ru.mipt.cybersecurity.crypto.InvalidCipherTextException;
+import ru.mipt.cybersecurity.crypto.Wrapper;
+import ru.mipt.cybersecurity.crypto.engines.AESWrapEngine;
+import ru.mipt.cybersecurity.crypto.engines.AESWrapPadEngine;
+import ru.mipt.cybersecurity.crypto.params.KeyParameter;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
+import ru.mipt.cybersecurity.util.test.TestFailedException;
+import ru.mipt.cybersecurity.util.test.TestResult;
 
 /**
  * Wrap Test

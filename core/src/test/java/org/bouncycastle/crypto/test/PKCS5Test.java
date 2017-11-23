@@ -1,30 +1,29 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.io.ByteArrayInputStream;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.pkcs.EncryptedPrivateKeyInfo;
-import org.bouncycastle.asn1.pkcs.EncryptionScheme;
-import org.bouncycastle.asn1.pkcs.KeyDerivationFunc;
-import org.bouncycastle.asn1.pkcs.PBES2Parameters;
-import org.bouncycastle.asn1.pkcs.PBKDF2Params;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.RC2CBCParameter;
-import org.bouncycastle.crypto.BufferedBlockCipher;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.PBEParametersGenerator;
-import org.bouncycastle.crypto.engines.DESEngine;
-import org.bouncycastle.crypto.engines.DESedeEngine;
-import org.bouncycastle.crypto.engines.RC2Engine;
-import org.bouncycastle.crypto.generators.PKCS5S2ParametersGenerator;
-import org.bouncycastle.crypto.modes.CBCBlockCipher;
-import org.bouncycastle.crypto.paddings.PaddedBufferedBlockCipher;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1InputStream;
+import ru.mipt.cybersecurity.asn1.ASN1OctetString;
+import ru.mipt.cybersecurity.asn1.pkcs.EncryptedPrivateKeyInfo;
+import ru.mipt.cybersecurity.asn1.pkcs.EncryptionScheme;
+import ru.mipt.cybersecurity.asn1.pkcs.PBES2Parameters;
+import ru.mipt.cybersecurity.asn1.pkcs.PBKDF2Params;
+import ru.mipt.cybersecurity.asn1.pkcs.PKCSObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.pkcs.RC2CBCParameter;
+import ru.mipt.cybersecurity.crypto.BufferedBlockCipher;
+import ru.mipt.cybersecurity.crypto.CipherParameters;
+import ru.mipt.cybersecurity.crypto.PBEParametersGenerator;
+import ru.mipt.cybersecurity.crypto.engines.DESEngine;
+import ru.mipt.cybersecurity.crypto.engines.DESedeEngine;
+import ru.mipt.cybersecurity.crypto.engines.RC2Engine;
+import ru.mipt.cybersecurity.crypto.generators.PKCS5S2ParametersGenerator;
+import ru.mipt.cybersecurity.crypto.modes.CBCBlockCipher;
+import ru.mipt.cybersecurity.crypto.paddings.PaddedBufferedBlockCipher;
+import ru.mipt.cybersecurity.crypto.params.KeyParameter;
+import ru.mipt.cybersecurity.crypto.params.ParametersWithIV;
+import ru.mipt.cybersecurity.util.encoders.Base64;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 /**
  * A test class for PKCS5 PBES2 with PBKDF2 (PKCS5 v2.0) using

@@ -1,21 +1,21 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1String;
-import org.bouncycastle.asn1.DERBMPString;
-import org.bouncycastle.asn1.DERBitString;
-import org.bouncycastle.asn1.DERGeneralString;
-import org.bouncycastle.asn1.DERIA5String;
-import org.bouncycastle.asn1.DERNumericString;
-import org.bouncycastle.asn1.DERPrintableString;
-import org.bouncycastle.asn1.DERT61String;
-import org.bouncycastle.asn1.DERUTF8String;
-import org.bouncycastle.asn1.DERUniversalString;
-import org.bouncycastle.asn1.DERVisibleString;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1Primitive;
+import ru.mipt.cybersecurity.asn1.ASN1String;
+import ru.mipt.cybersecurity.asn1.DERBMPString;
+import ru.mipt.cybersecurity.asn1.DERBitString;
+import ru.mipt.cybersecurity.asn1.DERGeneralString;
+import ru.mipt.cybersecurity.asn1.DERIA5String;
+import ru.mipt.cybersecurity.asn1.DERNumericString;
+import ru.mipt.cybersecurity.asn1.DERPrintableString;
+import ru.mipt.cybersecurity.asn1.DERT61String;
+import ru.mipt.cybersecurity.asn1.DERUTF8String;
+import ru.mipt.cybersecurity.asn1.DERUniversalString;
+import ru.mipt.cybersecurity.asn1.DERVisibleString;
+import ru.mipt.cybersecurity.util.Strings;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 /**
  * X.690 test example

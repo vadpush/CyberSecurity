@@ -1,20 +1,20 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.BufferedBlockCipher;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.engines.AESEngine;
-import org.bouncycastle.crypto.modes.CBCBlockCipher;
-import org.bouncycastle.crypto.modes.CFBBlockCipher;
-import org.bouncycastle.crypto.modes.OFBBlockCipher;
-import org.bouncycastle.crypto.modes.SICBlockCipher;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.BlockCipher;
+import ru.mipt.cybersecurity.crypto.BufferedBlockCipher;
+import ru.mipt.cybersecurity.crypto.CipherParameters;
+import ru.mipt.cybersecurity.crypto.InvalidCipherTextException;
+import ru.mipt.cybersecurity.crypto.engines.AESEngine;
+import ru.mipt.cybersecurity.crypto.modes.CBCBlockCipher;
+import ru.mipt.cybersecurity.crypto.modes.CFBBlockCipher;
+import ru.mipt.cybersecurity.crypto.modes.OFBBlockCipher;
+import ru.mipt.cybersecurity.crypto.modes.SICBlockCipher;
+import ru.mipt.cybersecurity.crypto.params.KeyParameter;
+import ru.mipt.cybersecurity.crypto.params.ParametersWithIV;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 /**
  * Test vectors from the NIST standard tests and Brian Gladman's vector set

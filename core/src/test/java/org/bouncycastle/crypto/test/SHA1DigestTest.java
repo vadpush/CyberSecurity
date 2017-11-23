@@ -1,7 +1,7 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.SHA1Digest;
+import ru.mipt.cybersecurity.crypto.Digest;
+import ru.mipt.cybersecurity.crypto.digests.SHA1Digest;
 
 /**
  * standard vector test for SHA-1 from "Handbook of Applied Cryptography", page 345.

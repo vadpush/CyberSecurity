@@ -1,19 +1,18 @@
-package org.bouncycastle.crypto.agreement.test;
+package ru.mipt.cybersecurity.crypto.agreement.test;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
 import junit.framework.TestCase;
-import org.bouncycastle.crypto.CryptoException;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.agreement.jpake.JPAKEParticipant;
-import org.bouncycastle.crypto.agreement.jpake.JPAKEPrimeOrderGroup;
-import org.bouncycastle.crypto.agreement.jpake.JPAKEPrimeOrderGroups;
-import org.bouncycastle.crypto.agreement.jpake.JPAKERound1Payload;
-import org.bouncycastle.crypto.agreement.jpake.JPAKERound2Payload;
-import org.bouncycastle.crypto.agreement.jpake.JPAKERound3Payload;
-import org.bouncycastle.crypto.agreement.jpake.JPAKEUtil;
-import org.bouncycastle.crypto.digests.SHA256Digest;
+import ru.mipt.cybersecurity.crypto.Digest;
+import ru.mipt.cybersecurity.crypto.agreement.jpake.JPAKEParticipant;
+import ru.mipt.cybersecurity.crypto.agreement.jpake.JPAKEPrimeOrderGroup;
+import ru.mipt.cybersecurity.crypto.agreement.jpake.JPAKEPrimeOrderGroups;
+import ru.mipt.cybersecurity.crypto.agreement.jpake.JPAKERound1Payload;
+import ru.mipt.cybersecurity.crypto.agreement.jpake.JPAKERound2Payload;
+import ru.mipt.cybersecurity.crypto.agreement.jpake.JPAKERound3Payload;
+import ru.mipt.cybersecurity.crypto.agreement.jpake.JPAKEUtil;
+import ru.mipt.cybersecurity.crypto.digests.SHA256Digest;
 
 public class JPAKEParticipantTest
     extends TestCase

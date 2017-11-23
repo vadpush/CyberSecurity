@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package ru.mipt.cybersecurity.jce.provider.test;
 
 import java.security.Key;
 import java.security.SecureRandom;
@@ -9,9 +9,9 @@ import javax.crypto.SecretKey;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.util.test.TestFailedException;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
+import ru.mipt.cybersecurity.util.test.TestFailedException;
 
 public abstract class BaseBlockCipherTest
     extends SimpleTest

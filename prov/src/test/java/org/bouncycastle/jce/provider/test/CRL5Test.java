@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package ru.mipt.cybersecurity.jce.provider.test;
 
 import java.io.ByteArrayInputStream;
 import java.security.Security;
@@ -8,9 +8,9 @@ import java.security.cert.X509CRLEntry;
 import java.util.Iterator;
 import java.util.Set;
 
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider;
+import ru.mipt.cybersecurity.util.encoders.Base64;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class CRL5Test
     extends SimpleTest

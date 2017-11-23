@@ -1,4 +1,4 @@
-package org.bouncycastle.util.encoders.test;
+package ru.mipt.cybersecurity.util.encoders.test;
 
 import junit.extensions.TestSetup;
 import junit.framework.Test;

@@ -1,16 +1,16 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.generators.KDF2BytesGenerator;
-import org.bouncycastle.crypto.generators.RSAKeyPairGenerator;
-import org.bouncycastle.crypto.kems.RSAKeyEncapsulation;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.RSAKeyGenerationParameters;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.AsymmetricCipherKeyPair;
+import ru.mipt.cybersecurity.crypto.digests.SHA1Digest;
+import ru.mipt.cybersecurity.crypto.generators.KDF2BytesGenerator;
+import ru.mipt.cybersecurity.crypto.generators.RSAKeyPairGenerator;
+import ru.mipt.cybersecurity.crypto.kems.RSAKeyEncapsulation;
+import ru.mipt.cybersecurity.crypto.params.KeyParameter;
+import ru.mipt.cybersecurity.crypto.params.RSAKeyGenerationParameters;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 /**
  * Tests for the RSA Key Encapsulation Mechanism

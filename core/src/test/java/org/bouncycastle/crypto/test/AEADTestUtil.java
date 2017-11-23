@@ -1,16 +1,16 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.OutputLengthException;
-import org.bouncycastle.crypto.modes.AEADBlockCipher;
-import org.bouncycastle.crypto.params.AEADParameters;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTestResult;
-import org.bouncycastle.util.test.Test;
-import org.bouncycastle.util.test.TestFailedException;
+import ru.mipt.cybersecurity.crypto.CipherParameters;
+import ru.mipt.cybersecurity.crypto.DataLengthException;
+import ru.mipt.cybersecurity.crypto.InvalidCipherTextException;
+import ru.mipt.cybersecurity.crypto.OutputLengthException;
+import ru.mipt.cybersecurity.crypto.modes.AEADBlockCipher;
+import ru.mipt.cybersecurity.crypto.params.AEADParameters;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTestResult;
+import ru.mipt.cybersecurity.util.test.Test;
+import ru.mipt.cybersecurity.util.test.TestFailedException;
 
 public class AEADTestUtil
 {

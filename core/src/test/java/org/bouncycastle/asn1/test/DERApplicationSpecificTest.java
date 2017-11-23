@@ -1,15 +1,15 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.BERTags;
-import org.bouncycastle.asn1.DERApplicationSpecific;
-import org.bouncycastle.asn1.DERTaggedObject;
-import org.bouncycastle.asn1.DERVisibleString;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1Encoding;
+import ru.mipt.cybersecurity.asn1.ASN1Integer;
+import ru.mipt.cybersecurity.asn1.ASN1Primitive;
+import ru.mipt.cybersecurity.asn1.BERTags;
+import ru.mipt.cybersecurity.asn1.DERApplicationSpecific;
+import ru.mipt.cybersecurity.asn1.DERTaggedObject;
+import ru.mipt.cybersecurity.asn1.DERVisibleString;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class DERApplicationSpecificTest
     extends SimpleTest

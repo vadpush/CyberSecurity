@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.jcajce.provider.test;
+package ru.mipt.cybersecurity.pqc.jcajce.provider.test;
 
 import java.security.Key;
 import java.security.KeyPair;
@@ -10,8 +10,8 @@ import javax.crypto.KeyAgreement;
 
 import junit.framework.Assert;
 import junit.framework.TestCase;
-import org.bouncycastle.pqc.jcajce.provider.BouncyCastlePQCProvider;
-import org.bouncycastle.util.Arrays;
+import ru.mipt.cybersecurity.pqc.jcajce.provider.BouncyCastlePQCProvider;
+import ru.mipt.cybersecurity.util.Arrays;
 
 /**
  * Test cases for the use of NewHope (NH) with the BCPQC provider.

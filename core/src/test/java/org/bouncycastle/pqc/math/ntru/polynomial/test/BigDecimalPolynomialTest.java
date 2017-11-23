@@ -1,13 +1,13 @@
-package org.bouncycastle.pqc.math.ntru.polynomial.test;
+package ru.mipt.cybersecurity.pqc.math.ntru.polynomial.test;
 
 import java.math.BigDecimal;
 import java.security.SecureRandom;
 
 import junit.framework.TestCase;
-import org.bouncycastle.pqc.math.ntru.polynomial.BigDecimalPolynomial;
-import org.bouncycastle.pqc.math.ntru.polynomial.BigIntPolynomial;
-import org.bouncycastle.pqc.math.ntru.polynomial.DenseTernaryPolynomial;
-import org.bouncycastle.pqc.math.ntru.polynomial.IntegerPolynomial;
+import ru.mipt.cybersecurity.pqc.math.ntru.polynomial.BigDecimalPolynomial;
+import ru.mipt.cybersecurity.pqc.math.ntru.polynomial.BigIntPolynomial;
+import ru.mipt.cybersecurity.pqc.math.ntru.polynomial.DenseTernaryPolynomial;
+import ru.mipt.cybersecurity.pqc.math.ntru.polynomial.IntegerPolynomial;
 
 public class BigDecimalPolynomialTest
     extends TestCase

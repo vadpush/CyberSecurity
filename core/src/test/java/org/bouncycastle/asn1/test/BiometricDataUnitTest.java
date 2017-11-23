@@ -1,18 +1,18 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DERIA5String;
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.oiw.OIWObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.qualified.BiometricData;
-import org.bouncycastle.asn1.x509.qualified.TypeOfBiometricData;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1InputStream;
+import ru.mipt.cybersecurity.asn1.ASN1OctetString;
+import ru.mipt.cybersecurity.asn1.ASN1Sequence;
+import ru.mipt.cybersecurity.asn1.DERIA5String;
+import ru.mipt.cybersecurity.asn1.DERNull;
+import ru.mipt.cybersecurity.asn1.DEROctetString;
+import ru.mipt.cybersecurity.asn1.oiw.OIWObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.x509.AlgorithmIdentifier;
+import ru.mipt.cybersecurity.asn1.x509.qualified.BiometricData;
+import ru.mipt.cybersecurity.asn1.x509.qualified.TypeOfBiometricData;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class BiometricDataUnitTest 
     extends SimpleTest

@@ -1,11 +1,11 @@
-package org.bouncycastle.crypto.tls.test;
+package ru.mipt.cybersecurity.crypto.tls.test;
 
-import org.bouncycastle.crypto.tls.AlertDescription;
-import org.bouncycastle.crypto.tls.HashAlgorithm;
-import org.bouncycastle.crypto.tls.ProtocolVersion;
-import org.bouncycastle.crypto.tls.SignatureAlgorithm;
-import org.bouncycastle.crypto.tls.SignatureAndHashAlgorithm;
-import org.bouncycastle.crypto.tls.TlsUtils;
+import ru.mipt.cybersecurity.crypto.tls.AlertDescription;
+import ru.mipt.cybersecurity.crypto.tls.HashAlgorithm;
+import ru.mipt.cybersecurity.crypto.tls.ProtocolVersion;
+import ru.mipt.cybersecurity.crypto.tls.SignatureAlgorithm;
+import ru.mipt.cybersecurity.crypto.tls.SignatureAndHashAlgorithm;
+import ru.mipt.cybersecurity.crypto.tls.TlsUtils;
 
 import junit.framework.Test;
 import junit.framework.TestSuite;

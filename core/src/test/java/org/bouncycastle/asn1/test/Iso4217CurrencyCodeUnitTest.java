@@ -1,8 +1,8 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.x509.qualified.Iso4217CurrencyCode;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1Primitive;
+import ru.mipt.cybersecurity.asn1.x509.qualified.Iso4217CurrencyCode;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class Iso4217CurrencyCodeUnitTest 
     extends SimpleTest

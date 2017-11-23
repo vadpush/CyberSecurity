@@ -1,8 +1,8 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 
-import org.bouncycastle.asn1.cmc.BodyPartID;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.cmc.BodyPartID;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class BodyPartIDTest
     extends SimpleTest

@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package ru.mipt.cybersecurity.jce.provider.test;
 
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
@@ -10,10 +10,10 @@ import javax.crypto.Mac;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class SipHashTest
     extends SimpleTest

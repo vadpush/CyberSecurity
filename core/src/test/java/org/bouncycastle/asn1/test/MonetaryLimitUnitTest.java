@@ -1,10 +1,10 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.isismtt.x509.MonetaryLimit;
+import ru.mipt.cybersecurity.asn1.ASN1InputStream;
+import ru.mipt.cybersecurity.asn1.ASN1Sequence;
+import ru.mipt.cybersecurity.asn1.isismtt.x509.MonetaryLimit;
 
 public class MonetaryLimitUnitTest
     extends ASN1UnitTest

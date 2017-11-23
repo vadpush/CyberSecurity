@@ -1,14 +1,14 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.io.IOException;
 import java.util.Random;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.icao.DataGroupHash;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1InputStream;
+import ru.mipt.cybersecurity.asn1.ASN1OctetString;
+import ru.mipt.cybersecurity.asn1.ASN1Sequence;
+import ru.mipt.cybersecurity.asn1.DEROctetString;
+import ru.mipt.cybersecurity.asn1.icao.DataGroupHash;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class DataGroupHashUnitTest 
     extends SimpleTest

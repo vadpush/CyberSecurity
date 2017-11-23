@@ -1,6 +1,6 @@
-package org.bouncycastle.crypto.tls.test;
+package ru.mipt.cybersecurity.crypto.tls.test;
 
-import org.bouncycastle.util.encoders.Base64;
+import ru.mipt.cybersecurity.util.encoders.Base64;
 
 public class KeyStores
 {

@@ -1,19 +1,19 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.util.Random;
 
 import junit.framework.TestCase;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.SkippingStreamCipher;
-import org.bouncycastle.crypto.engines.AESEngine;
-import org.bouncycastle.crypto.engines.ChaChaEngine;
-import org.bouncycastle.crypto.engines.Salsa20Engine;
-import org.bouncycastle.crypto.modes.SICBlockCipher;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.encoders.Hex;
+import ru.mipt.cybersecurity.crypto.CipherParameters;
+import ru.mipt.cybersecurity.crypto.SkippingStreamCipher;
+import ru.mipt.cybersecurity.crypto.engines.AESEngine;
+import ru.mipt.cybersecurity.crypto.engines.ChaChaEngine;
+import ru.mipt.cybersecurity.crypto.engines.Salsa20Engine;
+import ru.mipt.cybersecurity.crypto.modes.SICBlockCipher;
+import ru.mipt.cybersecurity.crypto.params.KeyParameter;
+import ru.mipt.cybersecurity.crypto.params.ParametersWithIV;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.encoders.Base64;
+import ru.mipt.cybersecurity.util.encoders.Hex;
 
 public class BigSkippingCipherTest
     extends TestCase

@@ -1,9 +1,9 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.x509.ReasonFlags;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.x509.ReasonFlags;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class ReasonFlagsTest
     extends SimpleTest

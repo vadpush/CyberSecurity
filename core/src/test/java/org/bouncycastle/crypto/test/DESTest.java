@@ -1,16 +1,16 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
-import org.bouncycastle.crypto.KeyGenerationParameters;
-import org.bouncycastle.crypto.engines.DESEngine;
-import org.bouncycastle.crypto.generators.DESKeyGenerator;
-import org.bouncycastle.crypto.modes.CBCBlockCipher;
-import org.bouncycastle.crypto.modes.CFBBlockCipher;
-import org.bouncycastle.crypto.modes.OFBBlockCipher;
-import org.bouncycastle.crypto.params.DESParameters;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.KeyGenerationParameters;
+import ru.mipt.cybersecurity.crypto.engines.DESEngine;
+import ru.mipt.cybersecurity.crypto.generators.DESKeyGenerator;
+import ru.mipt.cybersecurity.crypto.modes.CBCBlockCipher;
+import ru.mipt.cybersecurity.crypto.modes.CFBBlockCipher;
+import ru.mipt.cybersecurity.crypto.modes.OFBBlockCipher;
+import ru.mipt.cybersecurity.crypto.params.DESParameters;
+import ru.mipt.cybersecurity.crypto.params.KeyParameter;
+import ru.mipt.cybersecurity.crypto.params.ParametersWithIV;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 import java.security.SecureRandom;
 

@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.jcajce.provider.test;
+package ru.mipt.cybersecurity.pqc.jcajce.provider.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -19,30 +19,30 @@ import java.util.Map;
 import java.util.concurrent.atomic.AtomicLong;
 
 import junit.framework.TestCase;
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.DERBitString;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.bc.BCObjectIdentifiers;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x500.X500NameBuilder;
-import org.bouncycastle.asn1.x500.style.BCStyle;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.BasicConstraints;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.asn1.x509.Extensions;
-import org.bouncycastle.asn1.x509.ExtensionsGenerator;
-import org.bouncycastle.asn1.x509.KeyUsage;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.asn1.x509.TBSCertificate;
-import org.bouncycastle.asn1.x509.Time;
-import org.bouncycastle.asn1.x509.V3TBSCertificateGenerator;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.pqc.jcajce.provider.BouncyCastlePQCProvider;
-import org.bouncycastle.pqc.jcajce.spec.McElieceKeyGenParameterSpec;
-import org.bouncycastle.pqc.jcajce.spec.SPHINCS256KeyGenParameterSpec;
-import org.bouncycastle.pqc.jcajce.spec.XMSSMTParameterSpec;
+import ru.mipt.cybersecurity.asn1.ASN1EncodableVector;
+import ru.mipt.cybersecurity.asn1.ASN1Encoding;
+import ru.mipt.cybersecurity.asn1.ASN1Integer;
+import ru.mipt.cybersecurity.asn1.DERBitString;
+import ru.mipt.cybersecurity.asn1.DERSequence;
+import ru.mipt.cybersecurity.asn1.bc.BCObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.x500.X500Name;
+import ru.mipt.cybersecurity.asn1.x500.X500NameBuilder;
+import ru.mipt.cybersecurity.asn1.x500.style.BCStyle;
+import ru.mipt.cybersecurity.asn1.x509.AlgorithmIdentifier;
+import ru.mipt.cybersecurity.asn1.x509.BasicConstraints;
+import ru.mipt.cybersecurity.asn1.x509.Extension;
+import ru.mipt.cybersecurity.asn1.x509.Extensions;
+import ru.mipt.cybersecurity.asn1.x509.ExtensionsGenerator;
+import ru.mipt.cybersecurity.asn1.x509.KeyUsage;
+import ru.mipt.cybersecurity.asn1.x509.SubjectPublicKeyInfo;
+import ru.mipt.cybersecurity.asn1.x509.TBSCertificate;
+import ru.mipt.cybersecurity.asn1.x509.Time;
+import ru.mipt.cybersecurity.asn1.x509.V3TBSCertificateGenerator;
+import ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider;
+import ru.mipt.cybersecurity.pqc.jcajce.provider.BouncyCastlePQCProvider;
+import ru.mipt.cybersecurity.pqc.jcajce.spec.McElieceKeyGenParameterSpec;
+import ru.mipt.cybersecurity.pqc.jcajce.spec.SPHINCS256KeyGenParameterSpec;
+import ru.mipt.cybersecurity.pqc.jcajce.spec.XMSSMTParameterSpec;
 
 public class KeyStoreTest
     extends TestCase

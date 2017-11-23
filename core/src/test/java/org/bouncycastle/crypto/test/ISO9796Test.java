@@ -1,26 +1,26 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.AsymmetricBlockCipher;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.RIPEMD128Digest;
-import org.bouncycastle.crypto.digests.RIPEMD160Digest;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.encodings.ISO9796d1Encoding;
-import org.bouncycastle.crypto.engines.RSABlindedEngine;
-import org.bouncycastle.crypto.engines.RSAEngine;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithSalt;
-import org.bouncycastle.crypto.params.RSAKeyParameters;
-import org.bouncycastle.crypto.signers.ISO9796d2PSSSigner;
-import org.bouncycastle.crypto.signers.ISO9796d2Signer;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.AsymmetricBlockCipher;
+import ru.mipt.cybersecurity.crypto.Digest;
+import ru.mipt.cybersecurity.crypto.digests.RIPEMD128Digest;
+import ru.mipt.cybersecurity.crypto.digests.RIPEMD160Digest;
+import ru.mipt.cybersecurity.crypto.digests.SHA1Digest;
+import ru.mipt.cybersecurity.crypto.digests.SHA256Digest;
+import ru.mipt.cybersecurity.crypto.encodings.ISO9796d1Encoding;
+import ru.mipt.cybersecurity.crypto.engines.RSABlindedEngine;
+import ru.mipt.cybersecurity.crypto.engines.RSAEngine;
+import ru.mipt.cybersecurity.crypto.params.AsymmetricKeyParameter;
+import ru.mipt.cybersecurity.crypto.params.ParametersWithSalt;
+import ru.mipt.cybersecurity.crypto.params.RSAKeyParameters;
+import ru.mipt.cybersecurity.crypto.signers.ISO9796d2PSSSigner;
+import ru.mipt.cybersecurity.crypto.signers.ISO9796d2Signer;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.encoders.Base64;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 /**
  * test vectors from ISO 9796-1 and ISO 9796-2 edition 1.

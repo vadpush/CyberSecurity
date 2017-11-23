@@ -1,12 +1,12 @@
-package org.bouncycastle.pqc.crypto.test;
+package ru.mipt.cybersecurity.pqc.crypto.test;
 
 import java.io.IOException;
 
 import junit.framework.TestCase;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.pqc.crypto.xmss.XMSSParameters;
-import org.bouncycastle.pqc.crypto.xmss.XMSSPrivateKeyParameters;
-import org.bouncycastle.util.Arrays;
+import ru.mipt.cybersecurity.crypto.digests.SHA256Digest;
+import ru.mipt.cybersecurity.pqc.crypto.xmss.XMSSParameters;
+import ru.mipt.cybersecurity.pqc.crypto.xmss.XMSSPrivateKeyParameters;
+import ru.mipt.cybersecurity.util.Arrays;
 
 /**
  * Test cases for XMSSPrivateKey class.

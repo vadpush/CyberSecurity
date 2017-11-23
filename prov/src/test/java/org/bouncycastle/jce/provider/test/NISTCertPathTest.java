@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package ru.mipt.cybersecurity.jce.provider.test;
 
 import java.io.ByteArrayInputStream;
 import java.security.GeneralSecurityException;
@@ -17,11 +17,11 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.Vector;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1InputStream;
+import ru.mipt.cybersecurity.asn1.ASN1OctetString;
+import ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider;
+import ru.mipt.cybersecurity.util.encoders.Base64;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 
 /*

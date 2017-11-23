@@ -1,11 +1,11 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
-import org.bouncycastle.asn1.ASN1Boolean;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.cmc.ExtensionReq;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1Boolean;
+import ru.mipt.cybersecurity.asn1.ASN1ObjectIdentifier;
+import ru.mipt.cybersecurity.asn1.DEROctetString;
+import ru.mipt.cybersecurity.asn1.cmc.ExtensionReq;
+import ru.mipt.cybersecurity.asn1.x509.Extension;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 
 public class ExtensionReqTest

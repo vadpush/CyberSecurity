@@ -1,11 +1,11 @@
-package org.bouncycastle.pqc.crypto.test;
+package ru.mipt.cybersecurity.pqc.crypto.test;
 
 import junit.framework.TestCase;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.pqc.crypto.xmss.XMSSMT;
-import org.bouncycastle.pqc.crypto.xmss.XMSSMTParameters;
-import org.bouncycastle.pqc.crypto.xmss.XMSSMTSignature;
-import org.bouncycastle.util.Arrays;
+import ru.mipt.cybersecurity.crypto.digests.SHA256Digest;
+import ru.mipt.cybersecurity.pqc.crypto.xmss.XMSSMT;
+import ru.mipt.cybersecurity.pqc.crypto.xmss.XMSSMTParameters;
+import ru.mipt.cybersecurity.pqc.crypto.xmss.XMSSMTSignature;
+import ru.mipt.cybersecurity.util.Arrays;
 
 /**
  * Test cases for XMSS^MT signature class.

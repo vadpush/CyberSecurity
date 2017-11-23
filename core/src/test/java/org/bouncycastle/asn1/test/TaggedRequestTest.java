@@ -1,30 +1,30 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.DERBitString;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.DERSet;
-import org.bouncycastle.asn1.DERTaggedObject;
-import org.bouncycastle.asn1.cmc.BodyPartID;
-import org.bouncycastle.asn1.cmc.CertificationRequest;
-import org.bouncycastle.asn1.cmc.TaggedCertificationRequest;
-import org.bouncycastle.asn1.cmc.TaggedRequest;
-import org.bouncycastle.asn1.crmf.AttributeTypeAndValue;
-import org.bouncycastle.asn1.crmf.CertReqMsg;
-import org.bouncycastle.asn1.crmf.CertRequest;
-import org.bouncycastle.asn1.crmf.CertTemplate;
-import org.bouncycastle.asn1.crmf.Controls;
-import org.bouncycastle.asn1.crmf.POPOSigningKey;
-import org.bouncycastle.asn1.crmf.POPOSigningKeyInput;
-import org.bouncycastle.asn1.crmf.ProofOfPossession;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1Encodable;
+import ru.mipt.cybersecurity.asn1.ASN1Integer;
+import ru.mipt.cybersecurity.asn1.DERBitString;
+import ru.mipt.cybersecurity.asn1.DERSequence;
+import ru.mipt.cybersecurity.asn1.DERSet;
+import ru.mipt.cybersecurity.asn1.DERTaggedObject;
+import ru.mipt.cybersecurity.asn1.cmc.BodyPartID;
+import ru.mipt.cybersecurity.asn1.cmc.CertificationRequest;
+import ru.mipt.cybersecurity.asn1.cmc.TaggedCertificationRequest;
+import ru.mipt.cybersecurity.asn1.cmc.TaggedRequest;
+import ru.mipt.cybersecurity.asn1.crmf.AttributeTypeAndValue;
+import ru.mipt.cybersecurity.asn1.crmf.CertReqMsg;
+import ru.mipt.cybersecurity.asn1.crmf.CertRequest;
+import ru.mipt.cybersecurity.asn1.crmf.CertTemplate;
+import ru.mipt.cybersecurity.asn1.crmf.Controls;
+import ru.mipt.cybersecurity.asn1.crmf.POPOSigningKey;
+import ru.mipt.cybersecurity.asn1.crmf.POPOSigningKeyInput;
+import ru.mipt.cybersecurity.asn1.crmf.ProofOfPossession;
+import ru.mipt.cybersecurity.asn1.pkcs.PKCSObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.x509.AlgorithmIdentifier;
+import ru.mipt.cybersecurity.asn1.x509.GeneralName;
+import ru.mipt.cybersecurity.asn1.x509.SubjectPublicKeyInfo;
+import ru.mipt.cybersecurity.util.encoders.Base64;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class TaggedRequestTest
     extends SimpleTest

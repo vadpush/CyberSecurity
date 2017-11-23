@@ -1,7 +1,7 @@
-package org.bouncycastle.crypto.tls.test;
+package ru.mipt.cybersecurity.crypto.tls.test;
 
-import org.bouncycastle.crypto.tls.ByteQueueInputStream;
-import org.bouncycastle.util.Arrays;
+import ru.mipt.cybersecurity.crypto.tls.ByteQueueInputStream;
+import ru.mipt.cybersecurity.util.Arrays;
 
 import junit.framework.TestCase;
 

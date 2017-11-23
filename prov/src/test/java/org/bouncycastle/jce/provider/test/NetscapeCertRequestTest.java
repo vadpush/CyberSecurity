@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package ru.mipt.cybersecurity.jce.provider.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -6,17 +6,17 @@ import java.security.KeyPair;
 import java.security.KeyPairGenerator;
 import java.security.Security;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.DEROutputStream;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.jce.netscape.NetscapeCertRequest;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTestResult;
-import org.bouncycastle.util.test.Test;
-import org.bouncycastle.util.test.TestResult;
+import ru.mipt.cybersecurity.asn1.ASN1InputStream;
+import ru.mipt.cybersecurity.asn1.ASN1Sequence;
+import ru.mipt.cybersecurity.asn1.DEROutputStream;
+import ru.mipt.cybersecurity.asn1.pkcs.PKCSObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.x509.AlgorithmIdentifier;
+import ru.mipt.cybersecurity.jce.netscape.NetscapeCertRequest;
+import ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider;
+import ru.mipt.cybersecurity.util.encoders.Base64;
+import ru.mipt.cybersecurity.util.test.SimpleTestResult;
+import ru.mipt.cybersecurity.util.test.Test;
+import ru.mipt.cybersecurity.util.test.TestResult;
 
 /**
  */

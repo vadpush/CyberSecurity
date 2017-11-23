@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.tls.test;
+package ru.mipt.cybersecurity.crypto.tls.test;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -10,19 +10,19 @@ import java.security.SecureRandom;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
-import org.bouncycastle.crypto.tls.AlertDescription;
-import org.bouncycastle.crypto.tls.AlertLevel;
-import org.bouncycastle.crypto.tls.Certificate;
-import org.bouncycastle.crypto.tls.CipherSuite;
-import org.bouncycastle.crypto.tls.DefaultTlsClient;
-import org.bouncycastle.crypto.tls.ServerOnlyTlsAuthentication;
-import org.bouncycastle.crypto.tls.TlsAuthentication;
-import org.bouncycastle.crypto.tls.TlsClient;
-import org.bouncycastle.crypto.tls.TlsClientProtocol;
-import org.bouncycastle.crypto.tls.TlsFatalAlert;
-import org.bouncycastle.crypto.tls.TlsKeyExchange;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
+import ru.mipt.cybersecurity.crypto.tls.AlertDescription;
+import ru.mipt.cybersecurity.crypto.tls.AlertLevel;
+import ru.mipt.cybersecurity.crypto.tls.Certificate;
+import ru.mipt.cybersecurity.crypto.tls.CipherSuite;
+import ru.mipt.cybersecurity.crypto.tls.DefaultTlsClient;
+import ru.mipt.cybersecurity.crypto.tls.ServerOnlyTlsAuthentication;
+import ru.mipt.cybersecurity.crypto.tls.TlsAuthentication;
+import ru.mipt.cybersecurity.crypto.tls.TlsClient;
+import ru.mipt.cybersecurity.crypto.tls.TlsClientProtocol;
+import ru.mipt.cybersecurity.crypto.tls.TlsFatalAlert;
+import ru.mipt.cybersecurity.crypto.tls.TlsKeyExchange;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.encoders.Hex;
 
 public class BasicTlsTest
     extends TestCase
@@ -170,7 +170,7 @@ public class BasicTlsTest
 
         keyExchange
             .processServerCertificate(new Certificate(
-                new org.bouncycastle.asn1.x509.Certificate[]{org.bouncycastle.asn1.x509.Certificate
+                new ru.mipt.cybersecurity.asn1.x509.Certificate[]{ru.mipt.cybersecurity.asn1.x509.Certificate
                     .getInstance(encCert)}));
     }
 

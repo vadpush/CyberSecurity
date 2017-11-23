@@ -1,14 +1,14 @@
-package org.bouncycastle.crypto.test.speedy;
+package ru.mipt.cybersecurity.crypto.test.speedy;
 
 import java.io.IOException;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.engines.AESFastEngine;
-import org.bouncycastle.crypto.engines.ThreefishEngine;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.TweakableBlockCipherParameters;
-import org.bouncycastle.util.encoders.Hex;
+import ru.mipt.cybersecurity.crypto.BlockCipher;
+import ru.mipt.cybersecurity.crypto.engines.AESFastEngine;
+import ru.mipt.cybersecurity.crypto.engines.ThreefishEngine;
+import ru.mipt.cybersecurity.crypto.params.KeyParameter;
+import ru.mipt.cybersecurity.crypto.params.TweakableBlockCipherParameters;
+import ru.mipt.cybersecurity.util.encoders.Hex;
 
 public class ThroughputTest
 {
@@ -89,14 +89,14 @@ public class ThroughputTest
         System.out.println("Plaintext  : " + new String(Hex.encode(plaintext)));
         System.out.println("Expected   : " + new String(Hex.encode(expected)));
         System.out.println("Ciphertext : " + new String(Hex.encode(ciphertext)));
-        System.out.println("  Encrypt  : " + org.bouncycastle.util.Arrays.areEqual(expected, ciphertext));
+        System.out.println("  Encrypt  : " + ru.mipt.cybersecurity.util.Arrays.areEqual(expected, ciphertext));
 
         cipher.init(false, new TweakableBlockCipherParameters(new KeyParameter(key), tweak));
         byte[] replain = new byte[plaintext.length];
         cipher.processBlock(ciphertext, 0, replain, 0);
 
         System.out.println("Replain    : " + new String(Hex.encode(replain)));
-        System.out.println("  Decrypt  : " + org.bouncycastle.util.Arrays.areEqual(plaintext, replain));
+        System.out.println("  Decrypt  : " + ru.mipt.cybersecurity.util.Arrays.areEqual(plaintext, replain));
     }
 
     private static void testTF_512_2()

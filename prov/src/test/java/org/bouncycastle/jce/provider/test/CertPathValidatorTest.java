@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package ru.mipt.cybersecurity.jce.provider.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -48,42 +48,42 @@ import java.util.Set;
 
 import javax.security.auth.x500.X500Principal;
 
-import org.bouncycastle.asn1.ASN1BitString;
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1OutputStream;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1String;
-import org.bouncycastle.asn1.DERBitString;
-import org.bouncycastle.asn1.DERIA5String;
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.misc.MiscObjectIdentifiers;
-import org.bouncycastle.asn1.misc.NetscapeCertType;
-import org.bouncycastle.asn1.misc.NetscapeRevocationURL;
-import org.bouncycastle.asn1.misc.VerisignCzagExtension;
-import org.bouncycastle.asn1.util.ASN1Dump;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x500.style.RFC4519Style;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.BasicConstraints;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.asn1.x509.KeyUsage;
-import org.bouncycastle.asn1.x509.X509CertificateStructure;
-import org.bouncycastle.asn1.x509.X509Extension;
-import org.bouncycastle.asn1.x509.X509Extensions;
-import org.bouncycastle.jce.X509Principal;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Integers;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1BitString;
+import ru.mipt.cybersecurity.asn1.ASN1Encodable;
+import ru.mipt.cybersecurity.asn1.ASN1Encoding;
+import ru.mipt.cybersecurity.asn1.ASN1InputStream;
+import ru.mipt.cybersecurity.asn1.ASN1ObjectIdentifier;
+import ru.mipt.cybersecurity.asn1.ASN1OutputStream;
+import ru.mipt.cybersecurity.asn1.ASN1Primitive;
+import ru.mipt.cybersecurity.asn1.ASN1Sequence;
+import ru.mipt.cybersecurity.asn1.ASN1String;
+import ru.mipt.cybersecurity.asn1.DERBitString;
+import ru.mipt.cybersecurity.asn1.DERIA5String;
+import ru.mipt.cybersecurity.asn1.DERNull;
+import ru.mipt.cybersecurity.asn1.DEROctetString;
+import ru.mipt.cybersecurity.asn1.misc.MiscObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.misc.NetscapeCertType;
+import ru.mipt.cybersecurity.asn1.misc.NetscapeRevocationURL;
+import ru.mipt.cybersecurity.asn1.misc.VerisignCzagExtension;
+import ru.mipt.cybersecurity.asn1.util.ASN1Dump;
+import ru.mipt.cybersecurity.asn1.x500.X500Name;
+import ru.mipt.cybersecurity.asn1.x500.style.RFC4519Style;
+import ru.mipt.cybersecurity.asn1.x509.AlgorithmIdentifier;
+import ru.mipt.cybersecurity.asn1.x509.BasicConstraints;
+import ru.mipt.cybersecurity.asn1.x509.Extension;
+import ru.mipt.cybersecurity.asn1.x509.GeneralName;
+import ru.mipt.cybersecurity.asn1.x509.KeyUsage;
+import ru.mipt.cybersecurity.asn1.x509.X509CertificateStructure;
+import ru.mipt.cybersecurity.asn1.x509.X509Extension;
+import ru.mipt.cybersecurity.asn1.x509.X509Extensions;
+import ru.mipt.cybersecurity.jce.X509Principal;
+import ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.Integers;
+import ru.mipt.cybersecurity.util.Strings;
+import ru.mipt.cybersecurity.util.encoders.Base64;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class CertPathValidatorTest
     extends SimpleTest
@@ -669,14 +669,14 @@ public class CertPathValidatorTest
         static final String CRL_NUMBER = Extension.cRLNumber.getId();
         static final String ANY_POLICY = "2.5.29.32.0";
 
-        private org.bouncycastle.asn1.x509.X509CertificateStructure c;
+        private ru.mipt.cybersecurity.asn1.x509.X509CertificateStructure c;
         private BasicConstraints basicConstraints;
         private boolean[] keyUsage;
         private boolean hashValueSet;
         private int hashValue;
 
         public X509CertificateObject(
-            org.bouncycastle.asn1.x509.X509CertificateStructure c)
+            ru.mipt.cybersecurity.asn1.x509.X509CertificateStructure c)
             throws CertificateParsingException
         {
             this.c = c;

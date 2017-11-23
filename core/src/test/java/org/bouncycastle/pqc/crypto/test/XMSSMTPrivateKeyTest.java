@@ -1,13 +1,13 @@
-package org.bouncycastle.pqc.crypto.test;
+package ru.mipt.cybersecurity.pqc.crypto.test;
 
 import java.io.IOException;
 import java.security.SecureRandom;
 
 import junit.framework.TestCase;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.pqc.crypto.xmss.XMSSMT;
-import org.bouncycastle.pqc.crypto.xmss.XMSSMTParameters;
-import org.bouncycastle.util.Arrays;
+import ru.mipt.cybersecurity.crypto.digests.SHA256Digest;
+import ru.mipt.cybersecurity.pqc.crypto.xmss.XMSSMT;
+import ru.mipt.cybersecurity.pqc.crypto.xmss.XMSSMTParameters;
+import ru.mipt.cybersecurity.util.Arrays;
 
 /**
  * Test cases for XMSSMTPrivateKey class.

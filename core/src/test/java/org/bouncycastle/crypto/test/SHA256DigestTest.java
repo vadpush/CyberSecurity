@@ -1,7 +1,7 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.SHA256Digest;
+import ru.mipt.cybersecurity.crypto.Digest;
+import ru.mipt.cybersecurity.crypto.digests.SHA256Digest;
 
 /**
  * standard vector test for SHA-256 from FIPS Draft 180-2.

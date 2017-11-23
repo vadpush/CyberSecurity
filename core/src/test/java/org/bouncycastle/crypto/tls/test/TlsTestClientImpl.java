@@ -1,29 +1,29 @@
-package org.bouncycastle.crypto.tls.test;
+package ru.mipt.cybersecurity.crypto.tls.test;
 
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Hashtable;
 import java.util.Vector;
 
-import org.bouncycastle.asn1.ASN1EncodableVector;
-import org.bouncycastle.asn1.DERBitString;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.x509.Certificate;
-import org.bouncycastle.crypto.tls.AlertDescription;
-import org.bouncycastle.crypto.tls.AlertLevel;
-import org.bouncycastle.crypto.tls.CertificateRequest;
-import org.bouncycastle.crypto.tls.ClientCertificateType;
-import org.bouncycastle.crypto.tls.ConnectionEnd;
-import org.bouncycastle.crypto.tls.DefaultTlsClient;
-import org.bouncycastle.crypto.tls.ProtocolVersion;
-import org.bouncycastle.crypto.tls.SignatureAlgorithm;
-import org.bouncycastle.crypto.tls.SignatureAndHashAlgorithm;
-import org.bouncycastle.crypto.tls.TlsAuthentication;
-import org.bouncycastle.crypto.tls.TlsCredentials;
-import org.bouncycastle.crypto.tls.TlsFatalAlert;
-import org.bouncycastle.crypto.tls.TlsSignerCredentials;
-import org.bouncycastle.crypto.tls.TlsUtils;
-import org.bouncycastle.util.Arrays;
+import ru.mipt.cybersecurity.asn1.ASN1EncodableVector;
+import ru.mipt.cybersecurity.asn1.DERBitString;
+import ru.mipt.cybersecurity.asn1.DERSequence;
+import ru.mipt.cybersecurity.asn1.x509.Certificate;
+import ru.mipt.cybersecurity.crypto.tls.AlertDescription;
+import ru.mipt.cybersecurity.crypto.tls.AlertLevel;
+import ru.mipt.cybersecurity.crypto.tls.CertificateRequest;
+import ru.mipt.cybersecurity.crypto.tls.ClientCertificateType;
+import ru.mipt.cybersecurity.crypto.tls.ConnectionEnd;
+import ru.mipt.cybersecurity.crypto.tls.DefaultTlsClient;
+import ru.mipt.cybersecurity.crypto.tls.ProtocolVersion;
+import ru.mipt.cybersecurity.crypto.tls.SignatureAlgorithm;
+import ru.mipt.cybersecurity.crypto.tls.SignatureAndHashAlgorithm;
+import ru.mipt.cybersecurity.crypto.tls.TlsAuthentication;
+import ru.mipt.cybersecurity.crypto.tls.TlsCredentials;
+import ru.mipt.cybersecurity.crypto.tls.TlsFatalAlert;
+import ru.mipt.cybersecurity.crypto.tls.TlsSignerCredentials;
+import ru.mipt.cybersecurity.crypto.tls.TlsUtils;
+import ru.mipt.cybersecurity.util.Arrays;
 
 class TlsTestClientImpl
     extends DefaultTlsClient
@@ -139,7 +139,7 @@ class TlsTestClientImpl
     {
         return new TlsAuthentication()
         {
-            public void notifyServerCertificate(org.bouncycastle.crypto.tls.Certificate serverCertificate)
+            public void notifyServerCertificate(ru.mipt.cybersecurity.crypto.tls.Certificate serverCertificate)
                 throws IOException
             {
                 boolean isEmpty = serverCertificate == null || serverCertificate.isEmpty();
@@ -214,9 +214,9 @@ class TlsTestClientImpl
                         return sig;
                     }
 
-                    public org.bouncycastle.crypto.tls.Certificate getCertificate()
+                    public ru.mipt.cybersecurity.crypto.tls.Certificate getCertificate()
                     {
-                        org.bouncycastle.crypto.tls.Certificate cert = signerCredentials.getCertificate();
+                        ru.mipt.cybersecurity.crypto.tls.Certificate cert = signerCredentials.getCertificate();
 
                         if (config.clientAuth == TlsTestConfig.CLIENT_AUTH_INVALID_CERT)
                         {
@@ -235,11 +235,11 @@ class TlsTestClientImpl
         };
     }
 
-    protected org.bouncycastle.crypto.tls.Certificate corruptCertificate(org.bouncycastle.crypto.tls.Certificate cert)
+    protected ru.mipt.cybersecurity.crypto.tls.Certificate corruptCertificate(ru.mipt.cybersecurity.crypto.tls.Certificate cert)
     {
         Certificate[] certList = cert.getCertificateList();
         certList[0] = corruptCertificateSignature(certList[0]);
-        return new org.bouncycastle.crypto.tls.Certificate(certList);
+        return new ru.mipt.cybersecurity.crypto.tls.Certificate(certList);
     }
 
     protected Certificate corruptCertificateSignature(Certificate cert)

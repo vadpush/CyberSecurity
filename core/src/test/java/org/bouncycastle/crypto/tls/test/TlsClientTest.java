@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.tls.test;
+package ru.mipt.cybersecurity.crypto.tls.test;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,8 +9,8 @@ import java.net.InetAddress;
 import java.net.Socket;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.tls.TlsClient;
-import org.bouncycastle.crypto.tls.TlsClientProtocol;
+import ru.mipt.cybersecurity.crypto.tls.TlsClient;
+import ru.mipt.cybersecurity.crypto.tls.TlsClientProtocol;
 
 /**
  * A simple test designed to conduct a TLS handshake with an external TLS server.

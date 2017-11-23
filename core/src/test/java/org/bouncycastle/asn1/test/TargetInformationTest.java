@@ -1,10 +1,10 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.asn1.x509.Target;
-import org.bouncycastle.asn1.x509.TargetInformation;
-import org.bouncycastle.asn1.x509.Targets;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.x509.GeneralName;
+import ru.mipt.cybersecurity.asn1.x509.Target;
+import ru.mipt.cybersecurity.asn1.x509.TargetInformation;
+import ru.mipt.cybersecurity.asn1.x509.Targets;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class TargetInformationTest
     extends SimpleTest

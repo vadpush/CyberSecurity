@@ -1,17 +1,17 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.util.Date;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1GeneralizedTime;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.cmc.GetCRL;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x500.X500NameBuilder;
-import org.bouncycastle.asn1.x500.style.BCStyle;
-import org.bouncycastle.asn1.x509.GeneralName;
-import org.bouncycastle.asn1.x509.ReasonFlags;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1Encodable;
+import ru.mipt.cybersecurity.asn1.ASN1GeneralizedTime;
+import ru.mipt.cybersecurity.asn1.DERSequence;
+import ru.mipt.cybersecurity.asn1.cmc.GetCRL;
+import ru.mipt.cybersecurity.asn1.x500.X500Name;
+import ru.mipt.cybersecurity.asn1.x500.X500NameBuilder;
+import ru.mipt.cybersecurity.asn1.x500.style.BCStyle;
+import ru.mipt.cybersecurity.asn1.x509.GeneralName;
+import ru.mipt.cybersecurity.asn1.x509.ReasonFlags;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class GetCRLTest
     extends SimpleTest

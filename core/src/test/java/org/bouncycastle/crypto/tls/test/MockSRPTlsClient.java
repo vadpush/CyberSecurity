@@ -1,21 +1,20 @@
-package org.bouncycastle.crypto.tls.test;
+package ru.mipt.cybersecurity.crypto.tls.test;
 
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Hashtable;
 
-import org.bouncycastle.asn1.x509.Certificate;
-import org.bouncycastle.crypto.tls.AlertDescription;
-import org.bouncycastle.crypto.tls.AlertLevel;
-import org.bouncycastle.crypto.tls.CipherSuite;
-import org.bouncycastle.crypto.tls.ProtocolVersion;
-import org.bouncycastle.crypto.tls.SRPTlsClient;
-import org.bouncycastle.crypto.tls.ServerOnlyTlsAuthentication;
-import org.bouncycastle.crypto.tls.TlsAuthentication;
-import org.bouncycastle.crypto.tls.TlsExtensionsUtils;
-import org.bouncycastle.crypto.tls.TlsSession;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
+import ru.mipt.cybersecurity.asn1.x509.Certificate;
+import ru.mipt.cybersecurity.crypto.tls.AlertDescription;
+import ru.mipt.cybersecurity.crypto.tls.AlertLevel;
+import ru.mipt.cybersecurity.crypto.tls.ProtocolVersion;
+import ru.mipt.cybersecurity.crypto.tls.SRPTlsClient;
+import ru.mipt.cybersecurity.crypto.tls.ServerOnlyTlsAuthentication;
+import ru.mipt.cybersecurity.crypto.tls.TlsAuthentication;
+import ru.mipt.cybersecurity.crypto.tls.TlsExtensionsUtils;
+import ru.mipt.cybersecurity.crypto.tls.TlsSession;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.encoders.Hex;
 
 class MockSRPTlsClient
     extends SRPTlsClient
@@ -102,7 +101,7 @@ class MockSRPTlsClient
     {
         return new ServerOnlyTlsAuthentication()
         {
-            public void notifyServerCertificate(org.bouncycastle.crypto.tls.Certificate serverCertificate)
+            public void notifyServerCertificate(ru.mipt.cybersecurity.crypto.tls.Certificate serverCertificate)
                 throws IOException
             {
                 Certificate[] chain = serverCertificate.getCertificateList();

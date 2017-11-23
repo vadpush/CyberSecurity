@@ -1,19 +1,19 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.agreement.DHStandardGroups;
-import org.bouncycastle.crypto.engines.CramerShoupCiphertext;
-import org.bouncycastle.crypto.engines.CramerShoupCoreEngine;
-import org.bouncycastle.crypto.engines.CramerShoupCoreEngine.CramerShoupCiphertextException;
-import org.bouncycastle.crypto.generators.CramerShoupKeyPairGenerator;
-import org.bouncycastle.crypto.generators.CramerShoupParametersGenerator;
-import org.bouncycastle.crypto.params.CramerShoupKeyGenerationParameters;
-import org.bouncycastle.crypto.params.CramerShoupParameters;
-import org.bouncycastle.util.BigIntegers;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.AsymmetricCipherKeyPair;
+import ru.mipt.cybersecurity.crypto.agreement.DHStandardGroups;
+import ru.mipt.cybersecurity.crypto.engines.CramerShoupCiphertext;
+import ru.mipt.cybersecurity.crypto.engines.CramerShoupCoreEngine;
+import ru.mipt.cybersecurity.crypto.engines.CramerShoupCoreEngine.CramerShoupCiphertextException;
+import ru.mipt.cybersecurity.crypto.generators.CramerShoupKeyPairGenerator;
+import ru.mipt.cybersecurity.crypto.generators.CramerShoupParametersGenerator;
+import ru.mipt.cybersecurity.crypto.params.CramerShoupKeyGenerationParameters;
+import ru.mipt.cybersecurity.crypto.params.CramerShoupParameters;
+import ru.mipt.cybersecurity.util.BigIntegers;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class CramerShoupTest
     extends SimpleTest

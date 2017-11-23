@@ -1,16 +1,15 @@
-package org.bouncycastle.crypto.prng.test;
+package ru.mipt.cybersecurity.crypto.prng.test;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.engines.DESedeEngine;
-import org.bouncycastle.crypto.macs.HMac;
-import org.bouncycastle.crypto.prng.BasicEntropySourceProvider;
-import org.bouncycastle.crypto.prng.SP800SecureRandomBuilder;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.digests.SHA1Digest;
+import ru.mipt.cybersecurity.crypto.engines.DESedeEngine;
+import ru.mipt.cybersecurity.crypto.macs.HMac;
+import ru.mipt.cybersecurity.crypto.prng.BasicEntropySourceProvider;
+import ru.mipt.cybersecurity.crypto.prng.SP800SecureRandomBuilder;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class SP800RandomTest
     extends SimpleTest

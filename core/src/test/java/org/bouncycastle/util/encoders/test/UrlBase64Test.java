@@ -1,13 +1,13 @@
-package org.bouncycastle.util.encoders.test;
+package ru.mipt.cybersecurity.util.encoders.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.DecoderException;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.encoders.UrlBase64;
-import org.bouncycastle.util.encoders.UrlBase64Encoder;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.Strings;
+import ru.mipt.cybersecurity.util.encoders.DecoderException;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.encoders.UrlBase64;
+import ru.mipt.cybersecurity.util.encoders.UrlBase64Encoder;
 
 public class UrlBase64Test extends AbstractCoderTest
 {

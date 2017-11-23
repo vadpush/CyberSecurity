@@ -1,4 +1,4 @@
-package org.bouncycastle.util.io.pem.test;
+package ru.mipt.cybersecurity.util.io.pem.test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -8,9 +8,9 @@ import java.util.Collections;
 import java.util.List;
 
 import junit.framework.TestCase;
-import org.bouncycastle.util.io.pem.PemHeader;
-import org.bouncycastle.util.io.pem.PemObject;
-import org.bouncycastle.util.io.pem.PemWriter;
+import ru.mipt.cybersecurity.util.io.pem.PemHeader;
+import ru.mipt.cybersecurity.util.io.pem.PemObject;
+import ru.mipt.cybersecurity.util.io.pem.PemWriter;
 
 public class AllTests
     extends TestCase

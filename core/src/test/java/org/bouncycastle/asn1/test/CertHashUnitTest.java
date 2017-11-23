@@ -1,12 +1,12 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.isismtt.ocsp.CertHash;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
+import ru.mipt.cybersecurity.asn1.ASN1InputStream;
+import ru.mipt.cybersecurity.asn1.ASN1ObjectIdentifier;
+import ru.mipt.cybersecurity.asn1.ASN1Sequence;
+import ru.mipt.cybersecurity.asn1.isismtt.ocsp.CertHash;
+import ru.mipt.cybersecurity.asn1.x509.AlgorithmIdentifier;
 
 public class CertHashUnitTest
     extends ASN1UnitTest

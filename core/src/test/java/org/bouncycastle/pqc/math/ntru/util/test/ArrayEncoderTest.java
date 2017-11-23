@@ -1,13 +1,13 @@
-package org.bouncycastle.pqc.math.ntru.util.test;
+package ru.mipt.cybersecurity.pqc.math.ntru.util.test;
 
 import java.security.SecureRandom;
 import java.util.Random;
 
 import junit.framework.TestCase;
-import org.bouncycastle.pqc.math.ntru.polynomial.DenseTernaryPolynomial;
-import org.bouncycastle.pqc.math.ntru.polynomial.test.PolynomialGenerator;
-import org.bouncycastle.pqc.math.ntru.util.ArrayEncoder;
-import org.bouncycastle.util.Arrays;
+import ru.mipt.cybersecurity.pqc.math.ntru.polynomial.DenseTernaryPolynomial;
+import ru.mipt.cybersecurity.pqc.math.ntru.polynomial.test.PolynomialGenerator;
+import ru.mipt.cybersecurity.pqc.math.ntru.util.ArrayEncoder;
+import ru.mipt.cybersecurity.util.Arrays;
 
 public class ArrayEncoderTest
     extends TestCase

@@ -1,8 +1,8 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.SM3Digest;
-import org.bouncycastle.util.encoders.Hex;
+import ru.mipt.cybersecurity.crypto.Digest;
+import ru.mipt.cybersecurity.crypto.digests.SM3Digest;
+import ru.mipt.cybersecurity.util.encoders.Hex;
 
 /**
  * standard vector test for SM3 digest from chinese specification

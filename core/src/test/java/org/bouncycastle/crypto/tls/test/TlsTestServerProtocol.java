@@ -1,10 +1,10 @@
-package org.bouncycastle.crypto.tls.test;
+package ru.mipt.cybersecurity.crypto.tls.test;
 
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.tls.TlsServerProtocol;
+import ru.mipt.cybersecurity.crypto.tls.TlsServerProtocol;
 
 class TlsTestServerProtocol extends TlsServerProtocol
 {

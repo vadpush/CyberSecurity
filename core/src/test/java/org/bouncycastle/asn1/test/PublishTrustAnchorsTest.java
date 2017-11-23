@@ -1,13 +1,13 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.cmc.PublishTrustAnchors;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1Integer;
+import ru.mipt.cybersecurity.asn1.DERSequence;
+import ru.mipt.cybersecurity.asn1.cmc.PublishTrustAnchors;
+import ru.mipt.cybersecurity.asn1.pkcs.PKCSObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.x509.AlgorithmIdentifier;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 
 public class PublishTrustAnchorsTest

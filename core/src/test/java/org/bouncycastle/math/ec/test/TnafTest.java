@@ -1,18 +1,18 @@
-//package org.bouncycastle.math.ec.test;
+//package ru.mipt.cybersecurity.math.ec.test;
 //
 //import java.math.BigInteger;
 //import java.util.Random;
 //
 //import junit.framework.TestCase;
 //
-//import org.bouncycastle.asn1.sec.SECNamedCurves;
-//import org.bouncycastle.asn1.x9.X9ECParameters;
-//import org.bouncycastle.math.ec.ECCurve;
-//import org.bouncycastle.math.ec.ECPoint;
-//import org.bouncycastle.math.ec.NafL2RMultiplier;
-//import org.bouncycastle.math.ec.ReferenceMultiplier;
-//import org.bouncycastle.math.ec.WNafL2RMultiplier;
-//import org.bouncycastle.math.ec.WTauNafMultiplier;
+//import ru.mipt.cybersecurity.asn1.sec.SECNamedCurves;
+//import ru.mipt.cybersecurity.asn1.x9.X9ECParameters;
+//import ru.mipt.cybersecurity.math.ec.ECCurve;
+//import ru.mipt.cybersecurity.math.ec.ECPoint;
+//import ru.mipt.cybersecurity.math.ec.NafL2RMultiplier;
+//import ru.mipt.cybersecurity.math.ec.ReferenceMultiplier;
+//import ru.mipt.cybersecurity.math.ec.WNafL2RMultiplier;
+//import ru.mipt.cybersecurity.math.ec.WTauNafMultiplier;
 //
 //public class TnafTest extends TestCase
 //{

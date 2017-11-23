@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.test.cavp;
+package ru.mipt.cybersecurity.crypto.test.cavp;
 
 import java.util.Properties;
 

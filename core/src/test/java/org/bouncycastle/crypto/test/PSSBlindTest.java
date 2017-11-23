@@ -1,19 +1,19 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.engines.RSABlindingEngine;
-import org.bouncycastle.crypto.engines.RSAEngine;
-import org.bouncycastle.crypto.generators.RSABlindingFactorGenerator;
-import org.bouncycastle.crypto.generators.RSAKeyPairGenerator;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.crypto.params.RSABlindingParameters;
-import org.bouncycastle.crypto.params.RSAKeyGenerationParameters;
-import org.bouncycastle.crypto.params.RSAKeyParameters;
-import org.bouncycastle.crypto.params.RSAPrivateCrtKeyParameters;
-import org.bouncycastle.crypto.signers.PSSSigner;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.AsymmetricCipherKeyPair;
+import ru.mipt.cybersecurity.crypto.digests.SHA1Digest;
+import ru.mipt.cybersecurity.crypto.engines.RSABlindingEngine;
+import ru.mipt.cybersecurity.crypto.engines.RSAEngine;
+import ru.mipt.cybersecurity.crypto.generators.RSABlindingFactorGenerator;
+import ru.mipt.cybersecurity.crypto.generators.RSAKeyPairGenerator;
+import ru.mipt.cybersecurity.crypto.params.ParametersWithRandom;
+import ru.mipt.cybersecurity.crypto.params.RSABlindingParameters;
+import ru.mipt.cybersecurity.crypto.params.RSAKeyGenerationParameters;
+import ru.mipt.cybersecurity.crypto.params.RSAKeyParameters;
+import ru.mipt.cybersecurity.crypto.params.RSAPrivateCrtKeyParameters;
+import ru.mipt.cybersecurity.crypto.signers.PSSSigner;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;

@@ -1,9 +1,9 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ess.ESSCertIDv2;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
+import ru.mipt.cybersecurity.asn1.ASN1Primitive;
+import ru.mipt.cybersecurity.asn1.ess.ESSCertIDv2;
+import ru.mipt.cybersecurity.asn1.nist.NISTObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.x509.AlgorithmIdentifier;
 
 public class ESSCertIDv2UnitTest
     extends ASN1UnitTest

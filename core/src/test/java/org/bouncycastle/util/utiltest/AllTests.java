@@ -1,4 +1,4 @@
-package org.bouncycastle.util.utiltest;
+package ru.mipt.cybersecurity.util.utiltest;
 
 import junit.extensions.TestSetup;
 import junit.framework.Test;

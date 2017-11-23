@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package ru.mipt.cybersecurity.jce.provider.test;
 
 import java.math.BigInteger;
 import java.security.InvalidKeyException;
@@ -21,14 +21,14 @@ import java.security.spec.RSAPublicKeySpec;
 
 import javax.crypto.Cipher;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.x509.DigestInfo;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1ObjectIdentifier;
+import ru.mipt.cybersecurity.asn1.nist.NISTObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.pkcs.PKCSObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.x509.DigestInfo;
+import ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class SigTest
     extends SimpleTest

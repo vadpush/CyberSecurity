@@ -1,19 +1,19 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.params.ECDomainParameters;
-import org.bouncycastle.crypto.params.ECPrivateKeyParameters;
-import org.bouncycastle.crypto.params.ECPublicKeyParameters;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.crypto.signers.ECNRSigner;
-import org.bouncycastle.math.ec.ECConstants;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.util.BigIntegers;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.util.test.TestRandomBigInteger;
+import ru.mipt.cybersecurity.crypto.params.ECDomainParameters;
+import ru.mipt.cybersecurity.crypto.params.ECPrivateKeyParameters;
+import ru.mipt.cybersecurity.crypto.params.ECPublicKeyParameters;
+import ru.mipt.cybersecurity.crypto.params.ParametersWithRandom;
+import ru.mipt.cybersecurity.crypto.signers.ECNRSigner;
+import ru.mipt.cybersecurity.math.ec.ECConstants;
+import ru.mipt.cybersecurity.math.ec.ECCurve;
+import ru.mipt.cybersecurity.util.BigIntegers;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
+import ru.mipt.cybersecurity.util.test.TestRandomBigInteger;
 
 /**
  * ECNR tests.

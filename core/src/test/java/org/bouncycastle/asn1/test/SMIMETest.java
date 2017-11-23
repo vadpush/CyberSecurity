@@ -1,20 +1,20 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.io.ByteArrayInputStream;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.DERGeneralizedTime;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.cms.RecipientKeyIdentifier;
-import org.bouncycastle.asn1.smime.SMIMECapabilitiesAttribute;
-import org.bouncycastle.asn1.smime.SMIMECapability;
-import org.bouncycastle.asn1.smime.SMIMECapabilityVector;
-import org.bouncycastle.asn1.smime.SMIMEEncryptionKeyPreferenceAttribute;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTestResult;
-import org.bouncycastle.util.test.Test;
-import org.bouncycastle.util.test.TestResult;
+import ru.mipt.cybersecurity.asn1.ASN1InputStream;
+import ru.mipt.cybersecurity.asn1.ASN1Primitive;
+import ru.mipt.cybersecurity.asn1.DERGeneralizedTime;
+import ru.mipt.cybersecurity.asn1.DEROctetString;
+import ru.mipt.cybersecurity.asn1.cms.RecipientKeyIdentifier;
+import ru.mipt.cybersecurity.asn1.smime.SMIMECapabilitiesAttribute;
+import ru.mipt.cybersecurity.asn1.smime.SMIMECapability;
+import ru.mipt.cybersecurity.asn1.smime.SMIMECapabilityVector;
+import ru.mipt.cybersecurity.asn1.smime.SMIMEEncryptionKeyPreferenceAttribute;
+import ru.mipt.cybersecurity.util.encoders.Base64;
+import ru.mipt.cybersecurity.util.test.SimpleTestResult;
+import ru.mipt.cybersecurity.util.test.Test;
+import ru.mipt.cybersecurity.util.test.TestResult;
 
 public class SMIMETest
     implements Test

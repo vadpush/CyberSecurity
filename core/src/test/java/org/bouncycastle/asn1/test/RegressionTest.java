@@ -1,7 +1,7 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
-import org.bouncycastle.util.test.Test;
-import org.bouncycastle.util.test.TestResult;
+import ru.mipt.cybersecurity.util.test.Test;
+import ru.mipt.cybersecurity.util.test.TestResult;
 
 public class RegressionTest
 {

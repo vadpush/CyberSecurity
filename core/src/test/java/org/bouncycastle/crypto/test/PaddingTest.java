@@ -1,20 +1,20 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.engines.DESEngine;
-import org.bouncycastle.crypto.paddings.BlockCipherPadding;
-import org.bouncycastle.crypto.paddings.ISO10126d2Padding;
-import org.bouncycastle.crypto.paddings.ISO7816d4Padding;
-import org.bouncycastle.crypto.paddings.PKCS7Padding;
-import org.bouncycastle.crypto.paddings.PaddedBufferedBlockCipher;
-import org.bouncycastle.crypto.paddings.TBCPadding;
-import org.bouncycastle.crypto.paddings.X923Padding;
-import org.bouncycastle.crypto.paddings.ZeroBytePadding;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.engines.DESEngine;
+import ru.mipt.cybersecurity.crypto.paddings.BlockCipherPadding;
+import ru.mipt.cybersecurity.crypto.paddings.ISO10126d2Padding;
+import ru.mipt.cybersecurity.crypto.paddings.ISO7816d4Padding;
+import ru.mipt.cybersecurity.crypto.paddings.PKCS7Padding;
+import ru.mipt.cybersecurity.crypto.paddings.PaddedBufferedBlockCipher;
+import ru.mipt.cybersecurity.crypto.paddings.TBCPadding;
+import ru.mipt.cybersecurity.crypto.paddings.X923Padding;
+import ru.mipt.cybersecurity.crypto.paddings.ZeroBytePadding;
+import ru.mipt.cybersecurity.crypto.params.KeyParameter;
+import ru.mipt.cybersecurity.crypto.InvalidCipherTextException;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 /**
  * General Padding tests.

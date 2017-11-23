@@ -1,4 +1,4 @@
-package org.bouncycastle.math.ec.test;
+package ru.mipt.cybersecurity.math.ec.test;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -10,10 +10,10 @@ import java.util.Iterator;
 import java.util.Properties;
 import java.util.Set;
 
-import org.bouncycastle.asn1.sec.SECNamedCurves;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.math.ec.ECFieldElement;
-import org.bouncycastle.math.ec.ECPoint;
+import ru.mipt.cybersecurity.asn1.sec.SECNamedCurves;
+import ru.mipt.cybersecurity.asn1.x9.X9ECParameters;
+import ru.mipt.cybersecurity.math.ec.ECFieldElement;
+import ru.mipt.cybersecurity.math.ec.ECPoint;
 
 public class F2mProofer
 {

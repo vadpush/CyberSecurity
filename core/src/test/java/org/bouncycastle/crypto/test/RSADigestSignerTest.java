@@ -1,23 +1,23 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.asn1.x509.X509ObjectIdentifiers;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.digests.SHA224Digest;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.digests.SHA384Digest;
-import org.bouncycastle.crypto.digests.SHA3Digest;
-import org.bouncycastle.crypto.digests.SHA512Digest;
-import org.bouncycastle.crypto.digests.SHA512tDigest;
-import org.bouncycastle.crypto.params.RSAKeyParameters;
-import org.bouncycastle.crypto.params.RSAPrivateCrtKeyParameters;
-import org.bouncycastle.crypto.signers.RSADigestSigner;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1ObjectIdentifier;
+import ru.mipt.cybersecurity.asn1.nist.NISTObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.x509.X509ObjectIdentifiers;
+import ru.mipt.cybersecurity.crypto.Digest;
+import ru.mipt.cybersecurity.crypto.digests.SHA1Digest;
+import ru.mipt.cybersecurity.crypto.digests.SHA224Digest;
+import ru.mipt.cybersecurity.crypto.digests.SHA256Digest;
+import ru.mipt.cybersecurity.crypto.digests.SHA384Digest;
+import ru.mipt.cybersecurity.crypto.digests.SHA3Digest;
+import ru.mipt.cybersecurity.crypto.digests.SHA512Digest;
+import ru.mipt.cybersecurity.crypto.digests.SHA512tDigest;
+import ru.mipt.cybersecurity.crypto.params.RSAKeyParameters;
+import ru.mipt.cybersecurity.crypto.params.RSAPrivateCrtKeyParameters;
+import ru.mipt.cybersecurity.crypto.signers.RSADigestSigner;
+import ru.mipt.cybersecurity.util.encoders.Base64;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class RSADigestSignerTest
     extends SimpleTest

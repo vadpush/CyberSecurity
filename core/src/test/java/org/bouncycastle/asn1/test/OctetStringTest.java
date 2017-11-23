@@ -1,4 +1,4 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
@@ -7,18 +7,18 @@ import java.io.OutputStream;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1OctetStringParser;
-import org.bouncycastle.asn1.ASN1SequenceParser;
-import org.bouncycastle.asn1.ASN1StreamParser;
-import org.bouncycastle.asn1.BEROctetStringGenerator;
-import org.bouncycastle.asn1.BERSequenceGenerator;
-import org.bouncycastle.asn1.BERTags;
-import org.bouncycastle.asn1.DERSequenceGenerator;
-import org.bouncycastle.asn1.cms.CMSObjectIdentifiers;
-import org.bouncycastle.asn1.cms.CompressedDataParser;
-import org.bouncycastle.asn1.cms.ContentInfoParser;
+import ru.mipt.cybersecurity.asn1.ASN1Integer;
+import ru.mipt.cybersecurity.asn1.ASN1ObjectIdentifier;
+import ru.mipt.cybersecurity.asn1.ASN1OctetStringParser;
+import ru.mipt.cybersecurity.asn1.ASN1SequenceParser;
+import ru.mipt.cybersecurity.asn1.ASN1StreamParser;
+import ru.mipt.cybersecurity.asn1.BEROctetStringGenerator;
+import ru.mipt.cybersecurity.asn1.BERSequenceGenerator;
+import ru.mipt.cybersecurity.asn1.BERTags;
+import ru.mipt.cybersecurity.asn1.DERSequenceGenerator;
+import ru.mipt.cybersecurity.asn1.cms.CMSObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.cms.CompressedDataParser;
+import ru.mipt.cybersecurity.asn1.cms.ContentInfoParser;
 
 public class OctetStringTest 
     extends TestCase 

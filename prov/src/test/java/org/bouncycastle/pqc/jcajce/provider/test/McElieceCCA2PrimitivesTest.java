@@ -1,14 +1,14 @@
-package org.bouncycastle.pqc.jcajce.provider.test;
+package ru.mipt.cybersecurity.pqc.jcajce.provider.test;
 
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
 import java.security.NoSuchAlgorithmException;
 
-import org.bouncycastle.pqc.jcajce.provider.mceliece.BCMcElieceCCA2PrivateKey;
-import org.bouncycastle.pqc.jcajce.provider.mceliece.BCMcElieceCCA2PublicKey;
-import org.bouncycastle.pqc.jcajce.provider.mceliece.McElieceCCA2Primitives;
-import org.bouncycastle.pqc.jcajce.spec.McElieceKeyGenParameterSpec;
-import org.bouncycastle.pqc.math.linearalgebra.GF2Vector;
+import ru.mipt.cybersecurity.pqc.jcajce.provider.mceliece.BCMcElieceCCA2PrivateKey;
+import ru.mipt.cybersecurity.pqc.jcajce.provider.mceliece.BCMcElieceCCA2PublicKey;
+import ru.mipt.cybersecurity.pqc.jcajce.provider.mceliece.McElieceCCA2Primitives;
+import ru.mipt.cybersecurity.pqc.jcajce.spec.McElieceKeyGenParameterSpec;
+import ru.mipt.cybersecurity.pqc.math.linearalgebra.GF2Vector;
 
 
 public class McElieceCCA2PrimitivesTest

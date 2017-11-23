@@ -1,13 +1,13 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1String;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.x500.DirectoryString;
-import org.bouncycastle.asn1.x509.sigi.NameOrPseudonym;
+import ru.mipt.cybersecurity.asn1.ASN1InputStream;
+import ru.mipt.cybersecurity.asn1.ASN1Sequence;
+import ru.mipt.cybersecurity.asn1.ASN1String;
+import ru.mipt.cybersecurity.asn1.DERSequence;
+import ru.mipt.cybersecurity.asn1.x500.DirectoryString;
+import ru.mipt.cybersecurity.asn1.x509.sigi.NameOrPseudonym;
 
 public class NameOrPseudonymUnitTest
     extends ASN1UnitTest

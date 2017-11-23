@@ -1,20 +1,19 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.util.Date;
 
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.DERGeneralizedTime;
-import org.bouncycastle.asn1.DEROctetString;
-import org.bouncycastle.asn1.cmc.BodyPartID;
-import org.bouncycastle.asn1.cmc.CMCFailInfo;
-import org.bouncycastle.asn1.cmc.CMCStatus;
-import org.bouncycastle.asn1.cmc.CMCStatusInfoV2;
-import org.bouncycastle.asn1.cmc.CMCStatusInfoV2Builder;
-import org.bouncycastle.asn1.cmc.ExtendedFailInfo;
-import org.bouncycastle.asn1.cmc.PendInfo;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.DERGeneralizedTime;
+import ru.mipt.cybersecurity.asn1.DEROctetString;
+import ru.mipt.cybersecurity.asn1.cmc.BodyPartID;
+import ru.mipt.cybersecurity.asn1.cmc.CMCFailInfo;
+import ru.mipt.cybersecurity.asn1.cmc.CMCStatus;
+import ru.mipt.cybersecurity.asn1.cmc.CMCStatusInfoV2;
+import ru.mipt.cybersecurity.asn1.cmc.CMCStatusInfoV2Builder;
+import ru.mipt.cybersecurity.asn1.cmc.ExtendedFailInfo;
+import ru.mipt.cybersecurity.asn1.cmc.PendInfo;
+import ru.mipt.cybersecurity.asn1.pkcs.PKCSObjectIdentifiers;
+import ru.mipt.cybersecurity.util.Strings;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 
 public class CMCStatusInfoV2Test

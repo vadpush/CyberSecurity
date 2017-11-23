@@ -1,22 +1,22 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.DataLengthException;
-import org.bouncycastle.crypto.engines.ElGamalEngine;
-import org.bouncycastle.crypto.generators.ElGamalKeyPairGenerator;
-import org.bouncycastle.crypto.generators.ElGamalParametersGenerator;
-import org.bouncycastle.crypto.params.ElGamalKeyGenerationParameters;
-import org.bouncycastle.crypto.params.ElGamalParameters;
-import org.bouncycastle.crypto.params.ElGamalPrivateKeyParameters;
-import org.bouncycastle.crypto.params.ElGamalPublicKeyParameters;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.BigIntegers;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.AsymmetricCipherKeyPair;
+import ru.mipt.cybersecurity.crypto.DataLengthException;
+import ru.mipt.cybersecurity.crypto.engines.ElGamalEngine;
+import ru.mipt.cybersecurity.crypto.generators.ElGamalKeyPairGenerator;
+import ru.mipt.cybersecurity.crypto.generators.ElGamalParametersGenerator;
+import ru.mipt.cybersecurity.crypto.params.ElGamalKeyGenerationParameters;
+import ru.mipt.cybersecurity.crypto.params.ElGamalParameters;
+import ru.mipt.cybersecurity.crypto.params.ElGamalPrivateKeyParameters;
+import ru.mipt.cybersecurity.crypto.params.ElGamalPublicKeyParameters;
+import ru.mipt.cybersecurity.crypto.params.ParametersWithRandom;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.BigIntegers;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class ElGamalTest
     extends SimpleTest
