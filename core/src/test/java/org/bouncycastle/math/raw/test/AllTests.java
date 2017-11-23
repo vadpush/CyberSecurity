@@ -1,4 +1,4 @@
-package org.bouncycastle.math.raw.test;
+package ru.mipt.cybersecurity.math.raw.test;
 
 import junit.extensions.TestSetup;
 import junit.framework.Test;

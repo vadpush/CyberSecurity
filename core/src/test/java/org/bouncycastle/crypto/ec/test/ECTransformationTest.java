@@ -1,28 +1,28 @@
-package org.bouncycastle.crypto.ec.test;
+package ru.mipt.cybersecurity.crypto.ec.test;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.ec.ECDecryptor;
-import org.bouncycastle.crypto.ec.ECElGamalDecryptor;
-import org.bouncycastle.crypto.ec.ECElGamalEncryptor;
-import org.bouncycastle.crypto.ec.ECEncryptor;
-import org.bouncycastle.crypto.ec.ECNewPublicKeyTransform;
-import org.bouncycastle.crypto.ec.ECNewRandomnessTransform;
-import org.bouncycastle.crypto.ec.ECPair;
-import org.bouncycastle.crypto.ec.ECPairTransform;
-import org.bouncycastle.crypto.generators.ECKeyPairGenerator;
-import org.bouncycastle.crypto.params.ECDomainParameters;
-import org.bouncycastle.crypto.params.ECKeyGenerationParameters;
-import org.bouncycastle.crypto.params.ECPrivateKeyParameters;
-import org.bouncycastle.crypto.params.ECPublicKeyParameters;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.math.ec.ECConstants;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.math.ec.ECPoint;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.AsymmetricCipherKeyPair;
+import ru.mipt.cybersecurity.crypto.ec.ECDecryptor;
+import ru.mipt.cybersecurity.crypto.ec.ECElGamalDecryptor;
+import ru.mipt.cybersecurity.crypto.ec.ECElGamalEncryptor;
+import ru.mipt.cybersecurity.crypto.ec.ECEncryptor;
+import ru.mipt.cybersecurity.crypto.ec.ECNewPublicKeyTransform;
+import ru.mipt.cybersecurity.crypto.ec.ECNewRandomnessTransform;
+import ru.mipt.cybersecurity.crypto.ec.ECPair;
+import ru.mipt.cybersecurity.crypto.ec.ECPairTransform;
+import ru.mipt.cybersecurity.crypto.generators.ECKeyPairGenerator;
+import ru.mipt.cybersecurity.crypto.params.ECDomainParameters;
+import ru.mipt.cybersecurity.crypto.params.ECKeyGenerationParameters;
+import ru.mipt.cybersecurity.crypto.params.ECPrivateKeyParameters;
+import ru.mipt.cybersecurity.crypto.params.ECPublicKeyParameters;
+import ru.mipt.cybersecurity.crypto.params.ParametersWithRandom;
+import ru.mipt.cybersecurity.math.ec.ECConstants;
+import ru.mipt.cybersecurity.math.ec.ECCurve;
+import ru.mipt.cybersecurity.math.ec.ECPoint;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class ECTransformationTest
     extends SimpleTest

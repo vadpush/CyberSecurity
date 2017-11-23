@@ -1,16 +1,16 @@
-package org.bouncycastle.crypto.tls.test;
+package ru.mipt.cybersecurity.crypto.tls.test;
 
 import java.io.IOException;
 import java.io.PrintStream;
 
-import org.bouncycastle.crypto.tls.AlertDescription;
-import org.bouncycastle.crypto.tls.AlertLevel;
-import org.bouncycastle.crypto.tls.CipherSuite;
-import org.bouncycastle.crypto.tls.PSKTlsServer;
-import org.bouncycastle.crypto.tls.ProtocolVersion;
-import org.bouncycastle.crypto.tls.TlsEncryptionCredentials;
-import org.bouncycastle.crypto.tls.TlsPSKIdentityManager;
-import org.bouncycastle.util.Strings;
+import ru.mipt.cybersecurity.crypto.tls.AlertDescription;
+import ru.mipt.cybersecurity.crypto.tls.AlertLevel;
+import ru.mipt.cybersecurity.crypto.tls.CipherSuite;
+import ru.mipt.cybersecurity.crypto.tls.PSKTlsServer;
+import ru.mipt.cybersecurity.crypto.tls.ProtocolVersion;
+import ru.mipt.cybersecurity.crypto.tls.TlsEncryptionCredentials;
+import ru.mipt.cybersecurity.crypto.tls.TlsPSKIdentityManager;
+import ru.mipt.cybersecurity.util.Strings;
 
 class MockPSKTlsServer
     extends PSKTlsServer

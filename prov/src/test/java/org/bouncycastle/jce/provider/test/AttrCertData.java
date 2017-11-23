@@ -1,9 +1,9 @@
-package org.bouncycastle.jce.provider.test;
+package ru.mipt.cybersecurity.jce.provider.test;
 
 import java.math.BigInteger;
 import java.security.spec.RSAPrivateCrtKeySpec;
 
-import org.bouncycastle.util.encoders.Base64;
+import ru.mipt.cybersecurity.util.encoders.Base64;
 
 public class AttrCertData
 {

@@ -1,12 +1,12 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-import org.bouncycastle.crypto.generators.SCrypt;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.generators.SCrypt;
+import ru.mipt.cybersecurity.util.Strings;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 /*
  * scrypt test vectors from "Stronger Key Derivation Via Sequential Memory-hard Functions" Appendix B.

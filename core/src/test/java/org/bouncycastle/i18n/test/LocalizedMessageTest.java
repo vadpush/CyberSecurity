@@ -1,12 +1,12 @@
-package org.bouncycastle.i18n.test;
+package ru.mipt.cybersecurity.i18n.test;
 
 import junit.framework.TestCase;
-import org.bouncycastle.i18n.LocaleString;
-import org.bouncycastle.i18n.LocalizedMessage;
-import org.bouncycastle.i18n.MissingEntryException;
-import org.bouncycastle.i18n.filter.HTMLFilter;
-import org.bouncycastle.i18n.filter.TrustedInput;
-import org.bouncycastle.util.encoders.Hex;
+import ru.mipt.cybersecurity.i18n.LocaleString;
+import ru.mipt.cybersecurity.i18n.LocalizedMessage;
+import ru.mipt.cybersecurity.i18n.MissingEntryException;
+import ru.mipt.cybersecurity.i18n.filter.HTMLFilter;
+import ru.mipt.cybersecurity.i18n.filter.TrustedInput;
+import ru.mipt.cybersecurity.util.encoders.Hex;
 
 import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
@@ -19,8 +19,8 @@ import java.util.TimeZone;
 public class LocalizedMessageTest extends TestCase
 {
 
-    private static final String TEST_RESOURCE = "org.bouncycastle.i18n.test.I18nTestMessages";
-    private static final String UTF8_TEST_RESOURCE = "org.bouncycastle.i18n.test.I18nUTF8TestMessages";
+    private static final String TEST_RESOURCE = "ru.mipt.cybersecurity.i18n.test.I18nTestMessages";
+    private static final String UTF8_TEST_RESOURCE = "ru.mipt.cybersecurity.i18n.test.I18nUTF8TestMessages";
 
     /*
      * test message id's
@@ -33,7 +33,7 @@ public class LocalizedMessageTest extends TestCase
     private static final String utf8TestId = "utf8";
 
     /*
-     * Test method for 'org.bouncycastle.i18n.LocalizedMessage.getEntry(String,
+     * Test method for 'ru.mipt.cybersecurity.i18n.LocalizedMessage.getEntry(String,
      * Locale, TimeZone)'
      */
     public void testGetEntry()
@@ -178,7 +178,7 @@ public class LocalizedMessageTest extends TestCase
         }
         catch (MissingEntryException e)
         {
-            assertEquals("Can't find entry noname in resource file org.bouncycastle.i18n.test.I18nTestMessages.", e.getMessage());
+            assertEquals("Can't find entry noname in resource file ru.mipt.cybersecurity.i18n.test.I18nTestMessages.", e.getMessage());
         }
     }
 

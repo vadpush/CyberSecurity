@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package ru.mipt.cybersecurity.jce.provider.test;
 
 import java.io.ByteArrayInputStream;
 import java.math.BigInteger;
@@ -14,18 +14,18 @@ import java.security.cert.Certificate;
 import java.security.cert.X509Certificate;
 import java.util.Date;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.jce.X509Principal;
-import org.bouncycastle.jce.interfaces.ECPointEncoder;
-import org.bouncycastle.jce.interfaces.ECPrivateKey;
-import org.bouncycastle.jce.interfaces.ECPublicKey;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.spec.ECParameterSpec;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.x509.X509V3CertificateGenerator;
+import ru.mipt.cybersecurity.asn1.ASN1InputStream;
+import ru.mipt.cybersecurity.asn1.x9.X9ECParameters;
+import ru.mipt.cybersecurity.jce.X509Principal;
+import ru.mipt.cybersecurity.jce.interfaces.ECPointEncoder;
+import ru.mipt.cybersecurity.jce.interfaces.ECPrivateKey;
+import ru.mipt.cybersecurity.jce.interfaces.ECPublicKey;
+import ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider;
+import ru.mipt.cybersecurity.jce.spec.ECParameterSpec;
+import ru.mipt.cybersecurity.math.ec.ECCurve;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
+import ru.mipt.cybersecurity.x509.X509V3CertificateGenerator;
 
 public class ECEncodingTest
     extends SimpleTest

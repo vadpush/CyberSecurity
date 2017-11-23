@@ -1,7 +1,7 @@
-package org.bouncycastle.pqc.crypto.test;
+package ru.mipt.cybersecurity.pqc.crypto.test;
 
 import junit.framework.TestCase;
-import org.bouncycastle.pqc.crypto.xmss.DefaultXMSSOid;
+import ru.mipt.cybersecurity.pqc.crypto.xmss.DefaultXMSSOid;
 
 /**
  * Test cases for {@link DefaultXMSSOid} class.

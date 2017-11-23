@@ -1,21 +1,20 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.CryptoException;
-import org.bouncycastle.crypto.agreement.srp.SRP6Client;
-import org.bouncycastle.crypto.agreement.srp.SRP6Server;
-import org.bouncycastle.crypto.agreement.srp.SRP6StandardGroups;
-import org.bouncycastle.crypto.agreement.srp.SRP6Util;
-import org.bouncycastle.crypto.agreement.srp.SRP6VerifierGenerator;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.generators.DHParametersGenerator;
-import org.bouncycastle.crypto.params.DHParameters;
-import org.bouncycastle.crypto.params.SRP6GroupParameters;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.agreement.srp.SRP6Client;
+import ru.mipt.cybersecurity.crypto.agreement.srp.SRP6Server;
+import ru.mipt.cybersecurity.crypto.agreement.srp.SRP6StandardGroups;
+import ru.mipt.cybersecurity.crypto.agreement.srp.SRP6Util;
+import ru.mipt.cybersecurity.crypto.agreement.srp.SRP6VerifierGenerator;
+import ru.mipt.cybersecurity.crypto.digests.SHA1Digest;
+import ru.mipt.cybersecurity.crypto.digests.SHA256Digest;
+import ru.mipt.cybersecurity.crypto.generators.DHParametersGenerator;
+import ru.mipt.cybersecurity.crypto.params.DHParameters;
+import ru.mipt.cybersecurity.crypto.params.SRP6GroupParameters;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class SRP6Test extends SimpleTest
 {

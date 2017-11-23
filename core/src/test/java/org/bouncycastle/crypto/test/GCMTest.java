@@ -1,23 +1,23 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.engines.AESEngine;
-import org.bouncycastle.crypto.engines.DESEngine;
-import org.bouncycastle.crypto.modes.GCMBlockCipher;
-import org.bouncycastle.crypto.modes.gcm.BasicGCMMultiplier;
-import org.bouncycastle.crypto.modes.gcm.GCMMultiplier;
-import org.bouncycastle.crypto.modes.gcm.Tables4kGCMMultiplier;
-import org.bouncycastle.crypto.modes.gcm.Tables64kGCMMultiplier;
-import org.bouncycastle.crypto.modes.gcm.Tables8kGCMMultiplier;
-import org.bouncycastle.crypto.params.AEADParameters;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.Times;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.BlockCipher;
+import ru.mipt.cybersecurity.crypto.InvalidCipherTextException;
+import ru.mipt.cybersecurity.crypto.engines.AESEngine;
+import ru.mipt.cybersecurity.crypto.engines.DESEngine;
+import ru.mipt.cybersecurity.crypto.modes.GCMBlockCipher;
+import ru.mipt.cybersecurity.crypto.modes.gcm.BasicGCMMultiplier;
+import ru.mipt.cybersecurity.crypto.modes.gcm.GCMMultiplier;
+import ru.mipt.cybersecurity.crypto.modes.gcm.Tables4kGCMMultiplier;
+import ru.mipt.cybersecurity.crypto.modes.gcm.Tables64kGCMMultiplier;
+import ru.mipt.cybersecurity.crypto.modes.gcm.Tables8kGCMMultiplier;
+import ru.mipt.cybersecurity.crypto.params.AEADParameters;
+import ru.mipt.cybersecurity.crypto.params.KeyParameter;
+import ru.mipt.cybersecurity.util.Strings;
+import ru.mipt.cybersecurity.util.Times;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 /**
  * Test vectors from "The Galois/Counter Mode of Operation (GCM)", McGrew/Viega, Appendix B

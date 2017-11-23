@@ -1,10 +1,10 @@
-package org.bouncycastle.crypto.tls.test;
+package ru.mipt.cybersecurity.crypto.tls.test;
 
 import java.util.Vector;
 
-import org.bouncycastle.crypto.tls.ConnectionEnd;
-import org.bouncycastle.crypto.tls.ProtocolVersion;
-import org.bouncycastle.crypto.tls.SignatureAndHashAlgorithm;
+import ru.mipt.cybersecurity.crypto.tls.ConnectionEnd;
+import ru.mipt.cybersecurity.crypto.tls.ProtocolVersion;
+import ru.mipt.cybersecurity.crypto.tls.SignatureAndHashAlgorithm;
 
 public class TlsTestConfig
 {

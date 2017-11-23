@@ -1,16 +1,16 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.isismtt.x509.Admissions;
-import org.bouncycastle.asn1.isismtt.x509.NamingAuthority;
-import org.bouncycastle.asn1.isismtt.x509.ProfessionInfo;
-import org.bouncycastle.asn1.x500.DirectoryString;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x509.GeneralName;
+import ru.mipt.cybersecurity.asn1.ASN1InputStream;
+import ru.mipt.cybersecurity.asn1.ASN1ObjectIdentifier;
+import ru.mipt.cybersecurity.asn1.ASN1Sequence;
+import ru.mipt.cybersecurity.asn1.isismtt.x509.Admissions;
+import ru.mipt.cybersecurity.asn1.isismtt.x509.NamingAuthority;
+import ru.mipt.cybersecurity.asn1.isismtt.x509.ProfessionInfo;
+import ru.mipt.cybersecurity.asn1.x500.DirectoryString;
+import ru.mipt.cybersecurity.asn1.x500.X500Name;
+import ru.mipt.cybersecurity.asn1.x509.GeneralName;
 
 public class AdmissionsUnitTest
     extends ASN1UnitTest

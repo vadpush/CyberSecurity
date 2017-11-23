@@ -1,11 +1,11 @@
 package ru.mipt.cybersecurity.crypto;
-
 import ru.mipt.cybersecurity.util.StringUtils;
 
 
-public class DefaultBlockCipher extends AbstractSymmetricCipher {
-    private static final int DEFAULT_BLOCK_SIZE = 0;
 
+public class DefaultBlockCipher extends AbstractSymmetricCipher {
+
+    private static final int DEFAULT_BLOCK_SIZE = 0;
     private static final String TRANSFORMATION_STRING_DELIMITER = "/";
     private static final int DEFAULT_STREAMING_BLOCK_SIZE = 8; //8 bits (1 byte)
 

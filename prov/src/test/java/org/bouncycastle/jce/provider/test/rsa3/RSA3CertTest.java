@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test.rsa3;
+package ru.mipt.cybersecurity.jce.provider.test.rsa3;
 
 import java.security.Security;
 import java.security.Signature;
@@ -19,7 +19,7 @@ public class RSA3CertTest
     {
         if (Security.getProvider("BC") == null)
         {
-            Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
+            Security.addProvider(new ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider());
         }
     }
     

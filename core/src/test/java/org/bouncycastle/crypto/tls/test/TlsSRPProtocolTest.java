@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.tls.test;
+package ru.mipt.cybersecurity.crypto.tls.test;
 
 import java.io.OutputStream;
 import java.io.PipedInputStream;
@@ -7,10 +7,10 @@ import java.security.SecureRandom;
 
 import junit.framework.TestCase;
 
-import org.bouncycastle.crypto.tls.TlsClientProtocol;
-import org.bouncycastle.crypto.tls.TlsServerProtocol;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.io.Streams;
+import ru.mipt.cybersecurity.crypto.tls.TlsClientProtocol;
+import ru.mipt.cybersecurity.crypto.tls.TlsServerProtocol;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.io.Streams;
 
 public class TlsSRPProtocolTest
     extends TestCase

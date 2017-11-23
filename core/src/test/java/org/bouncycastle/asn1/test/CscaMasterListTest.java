@@ -1,12 +1,12 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.io.IOException;
 
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.icao.CscaMasterList;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.io.Streams;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1Primitive;
+import ru.mipt.cybersecurity.asn1.icao.CscaMasterList;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.io.Streams;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class CscaMasterListTest
     extends SimpleTest

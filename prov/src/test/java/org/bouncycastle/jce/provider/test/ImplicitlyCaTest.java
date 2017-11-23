@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package ru.mipt.cybersecurity.jce.provider.test;
 
 import java.math.BigInteger;
 import java.security.KeyFactory;
@@ -13,22 +13,22 @@ import java.security.spec.EllipticCurve;
 import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jce.ECPointUtil;
-import org.bouncycastle.jce.interfaces.ECPrivateKey;
-import org.bouncycastle.jce.interfaces.ECPublicKey;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.spec.ECParameterSpec;
-import org.bouncycastle.jce.spec.ECPrivateKeySpec;
-import org.bouncycastle.jce.spec.ECPublicKeySpec;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.FixedSecureRandom;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1InputStream;
+import ru.mipt.cybersecurity.asn1.DERNull;
+import ru.mipt.cybersecurity.asn1.pkcs.PrivateKeyInfo;
+import ru.mipt.cybersecurity.asn1.x509.SubjectPublicKeyInfo;
+import ru.mipt.cybersecurity.jcajce.provider.config.ConfigurableProvider;
+import ru.mipt.cybersecurity.jce.ECPointUtil;
+import ru.mipt.cybersecurity.jce.interfaces.ECPrivateKey;
+import ru.mipt.cybersecurity.jce.interfaces.ECPublicKey;
+import ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider;
+import ru.mipt.cybersecurity.jce.spec.ECParameterSpec;
+import ru.mipt.cybersecurity.jce.spec.ECPrivateKeySpec;
+import ru.mipt.cybersecurity.jce.spec.ECPublicKeySpec;
+import ru.mipt.cybersecurity.math.ec.ECCurve;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.FixedSecureRandom;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class ImplicitlyCaTest
     extends SimpleTest

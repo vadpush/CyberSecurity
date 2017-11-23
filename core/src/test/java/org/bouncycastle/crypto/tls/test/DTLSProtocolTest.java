@@ -1,14 +1,14 @@
-package org.bouncycastle.crypto.tls.test;
+package ru.mipt.cybersecurity.crypto.tls.test;
 
 import java.security.SecureRandom;
 
 import junit.framework.TestCase;
 
-import org.bouncycastle.crypto.tls.DTLSClientProtocol;
-import org.bouncycastle.crypto.tls.DTLSServerProtocol;
-import org.bouncycastle.crypto.tls.DTLSTransport;
-import org.bouncycastle.crypto.tls.DatagramTransport;
-import org.bouncycastle.util.Arrays;
+import ru.mipt.cybersecurity.crypto.tls.DTLSClientProtocol;
+import ru.mipt.cybersecurity.crypto.tls.DTLSServerProtocol;
+import ru.mipt.cybersecurity.crypto.tls.DTLSTransport;
+import ru.mipt.cybersecurity.crypto.tls.DatagramTransport;
+import ru.mipt.cybersecurity.util.Arrays;
 
 public class DTLSProtocolTest
     extends TestCase

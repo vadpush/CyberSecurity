@@ -1,9 +1,9 @@
-package org.bouncycastle.crypto.prng.test;
+package ru.mipt.cybersecurity.crypto.prng.test;
 
-import org.bouncycastle.crypto.prng.FixedSecureRandom;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.prng.FixedSecureRandom;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class FixedSecureRandomTest
     extends SimpleTest

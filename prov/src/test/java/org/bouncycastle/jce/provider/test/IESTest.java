@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package ru.mipt.cybersecurity.jce.provider.test;
 
 import java.math.BigInteger;
 import java.security.AlgorithmParameters;
@@ -12,13 +12,13 @@ import java.security.Security;
 import javax.crypto.Cipher;
 import javax.crypto.spec.DHParameterSpec;
 
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.spec.ECParameterSpec;
-import org.bouncycastle.jce.spec.IEKeySpec;
-import org.bouncycastle.jce.spec.IESParameterSpec;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider;
+import ru.mipt.cybersecurity.jce.spec.ECParameterSpec;
+import ru.mipt.cybersecurity.jce.spec.IEKeySpec;
+import ru.mipt.cybersecurity.jce.spec.IESParameterSpec;
+import ru.mipt.cybersecurity.math.ec.ECCurve;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 /**
  * test for ECIES - Elliptic Curve Integrated Encryption Scheme

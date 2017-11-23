@@ -1,25 +1,25 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.engines.DSTU7624Engine;
-import org.bouncycastle.crypto.engines.DSTU7624WrapEngine;
-import org.bouncycastle.crypto.macs.DSTU7624Mac;
-import org.bouncycastle.crypto.macs.KGMac;
-import org.bouncycastle.crypto.modes.AEADBlockCipher;
-import org.bouncycastle.crypto.modes.CBCBlockCipher;
-import org.bouncycastle.crypto.modes.CFBBlockCipher;
-import org.bouncycastle.crypto.modes.KCCMBlockCipher;
-import org.bouncycastle.crypto.modes.KCTRBlockCipher;
-import org.bouncycastle.crypto.modes.KGCMBlockCipher;
-import org.bouncycastle.crypto.modes.KXTSBlockCipher;
-import org.bouncycastle.crypto.modes.OFBBlockCipher;
-import org.bouncycastle.crypto.params.AEADParameters;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.engines.DSTU7624Engine;
+import ru.mipt.cybersecurity.crypto.engines.DSTU7624WrapEngine;
+import ru.mipt.cybersecurity.crypto.macs.DSTU7624Mac;
+import ru.mipt.cybersecurity.crypto.macs.KGMac;
+import ru.mipt.cybersecurity.crypto.modes.AEADBlockCipher;
+import ru.mipt.cybersecurity.crypto.modes.CBCBlockCipher;
+import ru.mipt.cybersecurity.crypto.modes.CFBBlockCipher;
+import ru.mipt.cybersecurity.crypto.modes.KCCMBlockCipher;
+import ru.mipt.cybersecurity.crypto.modes.KCTRBlockCipher;
+import ru.mipt.cybersecurity.crypto.modes.KGCMBlockCipher;
+import ru.mipt.cybersecurity.crypto.modes.KXTSBlockCipher;
+import ru.mipt.cybersecurity.crypto.modes.OFBBlockCipher;
+import ru.mipt.cybersecurity.crypto.params.AEADParameters;
+import ru.mipt.cybersecurity.crypto.params.KeyParameter;
+import ru.mipt.cybersecurity.crypto.params.ParametersWithIV;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class DSTU7624Test
     extends CipherTest

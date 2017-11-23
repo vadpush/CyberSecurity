@@ -1,13 +1,13 @@
-package org.bouncycastle.math.ec.custom.sec.test;
+package ru.mipt.cybersecurity.math.ec.custom.sec.test;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.asn1.sec.SECObjectIdentifiers;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.crypto.ec.CustomNamedCurves;
-import org.bouncycastle.math.ec.ECFieldElement;
-import org.bouncycastle.math.raw.Nat256;
+import ru.mipt.cybersecurity.asn1.sec.SECObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.x9.X9ECParameters;
+import ru.mipt.cybersecurity.crypto.ec.CustomNamedCurves;
+import ru.mipt.cybersecurity.math.ec.ECFieldElement;
+import ru.mipt.cybersecurity.math.raw.Nat256;
 
 import junit.framework.TestCase;
 

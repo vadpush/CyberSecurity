@@ -1,24 +1,24 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.StreamCipher;
-import org.bouncycastle.crypto.engines.ChaChaEngine;
-import org.bouncycastle.crypto.engines.Grain128Engine;
-import org.bouncycastle.crypto.engines.Grainv1Engine;
-import org.bouncycastle.crypto.engines.HC128Engine;
-import org.bouncycastle.crypto.engines.HC256Engine;
-import org.bouncycastle.crypto.engines.ISAACEngine;
-import org.bouncycastle.crypto.engines.RC4Engine;
-import org.bouncycastle.crypto.engines.Salsa20Engine;
-import org.bouncycastle.crypto.engines.XSalsa20Engine;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.CipherParameters;
+import ru.mipt.cybersecurity.crypto.InvalidCipherTextException;
+import ru.mipt.cybersecurity.crypto.StreamCipher;
+import ru.mipt.cybersecurity.crypto.engines.ChaChaEngine;
+import ru.mipt.cybersecurity.crypto.engines.Grain128Engine;
+import ru.mipt.cybersecurity.crypto.engines.Grainv1Engine;
+import ru.mipt.cybersecurity.crypto.engines.HC128Engine;
+import ru.mipt.cybersecurity.crypto.engines.HC256Engine;
+import ru.mipt.cybersecurity.crypto.engines.ISAACEngine;
+import ru.mipt.cybersecurity.crypto.engines.RC4Engine;
+import ru.mipt.cybersecurity.crypto.engines.Salsa20Engine;
+import ru.mipt.cybersecurity.crypto.engines.XSalsa20Engine;
+import ru.mipt.cybersecurity.crypto.params.KeyParameter;
+import ru.mipt.cybersecurity.crypto.params.ParametersWithIV;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 /**
  * Test whether block ciphers implement reset contract on init, encrypt/decrypt and reset.

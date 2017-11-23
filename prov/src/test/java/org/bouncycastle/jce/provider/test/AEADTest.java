@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package ru.mipt.cybersecurity.jce.provider.test;
 
 import java.io.IOException;
 import java.security.AlgorithmParameters;
@@ -19,13 +19,13 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
 import junit.framework.TestCase;
-import org.bouncycastle.asn1.cms.GCMParameters;
-import org.bouncycastle.jcajce.spec.AEADParameterSpec;
-import org.bouncycastle.jcajce.spec.RepeatedSecretKeySpec;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.cms.GCMParameters;
+import ru.mipt.cybersecurity.jcajce.spec.AEADParameterSpec;
+import ru.mipt.cybersecurity.jcajce.spec.RepeatedSecretKeySpec;
+import ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class AEADTest extends SimpleTest
 {

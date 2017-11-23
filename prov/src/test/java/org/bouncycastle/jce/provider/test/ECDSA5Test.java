@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package ru.mipt.cybersecurity.jce.provider.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -36,37 +36,37 @@ import java.security.spec.X509EncodedKeySpec;
 
 import javax.crypto.KeyAgreement;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1Integer;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.ASN1Primitive;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.bsi.BSIObjectIdentifiers;
-import org.bouncycastle.asn1.eac.EACObjectIdentifiers;
-import org.bouncycastle.asn1.nist.NISTNamedCurves;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.sec.SECObjectIdentifiers;
-import org.bouncycastle.asn1.teletrust.TeleTrusTObjectIdentifiers;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.asn1.x9.X962Parameters;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.asn1.x9.X9ObjectIdentifiers;
-import org.bouncycastle.jcajce.provider.asymmetric.util.ECUtil;
-import org.bouncycastle.jcajce.spec.MQVParameterSpec;
-import org.bouncycastle.jce.ECKeyUtil;
-import org.bouncycastle.jce.ECNamedCurveTable;
-import org.bouncycastle.jce.ECPointUtil;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.spec.ECNamedCurveParameterSpec;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.BigIntegers;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.FixedSecureRandom;
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.util.test.TestRandomBigInteger;
+import ru.mipt.cybersecurity.asn1.ASN1InputStream;
+import ru.mipt.cybersecurity.asn1.ASN1Integer;
+import ru.mipt.cybersecurity.asn1.ASN1ObjectIdentifier;
+import ru.mipt.cybersecurity.asn1.ASN1Primitive;
+import ru.mipt.cybersecurity.asn1.ASN1Sequence;
+import ru.mipt.cybersecurity.asn1.bsi.BSIObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.eac.EACObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.nist.NISTNamedCurves;
+import ru.mipt.cybersecurity.asn1.pkcs.PKCSObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.pkcs.PrivateKeyInfo;
+import ru.mipt.cybersecurity.asn1.sec.SECObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.teletrust.TeleTrusTObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.x509.SubjectPublicKeyInfo;
+import ru.mipt.cybersecurity.asn1.x9.X962Parameters;
+import ru.mipt.cybersecurity.asn1.x9.X9ECParameters;
+import ru.mipt.cybersecurity.asn1.x9.X9ObjectIdentifiers;
+import ru.mipt.cybersecurity.jcajce.provider.asymmetric.util.ECUtil;
+import ru.mipt.cybersecurity.jcajce.spec.MQVParameterSpec;
+import ru.mipt.cybersecurity.jce.ECKeyUtil;
+import ru.mipt.cybersecurity.jce.ECNamedCurveTable;
+import ru.mipt.cybersecurity.jce.ECPointUtil;
+import ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider;
+import ru.mipt.cybersecurity.jce.spec.ECNamedCurveParameterSpec;
+import ru.mipt.cybersecurity.math.ec.ECCurve;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.BigIntegers;
+import ru.mipt.cybersecurity.util.Strings;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.FixedSecureRandom;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
+import ru.mipt.cybersecurity.util.test.TestRandomBigInteger;
 
 public class ECDSA5Test
     extends SimpleTest
@@ -138,7 +138,7 @@ public class ECDSA5Test
         throws Exception
     {
         ECNamedCurveParameterSpec namedCurve = ECNamedCurveTable.getParameterSpec("P-256");
-        org.bouncycastle.jce.spec.ECPublicKeySpec pubSpec = new org.bouncycastle.jce.spec.ECPublicKeySpec(namedCurve.getCurve().createPoint(PubX, PubY), namedCurve);
+        ru.mipt.cybersecurity.jce.spec.ECPublicKeySpec pubSpec = new ru.mipt.cybersecurity.jce.spec.ECPublicKeySpec(namedCurve.getCurve().createPoint(PubX, PubY), namedCurve);
         KeyFactory kFact = KeyFactory.getInstance("EC", "BC");
         PublicKey pubKey = kFact.generatePublic(pubSpec);
         Signature sig = Signature.getInstance("SHA256WithECDSA", "BC");

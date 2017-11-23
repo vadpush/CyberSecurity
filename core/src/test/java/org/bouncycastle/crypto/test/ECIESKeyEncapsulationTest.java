@@ -1,18 +1,18 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.security.SecureRandom;
 
-import org.bouncycastle.asn1.sec.SECNamedCurves;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.generators.ECKeyPairGenerator;
-import org.bouncycastle.crypto.generators.KDF2BytesGenerator;
-import org.bouncycastle.crypto.kems.ECIESKeyEncapsulation;
-import org.bouncycastle.crypto.params.ECDomainParameters;
-import org.bouncycastle.crypto.params.ECKeyGenerationParameters;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.sec.SECNamedCurves;
+import ru.mipt.cybersecurity.asn1.x9.X9ECParameters;
+import ru.mipt.cybersecurity.crypto.AsymmetricCipherKeyPair;
+import ru.mipt.cybersecurity.crypto.digests.SHA1Digest;
+import ru.mipt.cybersecurity.crypto.generators.ECKeyPairGenerator;
+import ru.mipt.cybersecurity.crypto.generators.KDF2BytesGenerator;
+import ru.mipt.cybersecurity.crypto.kems.ECIESKeyEncapsulation;
+import ru.mipt.cybersecurity.crypto.params.ECDomainParameters;
+import ru.mipt.cybersecurity.crypto.params.ECKeyGenerationParameters;
+import ru.mipt.cybersecurity.crypto.params.KeyParameter;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 /**
  * Tests for the ECIES Key Encapsulation Mechanism

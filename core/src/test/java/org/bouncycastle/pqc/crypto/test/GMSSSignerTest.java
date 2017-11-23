@@ -1,28 +1,28 @@
-package org.bouncycastle.pqc.crypto.test;
+package ru.mipt.cybersecurity.pqc.crypto.test;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.Signer;
-import org.bouncycastle.crypto.digests.SHA224Digest;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.pqc.crypto.DigestingMessageSigner;
-import org.bouncycastle.pqc.crypto.DigestingStateAwareMessageSigner;
-import org.bouncycastle.pqc.crypto.gmss.GMSSDigestProvider;
-import org.bouncycastle.pqc.crypto.gmss.GMSSKeyGenerationParameters;
-import org.bouncycastle.pqc.crypto.gmss.GMSSKeyPairGenerator;
-import org.bouncycastle.pqc.crypto.gmss.GMSSParameters;
-import org.bouncycastle.pqc.crypto.gmss.GMSSPrivateKeyParameters;
-import org.bouncycastle.pqc.crypto.gmss.GMSSSigner;
-import org.bouncycastle.pqc.crypto.gmss.GMSSStateAwareSigner;
-import org.bouncycastle.util.BigIntegers;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.FixedSecureRandom;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.AsymmetricCipherKeyPair;
+import ru.mipt.cybersecurity.crypto.Digest;
+import ru.mipt.cybersecurity.crypto.Signer;
+import ru.mipt.cybersecurity.crypto.digests.SHA224Digest;
+import ru.mipt.cybersecurity.crypto.params.AsymmetricKeyParameter;
+import ru.mipt.cybersecurity.crypto.params.ParametersWithRandom;
+import ru.mipt.cybersecurity.pqc.crypto.DigestingMessageSigner;
+import ru.mipt.cybersecurity.pqc.crypto.DigestingStateAwareMessageSigner;
+import ru.mipt.cybersecurity.pqc.crypto.gmss.GMSSDigestProvider;
+import ru.mipt.cybersecurity.pqc.crypto.gmss.GMSSKeyGenerationParameters;
+import ru.mipt.cybersecurity.pqc.crypto.gmss.GMSSKeyPairGenerator;
+import ru.mipt.cybersecurity.pqc.crypto.gmss.GMSSParameters;
+import ru.mipt.cybersecurity.pqc.crypto.gmss.GMSSPrivateKeyParameters;
+import ru.mipt.cybersecurity.pqc.crypto.gmss.GMSSSigner;
+import ru.mipt.cybersecurity.pqc.crypto.gmss.GMSSStateAwareSigner;
+import ru.mipt.cybersecurity.util.BigIntegers;
+import ru.mipt.cybersecurity.util.Strings;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.FixedSecureRandom;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 
 public class GMSSSignerTest

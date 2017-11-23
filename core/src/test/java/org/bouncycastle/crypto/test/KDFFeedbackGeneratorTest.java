@@ -1,4 +1,4 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -6,10 +6,10 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.nio.charset.Charset;
 
-import org.bouncycastle.crypto.test.cavp.CAVPReader;
-import org.bouncycastle.crypto.test.cavp.KDFFeedbackCounterTests;
-import org.bouncycastle.crypto.test.cavp.KDFFeedbackNoCounterTests;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.test.cavp.CAVPReader;
+import ru.mipt.cybersecurity.crypto.test.cavp.KDFFeedbackCounterTests;
+import ru.mipt.cybersecurity.crypto.test.cavp.KDFFeedbackNoCounterTests;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class KDFFeedbackGeneratorTest
     extends SimpleTest

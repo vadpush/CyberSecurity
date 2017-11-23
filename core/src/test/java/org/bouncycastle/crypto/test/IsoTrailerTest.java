@@ -1,16 +1,16 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.crypto.digests.SHA512tDigest;
-import org.bouncycastle.crypto.engines.RSAEngine;
-import org.bouncycastle.crypto.params.RSAKeyParameters;
-import org.bouncycastle.crypto.signers.ISO9796d2PSSSigner;
-import org.bouncycastle.crypto.signers.ISO9796d2Signer;
-import org.bouncycastle.crypto.signers.X931Signer;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.digests.SHA512tDigest;
+import ru.mipt.cybersecurity.crypto.engines.RSAEngine;
+import ru.mipt.cybersecurity.crypto.params.RSAKeyParameters;
+import ru.mipt.cybersecurity.crypto.signers.ISO9796d2PSSSigner;
+import ru.mipt.cybersecurity.crypto.signers.ISO9796d2Signer;
+import ru.mipt.cybersecurity.crypto.signers.X931Signer;
+import ru.mipt.cybersecurity.util.encoders.Base64;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class IsoTrailerTest
     extends SimpleTest

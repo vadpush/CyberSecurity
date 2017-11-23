@@ -1,10 +1,10 @@
-package org.bouncycastle.crypto.tls.test;
+package ru.mipt.cybersecurity.crypto.tls.test;
 
 import java.io.IOException;
 import java.io.PrintStream;
 
-import org.bouncycastle.crypto.tls.DatagramTransport;
-import org.bouncycastle.util.Strings;
+import ru.mipt.cybersecurity.crypto.tls.DatagramTransport;
+import ru.mipt.cybersecurity.util.Strings;
 
 public class LoggingDatagramTransport
     implements DatagramTransport

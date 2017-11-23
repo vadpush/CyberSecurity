@@ -1,7 +1,7 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
-import org.bouncycastle.crypto.generators.OpenBSDBCrypt;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.generators.OpenBSDBCrypt;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class OpenBSDBCryptTest
     extends SimpleTest

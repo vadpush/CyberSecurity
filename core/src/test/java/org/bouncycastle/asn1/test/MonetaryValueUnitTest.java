@@ -1,10 +1,10 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.x509.qualified.Iso4217CurrencyCode;
-import org.bouncycastle.asn1.x509.qualified.MonetaryValue;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1InputStream;
+import ru.mipt.cybersecurity.asn1.ASN1Sequence;
+import ru.mipt.cybersecurity.asn1.x509.qualified.Iso4217CurrencyCode;
+import ru.mipt.cybersecurity.asn1.x509.qualified.MonetaryValue;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class MonetaryValueUnitTest 
     extends SimpleTest

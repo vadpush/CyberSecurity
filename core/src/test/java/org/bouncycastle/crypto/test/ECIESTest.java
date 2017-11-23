@@ -1,37 +1,37 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.BufferedBlockCipher;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.KeyEncoder;
-import org.bouncycastle.crypto.KeyGenerationParameters;
-import org.bouncycastle.crypto.agreement.ECDHBasicAgreement;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.engines.IESEngine;
-import org.bouncycastle.crypto.engines.TwofishEngine;
-import org.bouncycastle.crypto.generators.ECKeyPairGenerator;
-import org.bouncycastle.crypto.generators.EphemeralKeyPairGenerator;
-import org.bouncycastle.crypto.generators.KDF2BytesGenerator;
-import org.bouncycastle.crypto.macs.HMac;
-import org.bouncycastle.crypto.modes.CBCBlockCipher;
-import org.bouncycastle.crypto.paddings.PaddedBufferedBlockCipher;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.ECDomainParameters;
-import org.bouncycastle.crypto.params.ECKeyGenerationParameters;
-import org.bouncycastle.crypto.params.ECPrivateKeyParameters;
-import org.bouncycastle.crypto.params.ECPublicKeyParameters;
-import org.bouncycastle.crypto.params.IESParameters;
-import org.bouncycastle.crypto.params.IESWithCipherParameters;
-import org.bouncycastle.crypto.params.ParametersWithIV;
-import org.bouncycastle.crypto.parsers.ECIESPublicKeyParser;
-import org.bouncycastle.math.ec.ECConstants;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.AsymmetricCipherKeyPair;
+import ru.mipt.cybersecurity.crypto.BufferedBlockCipher;
+import ru.mipt.cybersecurity.crypto.CipherParameters;
+import ru.mipt.cybersecurity.crypto.InvalidCipherTextException;
+import ru.mipt.cybersecurity.crypto.KeyEncoder;
+import ru.mipt.cybersecurity.crypto.KeyGenerationParameters;
+import ru.mipt.cybersecurity.crypto.agreement.ECDHBasicAgreement;
+import ru.mipt.cybersecurity.crypto.digests.SHA1Digest;
+import ru.mipt.cybersecurity.crypto.engines.IESEngine;
+import ru.mipt.cybersecurity.crypto.engines.TwofishEngine;
+import ru.mipt.cybersecurity.crypto.generators.ECKeyPairGenerator;
+import ru.mipt.cybersecurity.crypto.generators.EphemeralKeyPairGenerator;
+import ru.mipt.cybersecurity.crypto.generators.KDF2BytesGenerator;
+import ru.mipt.cybersecurity.crypto.macs.HMac;
+import ru.mipt.cybersecurity.crypto.modes.CBCBlockCipher;
+import ru.mipt.cybersecurity.crypto.paddings.PaddedBufferedBlockCipher;
+import ru.mipt.cybersecurity.crypto.params.AsymmetricKeyParameter;
+import ru.mipt.cybersecurity.crypto.params.ECDomainParameters;
+import ru.mipt.cybersecurity.crypto.params.ECKeyGenerationParameters;
+import ru.mipt.cybersecurity.crypto.params.ECPrivateKeyParameters;
+import ru.mipt.cybersecurity.crypto.params.ECPublicKeyParameters;
+import ru.mipt.cybersecurity.crypto.params.IESParameters;
+import ru.mipt.cybersecurity.crypto.params.IESWithCipherParameters;
+import ru.mipt.cybersecurity.crypto.params.ParametersWithIV;
+import ru.mipt.cybersecurity.crypto.parsers.ECIESPublicKeyParser;
+import ru.mipt.cybersecurity.math.ec.ECConstants;
+import ru.mipt.cybersecurity.math.ec.ECCurve;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 /**
  * test for ECIES - Elliptic Curve Integrated Encryption Scheme

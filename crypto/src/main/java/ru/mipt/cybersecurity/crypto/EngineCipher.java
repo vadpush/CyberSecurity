@@ -250,7 +250,7 @@ public abstract class EngineCipher implements Cipher{
         return ivBytes;
     }
 
-    public ByteSource encrypt(byte[] plaintext, byte[] key) {
+    public ByteSource encrypt(byte[] plaintext, byte[] key) throws CryptoException {
         byte[] ivBytes = null;
         boolean generate = isGenerateInitializationVectors(false);
         if (generate) {
@@ -466,7 +466,7 @@ public abstract class EngineCipher implements Cipher{
                 //first write the IV:
                 out.write(iv);
             } catch (IOException e) {
-                throw new CryptoException(e);
+                throw new CryptoException(e.getMessage());
             }
         }
 
@@ -531,7 +531,7 @@ public abstract class EngineCipher implements Cipher{
                 out.write(buffer, 0, bytesRead);
             }
         } catch (IOException e) {
-            throw new CryptoException(e);
+            throw new CryptoException(e.getMessage());
         }
     }
 

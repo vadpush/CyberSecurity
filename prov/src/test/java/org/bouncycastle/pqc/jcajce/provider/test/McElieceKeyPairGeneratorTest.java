@@ -1,10 +1,10 @@
-package org.bouncycastle.pqc.jcajce.provider.test;
+package ru.mipt.cybersecurity.pqc.jcajce.provider.test;
 
 import java.security.KeyFactory;
 import java.security.KeyPairGenerator;
 
-import org.bouncycastle.pqc.asn1.PQCObjectIdentifiers;
-import org.bouncycastle.pqc.jcajce.spec.McElieceKeyGenParameterSpec;
+import ru.mipt.cybersecurity.pqc.asn1.PQCObjectIdentifiers;
+import ru.mipt.cybersecurity.pqc.jcajce.spec.McElieceKeyGenParameterSpec;
 
 
 public class McElieceKeyPairGeneratorTest

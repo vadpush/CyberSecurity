@@ -1,15 +1,15 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.crypto.DerivationFunction;
-import org.bouncycastle.crypto.DerivationParameters;
-import org.bouncycastle.crypto.agreement.kdf.DHKDFParameters;
-import org.bouncycastle.crypto.agreement.kdf.ECDHKEKGenerator;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1ObjectIdentifier;
+import ru.mipt.cybersecurity.asn1.nist.NISTObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.pkcs.PKCSObjectIdentifiers;
+import ru.mipt.cybersecurity.crypto.DerivationFunction;
+import ru.mipt.cybersecurity.crypto.DerivationParameters;
+import ru.mipt.cybersecurity.crypto.agreement.kdf.DHKDFParameters;
+import ru.mipt.cybersecurity.crypto.agreement.kdf.ECDHKEKGenerator;
+import ru.mipt.cybersecurity.crypto.digests.SHA1Digest;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 /**
  * ECDHKEK Generator tests.

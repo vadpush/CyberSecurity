@@ -1,10 +1,10 @@
-package org.bouncycastle.crypto.tls.test;
+package ru.mipt.cybersecurity.crypto.tls.test;
 
 import java.io.IOException;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.tls.DTLSClientProtocol;
-import org.bouncycastle.crypto.tls.DigitallySigned;
+import ru.mipt.cybersecurity.crypto.tls.DTLSClientProtocol;
+import ru.mipt.cybersecurity.crypto.tls.DigitallySigned;
 
 class DTLSTestClientProtocol extends DTLSClientProtocol
 {

@@ -1,10 +1,10 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
-import org.bouncycastle.asn1.cmc.BodyPartID;
-import org.bouncycastle.asn1.cmc.CertificationRequest;
-import org.bouncycastle.asn1.cmc.TaggedCertificationRequest;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.cmc.BodyPartID;
+import ru.mipt.cybersecurity.asn1.cmc.CertificationRequest;
+import ru.mipt.cybersecurity.asn1.cmc.TaggedCertificationRequest;
+import ru.mipt.cybersecurity.util.encoders.Base64;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 
 public class TaggedCertificationRequestTest extends SimpleTest

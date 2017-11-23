@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package ru.mipt.cybersecurity.jce.provider.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -20,35 +20,35 @@ import java.security.spec.RSAPrivateCrtKeySpec;
 import java.security.spec.RSAPublicKeySpec;
 import java.util.Enumeration;
 
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.ASN1StreamParser;
-import org.bouncycastle.asn1.DERBMPString;
-import org.bouncycastle.asn1.DERNull;
-import org.bouncycastle.asn1.DERSequenceParser;
-import org.bouncycastle.asn1.cryptopro.CryptoProObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.ContentInfo;
-import org.bouncycastle.asn1.pkcs.EncryptedData;
-import org.bouncycastle.asn1.pkcs.EncryptedPrivateKeyInfo;
-import org.bouncycastle.asn1.pkcs.MacData;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.Pfx;
-import org.bouncycastle.asn1.pkcs.SafeBag;
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x500.X500NameBuilder;
-import org.bouncycastle.asn1.x500.style.BCStyle;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.jcajce.PKCS12StoreParameter;
-import org.bouncycastle.jce.PKCS12Util;
-import org.bouncycastle.jce.interfaces.PKCS12BagAttributeCarrier;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.provider.JDKPKCS12StoreParameter;
-import org.bouncycastle.jce.provider.X509CertificateObject;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1Encodable;
+import ru.mipt.cybersecurity.asn1.ASN1InputStream;
+import ru.mipt.cybersecurity.asn1.ASN1OctetString;
+import ru.mipt.cybersecurity.asn1.ASN1Sequence;
+import ru.mipt.cybersecurity.asn1.ASN1StreamParser;
+import ru.mipt.cybersecurity.asn1.DERBMPString;
+import ru.mipt.cybersecurity.asn1.DERNull;
+import ru.mipt.cybersecurity.asn1.DERSequenceParser;
+import ru.mipt.cybersecurity.asn1.cryptopro.CryptoProObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.pkcs.ContentInfo;
+import ru.mipt.cybersecurity.asn1.pkcs.EncryptedData;
+import ru.mipt.cybersecurity.asn1.pkcs.EncryptedPrivateKeyInfo;
+import ru.mipt.cybersecurity.asn1.pkcs.MacData;
+import ru.mipt.cybersecurity.asn1.pkcs.PKCSObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.pkcs.Pfx;
+import ru.mipt.cybersecurity.asn1.pkcs.SafeBag;
+import ru.mipt.cybersecurity.asn1.x500.X500Name;
+import ru.mipt.cybersecurity.asn1.x500.X500NameBuilder;
+import ru.mipt.cybersecurity.asn1.x500.style.BCStyle;
+import ru.mipt.cybersecurity.asn1.x509.AlgorithmIdentifier;
+import ru.mipt.cybersecurity.jcajce.PKCS12StoreParameter;
+import ru.mipt.cybersecurity.jce.PKCS12Util;
+import ru.mipt.cybersecurity.jce.interfaces.PKCS12BagAttributeCarrier;
+import ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider;
+import ru.mipt.cybersecurity.jce.provider.JDKPKCS12StoreParameter;
+import ru.mipt.cybersecurity.jce.provider.X509CertificateObject;
+import ru.mipt.cybersecurity.util.encoders.Base64;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 /**
  * Exercise the various key stores, making sure we at least get back what we put in!
@@ -774,7 +774,7 @@ public class PKCS12StoreTest
         //
         bOut = new ByteArrayOutputStream();
 
-        storeParam = new org.bouncycastle.jcajce.provider.config.PKCS12StoreParameter(bOut, passwd, true);
+        storeParam = new ru.mipt.cybersecurity.jcajce.provider.config.PKCS12StoreParameter(bOut, passwd, true);
 
         store.store(storeParam);
 

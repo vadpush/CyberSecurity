@@ -1,12 +1,12 @@
-package org.bouncycastle.crypto.tls.test;
+package ru.mipt.cybersecurity.crypto.tls.test;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.security.SecureRandom;
 
-import org.bouncycastle.crypto.tls.DigitallySigned;
-import org.bouncycastle.crypto.tls.TlsClientProtocol;
+import ru.mipt.cybersecurity.crypto.tls.DigitallySigned;
+import ru.mipt.cybersecurity.crypto.tls.TlsClientProtocol;
 
 class TlsTestClientProtocol extends TlsClientProtocol
 {

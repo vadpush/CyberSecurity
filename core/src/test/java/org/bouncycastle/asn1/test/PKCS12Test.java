@@ -1,27 +1,27 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1OctetString;
-import org.bouncycastle.asn1.ASN1OutputStream;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.BEROctetString;
-import org.bouncycastle.asn1.DLSequence;
-import org.bouncycastle.asn1.pkcs.AuthenticatedSafe;
-import org.bouncycastle.asn1.pkcs.ContentInfo;
-import org.bouncycastle.asn1.pkcs.EncryptedData;
-import org.bouncycastle.asn1.pkcs.EncryptedPrivateKeyInfo;
-import org.bouncycastle.asn1.pkcs.MacData;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.Pfx;
-import org.bouncycastle.asn1.pkcs.SafeBag;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x509.DigestInfo;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1InputStream;
+import ru.mipt.cybersecurity.asn1.ASN1OctetString;
+import ru.mipt.cybersecurity.asn1.ASN1OutputStream;
+import ru.mipt.cybersecurity.asn1.ASN1Sequence;
+import ru.mipt.cybersecurity.asn1.BEROctetString;
+import ru.mipt.cybersecurity.asn1.DLSequence;
+import ru.mipt.cybersecurity.asn1.pkcs.AuthenticatedSafe;
+import ru.mipt.cybersecurity.asn1.pkcs.ContentInfo;
+import ru.mipt.cybersecurity.asn1.pkcs.EncryptedData;
+import ru.mipt.cybersecurity.asn1.pkcs.EncryptedPrivateKeyInfo;
+import ru.mipt.cybersecurity.asn1.pkcs.MacData;
+import ru.mipt.cybersecurity.asn1.pkcs.PKCSObjectIdentifiers;
+import ru.mipt.cybersecurity.asn1.pkcs.Pfx;
+import ru.mipt.cybersecurity.asn1.pkcs.SafeBag;
+import ru.mipt.cybersecurity.asn1.x509.AlgorithmIdentifier;
+import ru.mipt.cybersecurity.asn1.x509.DigestInfo;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.encoders.Base64;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class PKCS12Test
     extends SimpleTest

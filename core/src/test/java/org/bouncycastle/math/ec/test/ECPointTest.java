@@ -1,4 +1,4 @@
-package org.bouncycastle.math.ec.test;
+package ru.mipt.cybersecurity.math.ec.test;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
@@ -13,19 +13,19 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
-import org.bouncycastle.asn1.x9.ECNamedCurveTable;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.crypto.ec.CustomNamedCurves;
-import org.bouncycastle.math.ec.ECAlgorithms;
-import org.bouncycastle.math.ec.ECConstants;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.math.ec.ECFieldElement;
-import org.bouncycastle.math.ec.ECPoint;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.BigIntegers;
+import ru.mipt.cybersecurity.asn1.x9.ECNamedCurveTable;
+import ru.mipt.cybersecurity.asn1.x9.X9ECParameters;
+import ru.mipt.cybersecurity.crypto.ec.CustomNamedCurves;
+import ru.mipt.cybersecurity.math.ec.ECAlgorithms;
+import ru.mipt.cybersecurity.math.ec.ECConstants;
+import ru.mipt.cybersecurity.math.ec.ECCurve;
+import ru.mipt.cybersecurity.math.ec.ECFieldElement;
+import ru.mipt.cybersecurity.math.ec.ECPoint;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.BigIntegers;
 
 /**
- * Test class for {@link org.bouncycastle.math.ec.ECPoint ECPoint}. All
+ * Test class for {@link ru.mipt.cybersecurity.math.ec.ECPoint ECPoint}. All
  * literature values are taken from "Guide to elliptic curve cryptography",
  * Darrel Hankerson, Alfred J. Menezes, Scott Vanstone, 2004, Springer-Verlag
  * New York, Inc.

@@ -1,4 +1,4 @@
-package org.bouncycastle.jcajce.provider.test;
+package ru.mipt.cybersecurity.jcajce.provider.test;
 
 import java.security.AlgorithmParameters;
 import java.security.Security;
@@ -6,7 +6,7 @@ import java.security.spec.ECGenParameterSpec;
 import java.security.spec.ECParameterSpec;
 
 import junit.framework.TestCase;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
+import ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider;
 
 public class ECAlgorithmParametersTest
     extends TestCase

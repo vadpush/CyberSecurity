@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package ru.mipt.cybersecurity.jce.provider.test;
 
 import java.math.BigInteger;
 import java.security.KeyFactory;
@@ -23,17 +23,17 @@ import java.util.Set;
 
 import javax.crypto.KeyAgreement;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.cryptopro.ECGOST3410NamedCurves;
-import org.bouncycastle.asn1.nist.NISTNamedCurves;
-import org.bouncycastle.asn1.sec.SECNamedCurves;
-import org.bouncycastle.asn1.teletrust.TeleTrusTNamedCurves;
-import org.bouncycastle.asn1.x509.Extension;
-import org.bouncycastle.asn1.x9.X962NamedCurves;
-import org.bouncycastle.jcajce.provider.config.ConfigurableProvider;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.spec.ECNamedCurveSpec;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1ObjectIdentifier;
+import ru.mipt.cybersecurity.asn1.cryptopro.ECGOST3410NamedCurves;
+import ru.mipt.cybersecurity.asn1.nist.NISTNamedCurves;
+import ru.mipt.cybersecurity.asn1.sec.SECNamedCurves;
+import ru.mipt.cybersecurity.asn1.teletrust.TeleTrusTNamedCurves;
+import ru.mipt.cybersecurity.asn1.x509.Extension;
+import ru.mipt.cybersecurity.asn1.x9.X962NamedCurves;
+import ru.mipt.cybersecurity.jcajce.provider.config.ConfigurableProvider;
+import ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider;
+import ru.mipt.cybersecurity.jce.spec.ECNamedCurveSpec;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class NamedCurveTest
     extends SimpleTest

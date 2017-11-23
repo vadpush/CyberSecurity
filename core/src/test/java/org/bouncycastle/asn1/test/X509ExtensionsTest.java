@@ -1,9 +1,9 @@
-package org.bouncycastle.asn1.test;
+package ru.mipt.cybersecurity.asn1.test;
 
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.x509.X509Extensions;
-import org.bouncycastle.asn1.x509.X509ExtensionsGenerator;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.asn1.ASN1ObjectIdentifier;
+import ru.mipt.cybersecurity.asn1.x509.X509Extensions;
+import ru.mipt.cybersecurity.asn1.x509.X509ExtensionsGenerator;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class X509ExtensionsTest
     extends SimpleTest

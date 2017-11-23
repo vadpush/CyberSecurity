@@ -1,24 +1,24 @@
-package org.bouncycastle.crypto.test;
+package ru.mipt.cybersecurity.crypto.test;
 
 import java.math.BigInteger;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.agreement.SM2KeyExchange;
-import org.bouncycastle.crypto.generators.ECKeyPairGenerator;
-import org.bouncycastle.crypto.params.ECDomainParameters;
-import org.bouncycastle.crypto.params.ECKeyGenerationParameters;
-import org.bouncycastle.crypto.params.ECPrivateKeyParameters;
-import org.bouncycastle.crypto.params.ECPublicKeyParameters;
-import org.bouncycastle.crypto.params.ParametersWithID;
-import org.bouncycastle.crypto.params.SM2KeyExchangePrivateParameters;
-import org.bouncycastle.crypto.params.SM2KeyExchangePublicParameters;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.math.ec.ECPoint;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.Strings;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
-import org.bouncycastle.util.test.TestRandomBigInteger;
+import ru.mipt.cybersecurity.crypto.AsymmetricCipherKeyPair;
+import ru.mipt.cybersecurity.crypto.agreement.SM2KeyExchange;
+import ru.mipt.cybersecurity.crypto.generators.ECKeyPairGenerator;
+import ru.mipt.cybersecurity.crypto.params.ECDomainParameters;
+import ru.mipt.cybersecurity.crypto.params.ECKeyGenerationParameters;
+import ru.mipt.cybersecurity.crypto.params.ECPrivateKeyParameters;
+import ru.mipt.cybersecurity.crypto.params.ECPublicKeyParameters;
+import ru.mipt.cybersecurity.crypto.params.ParametersWithID;
+import ru.mipt.cybersecurity.crypto.params.SM2KeyExchangePrivateParameters;
+import ru.mipt.cybersecurity.crypto.params.SM2KeyExchangePublicParameters;
+import ru.mipt.cybersecurity.math.ec.ECCurve;
+import ru.mipt.cybersecurity.math.ec.ECPoint;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.Strings;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
+import ru.mipt.cybersecurity.util.test.TestRandomBigInteger;
 
 public class SM2KeyExchangeTest
     extends SimpleTest

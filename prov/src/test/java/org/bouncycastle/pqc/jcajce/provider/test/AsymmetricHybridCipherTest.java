@@ -1,4 +1,4 @@
-package org.bouncycastle.pqc.jcajce.provider.test;
+package ru.mipt.cybersecurity.pqc.jcajce.provider.test;
 
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
@@ -8,8 +8,8 @@ import java.security.spec.AlgorithmParameterSpec;
 
 import javax.crypto.Cipher;
 
-import org.bouncycastle.pqc.jcajce.provider.util.AsymmetricHybridCipher;
-import org.bouncycastle.pqc.math.linearalgebra.ByteUtils;
+import ru.mipt.cybersecurity.pqc.jcajce.provider.util.AsymmetricHybridCipher;
+import ru.mipt.cybersecurity.pqc.math.linearalgebra.ByteUtils;
 
 /**
  * Base class for unit tests of {@link AsymmetricHybridCipher}s.

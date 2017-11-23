@@ -1,18 +1,18 @@
-package org.bouncycastle.pqc.crypto.test;
+package ru.mipt.cybersecurity.pqc.crypto.test;
 
 import java.security.SecureRandom;
 import java.util.Random;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceCipher;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceKeyGenerationParameters;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceKeyPairGenerator;
-import org.bouncycastle.pqc.crypto.mceliece.McElieceParameters;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.AsymmetricCipherKeyPair;
+import ru.mipt.cybersecurity.crypto.Digest;
+import ru.mipt.cybersecurity.crypto.InvalidCipherTextException;
+import ru.mipt.cybersecurity.crypto.digests.SHA256Digest;
+import ru.mipt.cybersecurity.crypto.params.ParametersWithRandom;
+import ru.mipt.cybersecurity.pqc.crypto.mceliece.McElieceCipher;
+import ru.mipt.cybersecurity.pqc.crypto.mceliece.McElieceKeyGenerationParameters;
+import ru.mipt.cybersecurity.pqc.crypto.mceliece.McElieceKeyPairGenerator;
+import ru.mipt.cybersecurity.pqc.crypto.mceliece.McElieceParameters;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 public class McElieceCipherTest
     extends SimpleTest

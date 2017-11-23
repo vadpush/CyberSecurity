@@ -1,4 +1,4 @@
-package org.bouncycastle.jce.provider.test;
+package ru.mipt.cybersecurity.jce.provider.test;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.KeyPair;
@@ -11,21 +11,21 @@ import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
 import javax.crypto.SealedObject;
 
-import org.bouncycastle.crypto.agreement.ECDHBasicAgreement;
-import org.bouncycastle.crypto.digests.SHA1Digest;
-import org.bouncycastle.crypto.engines.DESEngine;
-import org.bouncycastle.crypto.engines.IESEngine;
-import org.bouncycastle.crypto.generators.KDF2BytesGenerator;
-import org.bouncycastle.crypto.macs.HMac;
-import org.bouncycastle.crypto.paddings.PaddedBufferedBlockCipher;
-import org.bouncycastle.jcajce.provider.asymmetric.ec.IESCipher;
-import org.bouncycastle.jce.interfaces.ECPrivateKey;
-import org.bouncycastle.jce.interfaces.ECPublicKey;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.spec.IESParameterSpec;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
-import org.bouncycastle.util.test.SimpleTest;
+import ru.mipt.cybersecurity.crypto.agreement.ECDHBasicAgreement;
+import ru.mipt.cybersecurity.crypto.digests.SHA1Digest;
+import ru.mipt.cybersecurity.crypto.engines.DESEngine;
+import ru.mipt.cybersecurity.crypto.engines.IESEngine;
+import ru.mipt.cybersecurity.crypto.generators.KDF2BytesGenerator;
+import ru.mipt.cybersecurity.crypto.macs.HMac;
+import ru.mipt.cybersecurity.crypto.paddings.PaddedBufferedBlockCipher;
+import ru.mipt.cybersecurity.jcajce.provider.asymmetric.ec.IESCipher;
+import ru.mipt.cybersecurity.jce.interfaces.ECPrivateKey;
+import ru.mipt.cybersecurity.jce.interfaces.ECPublicKey;
+import ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider;
+import ru.mipt.cybersecurity.jce.spec.IESParameterSpec;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.encoders.Hex;
+import ru.mipt.cybersecurity.util.test.SimpleTest;
 
 /**
  * Test for ECIES - Elliptic Curve Integrated Encryption Scheme
@@ -50,8 +50,8 @@ public class ECIESTest
         byte[] encoding   = Hex.decode("303132333435363738393a3b3c3d3e3f");
         
         
-        IESCipher c1 = new org.bouncycastle.jcajce.provider.asymmetric.ec.IESCipher.ECIES();
-        IESCipher c2 = new org.bouncycastle.jcajce.provider.asymmetric.ec.IESCipher.ECIES();
+        IESCipher c1 = new ru.mipt.cybersecurity.jcajce.provider.asymmetric.ec.IESCipher.ECIES();
+        IESCipher c2 = new ru.mipt.cybersecurity.jcajce.provider.asymmetric.ec.IESCipher.ECIES();
         IESParameterSpec params = new IESParameterSpec(derivation,encoding,128);
 
         // Testing ECIES with default curve in streaming mode
@@ -105,8 +105,8 @@ public class ECIESTest
             }
         }
 
-        c1 = new org.bouncycastle.jcajce.provider.asymmetric.ec.IESCipher.ECIESwithAESCBC();
-        c2 = new org.bouncycastle.jcajce.provider.asymmetric.ec.IESCipher.ECIESwithAESCBC();
+        c1 = new ru.mipt.cybersecurity.jcajce.provider.asymmetric.ec.IESCipher.ECIESwithAESCBC();
+        c2 = new ru.mipt.cybersecurity.jcajce.provider.asymmetric.ec.IESCipher.ECIESwithAESCBC();
         params = new IESParameterSpec(derivation, encoding, 128, 128, Hex.decode("000102030405060708090a0b0c0d0e0f"));
 
         // Testing ECIES with 256-bit curve using AES-CBC

@@ -1,7 +1,7 @@
-package org.bouncycastle.crypto.prng.test;
+package ru.mipt.cybersecurity.crypto.prng.test;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.prng.EntropySourceProvider;
+import ru.mipt.cybersecurity.crypto.BlockCipher;
+import ru.mipt.cybersecurity.crypto.prng.EntropySourceProvider;
 
 public class X931TestVector
 {

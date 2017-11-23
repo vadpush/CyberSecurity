@@ -1,22 +1,22 @@
-package org.bouncycastle.pqc.crypto.test;
+package ru.mipt.cybersecurity.pqc.crypto.test;
 
 import java.io.IOException;
 import java.security.SecureRandom;
 import java.text.ParseException;
 
 import junit.framework.TestCase;
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.digests.SHA256Digest;
-import org.bouncycastle.crypto.digests.SHA512Digest;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.pqc.crypto.xmss.XMSSMT;
-import org.bouncycastle.pqc.crypto.xmss.XMSSMTKeyGenerationParameters;
-import org.bouncycastle.pqc.crypto.xmss.XMSSMTKeyPairGenerator;
-import org.bouncycastle.pqc.crypto.xmss.XMSSMTParameters;
-import org.bouncycastle.pqc.crypto.xmss.XMSSMTSigner;
-import org.bouncycastle.pqc.crypto.xmss.XMSSUtil;
-import org.bouncycastle.util.Arrays;
-import org.bouncycastle.util.encoders.Hex;
+import ru.mipt.cybersecurity.crypto.AsymmetricCipherKeyPair;
+import ru.mipt.cybersecurity.crypto.digests.SHA256Digest;
+import ru.mipt.cybersecurity.crypto.digests.SHA512Digest;
+import ru.mipt.cybersecurity.crypto.params.AsymmetricKeyParameter;
+import ru.mipt.cybersecurity.pqc.crypto.xmss.XMSSMT;
+import ru.mipt.cybersecurity.pqc.crypto.xmss.XMSSMTKeyGenerationParameters;
+import ru.mipt.cybersecurity.pqc.crypto.xmss.XMSSMTKeyPairGenerator;
+import ru.mipt.cybersecurity.pqc.crypto.xmss.XMSSMTParameters;
+import ru.mipt.cybersecurity.pqc.crypto.xmss.XMSSMTSigner;
+import ru.mipt.cybersecurity.pqc.crypto.xmss.XMSSUtil;
+import ru.mipt.cybersecurity.util.Arrays;
+import ru.mipt.cybersecurity.util.encoders.Hex;
 
 /**
  * Test cases for XMSS^MT class.
