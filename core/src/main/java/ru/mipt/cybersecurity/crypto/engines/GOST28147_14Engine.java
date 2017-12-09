@@ -20,8 +20,14 @@ import static jdk.nashorn.internal.objects.Global.print;
  */
 
 
-public class Kuznyechik     implements BlockCipher
+public class GOST28147_14Engine implements BlockCipher
 {
+    protected static final int  BLOCK_SIZE = 16;
+    private char[]               workingKey = null;
+    private boolean forEncryption;
+
+
+
     /* Нелинейное биективное преобразование множества двоичных векторов. */
     private static char kPi[] =
     {
@@ -244,7 +250,7 @@ public class Kuznyechik     implements BlockCipher
         funcL(tempI, output);
     }
 
-    public void ExpandKey(char[] masterKey, char[] keys) {
+    public void expandKey(char[] masterKey, char[] keys) {
         char[] C = new char[16];
         char[] temp1 = new char[16];
         char[] temp2 = new char[16];
@@ -255,7 +261,7 @@ public class Kuznyechik     implements BlockCipher
 
 
         //memcpy(keys + 16, masterKey + 16, 16);
-        System.arraycopy(masterKey , 16, keys, 16, 16); //TODO: 16???
+        System.arraycopy(masterKey , 16, keys, 16, 16); //TODO: 16?
 
 
         System.out.println("ExpandKey: master key: " + masterKey);
@@ -289,7 +295,7 @@ public class Kuznyechik     implements BlockCipher
         }
     }
 
-    private  void  Encrypt_14(char[] plainText, char[] chipherText, char[] keys) {
+    private  void encrypt(char[] plainText, char[] chipherText, char[] keys, int blockIndex) {
         char[] xTemp = new char[16];
         char[] yTemp = new char[16];
         int i;
@@ -297,9 +303,9 @@ public class Kuznyechik     implements BlockCipher
         //memcpy(xTemp, plainText, 16);
         System.arraycopy(plainText , 0, xTemp, 0, 16);
 
-        for(i = 0; i < 9; ++i) {
-            char[] tempKeys = new char[16];
-            System.arraycopy(keys, 16*i, tempKeys, 0, 16);
+        if(blockIndex < 9) {
+            char[] tempKeys = new char[BLOCK_SIZE];
+            System.arraycopy(keys, BLOCK_SIZE*blockIndex, tempKeys, 0, 16);
 
             funcLSX(xTemp, tempKeys, yTemp);
 
@@ -313,14 +319,14 @@ public class Kuznyechik     implements BlockCipher
 
         funcX(yTemp, tempKeys, chipherText);
 
-        System.out.println("Encrypt_14: key: " + keys);
-        System.out.println("Encrypt_14: plain text: " + plainText);
-        System.out.println("Encrypt_14: chipher text: " + chipherText);
+        System.out.println("encrypt: key: " + keys);
+        System.out.println("encrypt: plain text: " + plainText);
+        System.out.println("encrypt: chipher text: " + chipherText);
     }
 
 
 
-    private void Decrypt_14(char[] chipherText, char[] plainText, char[] keys) {
+    private void decrypt(char[] chipherText, char[] plainText, char[] keys) {
         char[] xTemp = new char[16];
         char[] yTemp = new char[16];
         int i;
@@ -340,27 +346,129 @@ public class Kuznyechik     implements BlockCipher
         funcX(yTemp, keys, plainText);
 
 
-        System.out.println("Decrypt_14: key: " + keys);
-        System.out.println("Decrypt_14: chipher text : " + chipherText);
-        System.out.println("Decrypt_14: plain text: " + plainText);
+        System.out.println("decrypt: key: " + keys);
+        System.out.println("decrypt: chipher text : " + chipherText);
+        System.out.println("decrypt: plain text: " + plainText);
     }
 
 
 
-    public void init(boolean forEncryption, CipherParameters params) throws IllegalArgumentException {
+    public void init(boolean forEncryption, CipherParameters params) {
+            if (params instanceof ParametersWithSBox)
+            {
+               /* ParametersWithSBox   param = (ParametersWithSBox)params;
 
+                //
+                // Set the S-Box
+                //
+                byte[] sBox = param.getSBox();
+                if (sBox.length != Sbox_Default.length)
+                {
+                    throw new IllegalArgumentException("invalid S-box passed to GOST28147 init");
+                }
+                this.S = Arrays.clone(sBox);
+
+                //
+                // set key if there is one
+                //
+                if (param.getParameters() != null)
+                {
+                    workingKey = generateWorkingKey(forEncryption,
+                            ((KeyParameter)param.getParameters()).getKey());
+                }*/ //TODO: Do we need it?
+            }
+            else if (params instanceof KeyParameter)
+            {
+                workingKey = generateWorkingKey(forEncryption,
+                        ((KeyParameter)params).getKey());
+            }
+            else if (params != null)
+            {
+                throw new IllegalArgumentException("invalid parameter passed to GOST28147 init - " + params.getClass().getName());
+            }
     }
+
+
+    private char[] generateWorkingKey(
+            boolean forEncryption,
+            byte[]  userKey)
+    {
+        this.forEncryption = forEncryption;
+
+        if (userKey.length != 32)
+        {
+            throw new IllegalArgumentException("Key length invalid. Key needs to be 32 byte - 256 bit!!!");
+        }
+
+        char key[] = new char[10*BLOCK_SIZE];
+        expandKey(bytesToChar(userKey), key);
+
+        return key;
+    }
+
+    private char[] bytesToChar(byte[]  in) {
+        char[] answ = new char[in.length];
+        for(int i = 0; i < in.length; i++)
+            answ[i] = (char)(in[i] & 0xFF);
+
+        return answ;
+    }
+
 
     public String getAlgorithmName() {
         return null;
     }
 
     public int getBlockSize() {
-        return 0;
+        return BLOCK_SIZE;
     }
 
     public int processBlock(byte[] in, int inOff, byte[] out, int outOff) throws DataLengthException, IllegalStateException {
-        return 0;
+        if (workingKey == null)
+        {
+            throw new IllegalStateException("GOST28147 engine not initialised");
+        }
+
+        if ((inOff + BLOCK_SIZE) > in.length)
+        {
+            throw new DataLengthException("input buffer too short");
+        }
+
+        if ((outOff + BLOCK_SIZE) > out.length)
+        {
+            throw new OutputLengthException("output buffer too short");
+        }
+
+        GOST28147_14Func(workingKey, in, inOff/BLOCK_SIZE, out, outOff);
+
+        return BLOCK_SIZE;
+    }
+
+    private void GOST28147_14Func(
+            char[]   workingKey,
+            byte[]  in,
+            int     blockIndex,
+            byte[]  out,
+            int     outOff)
+    {
+
+        char[] charIn = bytesToChar(in);
+        char[] charOut = new char[BLOCK_SIZE];
+
+
+        if (this.forEncryption)
+        {
+            encrypt(charIn, charOut, workingKey);
+        }
+        else //decrypt
+        {
+
+        }
+
+
+
+        intTobytes(N1, out, outOff);
+        intTobytes(N2, out, outOff + 4);
     }
 
     public void reset() {
