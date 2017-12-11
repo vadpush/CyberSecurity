@@ -45,7 +45,7 @@ import ru.mipt.cybersecurity.util.Selector;
  *                         -- for example, an executable
  *          }
  * </pre>
- * @deprecated use org.bouncycastle.cert.AttributeCertificateHolder
+ * @deprecated use ru.mipt.cybersecurity.cert.AttributeCertificateHolder
  */
 public class AttributeCertificateHolder
     implements CertSelector, Selector

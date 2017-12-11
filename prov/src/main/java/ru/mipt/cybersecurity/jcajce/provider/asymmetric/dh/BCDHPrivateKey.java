@@ -19,6 +19,7 @@ import ru.mipt.cybersecurity.asn1.pkcs.DHParameter;
 import ru.mipt.cybersecurity.asn1.pkcs.PKCSObjectIdentifiers;
 import ru.mipt.cybersecurity.asn1.pkcs.PrivateKeyInfo;
 import ru.mipt.cybersecurity.asn1.x509.AlgorithmIdentifier;
+import ru.mipt.cybersecurity.asn1.x9.DHDomainParameters;
 import ru.mipt.cybersecurity.asn1.x9.DomainParameters;
 import ru.mipt.cybersecurity.asn1.x9.X9ObjectIdentifiers;
 import ru.mipt.cybersecurity.crypto.params.DHPrivateKeyParameters;

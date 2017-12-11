@@ -11,11 +11,11 @@ import ru.mipt.cybersecurity.asn1.ASN1ObjectIdentifier;
 public interface PKCS12BagAttributeCarrier
 {
     void setBagAttribute(
-        ASN1ObjectIdentifier oid,
-        ASN1Encodable attribute);
+            ASN1ObjectIdentifier oid,
+            ASN1Encodable attribute);
 
     ASN1Encodable getBagAttribute(
-        ASN1ObjectIdentifier oid);
+            ASN1ObjectIdentifier oid);
 
     Enumeration getBagAttributeKeys();
 }

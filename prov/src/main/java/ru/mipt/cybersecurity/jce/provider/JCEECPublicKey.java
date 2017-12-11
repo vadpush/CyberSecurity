@@ -38,6 +38,8 @@ import ru.mipt.cybersecurity.jce.interfaces.ECPointEncoder;
 import ru.mipt.cybersecurity.jce.spec.ECNamedCurveParameterSpec;
 import ru.mipt.cybersecurity.jce.spec.ECNamedCurveSpec;
 import ru.mipt.cybersecurity.math.ec.ECCurve;
+import ru.mipt.cybersecurity.math.ec.custom.sec.SecP256K1Point;
+import ru.mipt.cybersecurity.math.ec.custom.sec.SecP256R1Point;
 import ru.mipt.cybersecurity.util.Strings;
 
 public class JCEECPublicKey

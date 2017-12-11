@@ -21,7 +21,7 @@ import ru.mipt.cybersecurity.util.Selector;
 
 /**
  * Carrying class for an attribute certificate issuer.
- * @deprecated use org.bouncycastle.cert.AttributeCertificateIssuer
+ * @deprecated use ru.mipt.cybersecurity.cert.AttributeCertificateIssuer
  */
 public class AttributeCertificateIssuer
     implements CertSelector, Selector

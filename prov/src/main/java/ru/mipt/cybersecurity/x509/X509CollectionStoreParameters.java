@@ -6,7 +6,7 @@ import java.util.Collection;
 /**
  * This class contains a collection for collection based <code>X509Store</code>s.
  * 
- * @see ru.mipt.cybersecurity.x509.X509Store
+ * @see X509Store
  * 
  */
 public class X509CollectionStoreParameters

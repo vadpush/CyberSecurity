@@ -113,7 +113,7 @@ public class EC
             registerOidAlgorithmParameters(provider, SECObjectIdentifiers.dhSinglePass_stdDH_sha512kdf_scheme, "EC");
             registerOidAlgorithmParameters(provider, SECObjectIdentifiers.dhSinglePass_cofactorDH_sha512kdf_scheme, "EC");
 
-            if (!Properties.isOverrideSet("org.bouncycastle.ec.disable_mqv"))
+            if (!Properties.isOverrideSet("ru.mipt.cybersecurity.ec.disable_mqv"))
             {
                 provider.addAlgorithm("KeyAgreement.ECMQV", PREFIX + "KeyAgreementSpi$MQV");
 

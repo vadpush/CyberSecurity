@@ -15,7 +15,7 @@ import java.util.Set;
 /**
  * This class contains extended parameters for PKIX certification path builders.
  * 
- * @see java.security.cert.PKIXBuilderParameters
+ * @see PKIXBuilderParameters
  * @see ru.mipt.cybersecurity.jce.provider.PKIXCertPathBuilderSpi
  * @deprecated use PKIXExtendedBuilderParameters
  */
@@ -138,7 +138,7 @@ public class ExtendedPKIXBuilderParameters extends ExtendedPKIXParameters
      * <code>PKIXBuilderParameters</code>.
      * 
      * @param params Parameters to set.
-     * @see ru.mipt.cybersecurity.x509.ExtendedPKIXParameters#setParams(java.security.cert.PKIXParameters)
+     * @see ExtendedPKIXParameters#setParams(PKIXParameters)
      */
     protected void setParams(PKIXParameters params)
     {

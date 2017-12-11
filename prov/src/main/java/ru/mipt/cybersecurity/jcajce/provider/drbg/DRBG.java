@@ -128,7 +128,7 @@ public class DRBG
 
     private static EntropySourceProvider createEntropySource()
     {
-        final String sourceClass = System.getProperty("org.bouncycastle.drbg.entropysource");
+        final String sourceClass = System.getProperty("ru.mipt.cybersecurity.drbg.entropysource");
 
         return AccessController.doPrivileged(new PrivilegedAction<EntropySourceProvider>()
         {
@@ -150,7 +150,7 @@ public class DRBG
 
     private static SecureRandom createBaseRandom(boolean isPredictionResistant)
     {
-        if (System.getProperty("org.bouncycastle.drbg.entropysource") != null)
+        if (System.getProperty("ru.mipt.cybersecurity.drbg.entropysource") != null)
         {
             EntropySourceProvider entropyProvider = createEntropySource();
 

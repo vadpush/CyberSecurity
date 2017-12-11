@@ -11,6 +11,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
+import ru.mipt.cybersecurity.jcajce.PKIXCRLStore;
 import ru.mipt.cybersecurity.jcajce.PKIXCRLStoreSelector;
 import ru.mipt.cybersecurity.util.Store;
 import ru.mipt.cybersecurity.util.StoreException;
@@ -71,7 +72,7 @@ class PKIXCRLUtil
      *            {@link Store} objects.
      *            These are used to search for CRLs
      *
-     * @return a Collection of all found {@link java.security.cert.X509CRL X509CRL} objects. May be
+     * @return a Collection of all found {@link X509CRL X509CRL} objects. May be
      *         empty but never <code>null</code>.
      */
     private final Collection findCRLs(PKIXCRLStoreSelector crlSelect,

@@ -17,7 +17,7 @@ import ru.mipt.cybersecurity.x509.extension.X509ExtensionUtil;
  * lists.
  * 
  * @see ru.mipt.cybersecurity.util.Selector
- * @see ru.mipt.cybersecurity.x509.X509Store
+ * @see X509Store
  * @see ru.mipt.cybersecurity.jce.provider.X509StoreCRLCollection
  */
 public class X509CRLStoreSelector

@@ -8,9 +8,16 @@ import java.util.Enumeration;
 import java.util.Map;
 
 import ru.mipt.cybersecurity.asn1.ASN1ObjectIdentifier;
+import ru.mipt.cybersecurity.asn1.anssi.ANSSINamedCurves;
+import ru.mipt.cybersecurity.asn1.cryptopro.ECGOST3410NamedCurves;
+import ru.mipt.cybersecurity.asn1.gm.GMNamedCurves;
+import ru.mipt.cybersecurity.asn1.nist.NISTNamedCurves;
 import ru.mipt.cybersecurity.asn1.pkcs.PrivateKeyInfo;
+import ru.mipt.cybersecurity.asn1.sec.SECNamedCurves;
+import ru.mipt.cybersecurity.asn1.teletrust.TeleTrusTNamedCurves;
 import ru.mipt.cybersecurity.asn1.x509.SubjectPublicKeyInfo;
 import ru.mipt.cybersecurity.asn1.x9.ECNamedCurveTable;
+import ru.mipt.cybersecurity.asn1.x9.X962NamedCurves;
 import ru.mipt.cybersecurity.asn1.x9.X962Parameters;
 import ru.mipt.cybersecurity.asn1.x9.X9ECParameters;
 import ru.mipt.cybersecurity.crypto.ec.CustomNamedCurves;
@@ -109,7 +116,7 @@ public class ECUtil
 
     public static ECDomainParameters getDomainParameters(
         ProviderConfiguration configuration,
-        ru.mipt.cybersecurity.jce.spec.ECParameterSpec params)
+        ECParameterSpec params)
     {
         ECDomainParameters domainParameters;
 
@@ -122,7 +129,7 @@ public class ECUtil
         }
         else if (params == null)
         {
-            ru.mipt.cybersecurity.jce.spec.ECParameterSpec iSpec = configuration.getEcImplicitlyCa();
+            ECParameterSpec iSpec = configuration.getEcImplicitlyCa();
 
             domainParameters = new ECDomainParameters(iSpec.getCurve(), iSpec.getG(), iSpec.getN(), iSpec.getH(), iSpec.getSeed());
         }
@@ -154,7 +161,7 @@ public class ECUtil
         }
         else if (params.isImplicitlyCA())
         {
-            ru.mipt.cybersecurity.jce.spec.ECParameterSpec iSpec = configuration.getEcImplicitlyCa();
+            ECParameterSpec iSpec = configuration.getEcImplicitlyCa();
 
             domainParameters = new ECDomainParameters(iSpec.getCurve(), iSpec.getG(), iSpec.getN(), iSpec.getH(), iSpec.getSeed());
         }
@@ -368,7 +375,7 @@ public class ECUtil
         return ECNamedCurveTable.getName(oid);
     }
 
-    public static String privateKeyToString(String algorithm, BigInteger d, ru.mipt.cybersecurity.jce.spec.ECParameterSpec spec)
+    public static String privateKeyToString(String algorithm, BigInteger d, ECParameterSpec spec)
     {
         StringBuffer buf = new StringBuffer();
         String nl = Strings.lineSeparator();
@@ -383,12 +390,12 @@ public class ECUtil
         return buf.toString();
     }
 
-    private static ru.mipt.cybersecurity.math.ec.ECPoint calculateQ(BigInteger d, ru.mipt.cybersecurity.jce.spec.ECParameterSpec spec)
+    private static ru.mipt.cybersecurity.math.ec.ECPoint calculateQ(BigInteger d, ECParameterSpec spec)
     {
         return spec.getG().multiply(d).normalize();
     }
 
-    public static String publicKeyToString(String algorithm, ru.mipt.cybersecurity.math.ec.ECPoint q, ru.mipt.cybersecurity.jce.spec.ECParameterSpec spec)
+    public static String publicKeyToString(String algorithm, ru.mipt.cybersecurity.math.ec.ECPoint q, ECParameterSpec spec)
     {
         StringBuffer buf = new StringBuffer();
         String nl = Strings.lineSeparator();
@@ -401,7 +408,7 @@ public class ECUtil
         return buf.toString();
     }
 
-    public static String generateKeyFingerprint(ECPoint publicPoint, ru.mipt.cybersecurity.jce.spec.ECParameterSpec spec)
+    public static String generateKeyFingerprint(ECPoint publicPoint, ECParameterSpec spec)
     {
         ECCurve curve = spec.getCurve();
         ECPoint g = spec.getG();

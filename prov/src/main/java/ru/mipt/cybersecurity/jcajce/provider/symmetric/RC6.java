@@ -24,6 +24,7 @@ import ru.mipt.cybersecurity.jcajce.provider.symmetric.util.BaseKeyGenerator;
 import ru.mipt.cybersecurity.jcajce.provider.symmetric.util.BaseMac;
 import ru.mipt.cybersecurity.jcajce.provider.symmetric.util.BlockCipherProvider;
 import ru.mipt.cybersecurity.jcajce.provider.symmetric.util.IvAlgorithmParameters;
+import ru.mipt.cybersecurity.jce.provider.BouncyCastleProvider;
 
 public final class RC6
 {

@@ -18,7 +18,7 @@ import ru.mipt.cybersecurity.asn1.x509.X509Name;
  * Objects of this type can be created from certificates and CRLs using the
  * PrincipalUtil class.
  * </p>
- * @see ru.mipt.cybersecurity.jce.PrincipalUtil
+ * @see PrincipalUtil
  * @deprecated use the X500Name class.
  */
 public class X509Principal

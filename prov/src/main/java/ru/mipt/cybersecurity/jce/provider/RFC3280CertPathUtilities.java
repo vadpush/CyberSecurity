@@ -59,6 +59,7 @@ import ru.mipt.cybersecurity.jcajce.PKIXCertStoreSelector;
 import ru.mipt.cybersecurity.jcajce.PKIXExtendedBuilderParameters;
 import ru.mipt.cybersecurity.jcajce.PKIXExtendedParameters;
 import ru.mipt.cybersecurity.jcajce.util.JcaJceHelper;
+import ru.mipt.cybersecurity.jce.PrincipalUtil;
 import ru.mipt.cybersecurity.jce.exception.ExtCertPathValidatorException;
 import ru.mipt.cybersecurity.util.Arrays;
 

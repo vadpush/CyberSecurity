@@ -34,7 +34,7 @@ import ru.mipt.cybersecurity.util.Arrays;
 
 /**
  * An implementation of a version 2 X.509 Attribute Certificate.
- * @deprecated use org.bouncycastle.cert.X509AttributeCertificateHolder
+ * @deprecated use ru.mipt.cybersecurity.cert.X509AttributeCertificateHolder
  */
 public class X509V2AttributeCertificate
     implements X509AttributeCertificate

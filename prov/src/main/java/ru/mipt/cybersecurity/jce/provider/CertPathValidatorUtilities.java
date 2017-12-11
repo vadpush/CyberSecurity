@@ -75,6 +75,7 @@ import ru.mipt.cybersecurity.util.Selector;
 import ru.mipt.cybersecurity.util.Store;
 import ru.mipt.cybersecurity.util.StoreException;
 import ru.mipt.cybersecurity.x509.X509AttributeCertificate;
+import ru.mipt.cybersecurity.x509.extension.X509ExtensionUtil;
 
 class CertPathValidatorUtilities
 {

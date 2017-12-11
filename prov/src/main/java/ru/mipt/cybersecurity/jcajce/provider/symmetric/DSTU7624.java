@@ -355,7 +355,7 @@ public class DSTU7624
     }
 
     public static class KeyGen128
-        extends DSTU7624.KeyGen
+        extends KeyGen
     {
         public KeyGen128()
         {
@@ -364,7 +364,7 @@ public class DSTU7624
     }
 
     public static class KeyGen256
-        extends DSTU7624.KeyGen
+        extends KeyGen
     {
         public KeyGen256()
         {
@@ -373,7 +373,7 @@ public class DSTU7624
     }
 
     public static class KeyGen512
-        extends DSTU7624.KeyGen
+        extends KeyGen
     {
         public KeyGen512()
         {

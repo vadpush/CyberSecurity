@@ -6,11 +6,11 @@ import ru.mipt.cybersecurity.util.Selector;
  * This class is an <code>Selector</code> like implementation to select
  * certificates pairs, which are e.g. used for cross certificates. The set of
  * criteria is given from two
- * {@link ru.mipt.cybersecurity.x509.X509CertStoreSelector}s which must be both
+ * {@link X509CertStoreSelector}s which must be both
  * matched.
  * 
- * @see ru.mipt.cybersecurity.x509.X509AttributeCertificate
- * @see ru.mipt.cybersecurity.x509.X509Store
+ * @see X509AttributeCertificate
+ * @see X509Store
  */
 public class X509CertPairStoreSelector implements Selector
 {
@@ -67,7 +67,7 @@ public class X509CertPairStoreSelector implements Selector
      * Returns a clone of this selector.
      * 
      * @return A clone of this selector.
-     * @see java.lang.Object#clone()
+     * @see Object#clone()
      */
     public Object clone()
     {

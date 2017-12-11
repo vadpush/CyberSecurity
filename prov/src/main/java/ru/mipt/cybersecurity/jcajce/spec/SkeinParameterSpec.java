@@ -21,15 +21,15 @@ import ru.mipt.cybersecurity.util.Integers;
  * <p>
  * Parameterised Skein can be used for:
  * <ul>
- * <li>MAC generation, by providing a {@link ru.mipt.cybersecurity.jcajce.spec.SkeinParameterSpec.Builder#setKey(byte[]) key}.</li>
- * <li>Randomised hashing, by providing a {@link ru.mipt.cybersecurity.jcajce.spec.SkeinParameterSpec.Builder#setNonce(byte[]) nonce}.</li>
+ * <li>MAC generation, by providing a {@link Builder#setKey(byte[]) key}.</li>
+ * <li>Randomised hashing, by providing a {@link Builder#setNonce(byte[]) nonce}.</li>
  * <li>A hash function for digital signatures, associating a
- * {@link ru.mipt.cybersecurity.jcajce.spec.SkeinParameterSpec.Builder#setPublicKey(byte[]) public key} with the message digest.</li>
+ * {@link Builder#setPublicKey(byte[]) public key} with the message digest.</li>
  * <li>A key derivation function, by providing a
- * {@link ru.mipt.cybersecurity.jcajce.spec.SkeinParameterSpec.Builder#setKeyIdentifier(byte[]) key identifier}.</li>
+ * {@link Builder#setKeyIdentifier(byte[]) key identifier}.</li>
  * <li>Personalised hashing, by providing a
- * {@link ru.mipt.cybersecurity.jcajce.spec.SkeinParameterSpec.Builder#setPersonalisation(java.util.Date, String, String) recommended format} or
- * {@link ru.mipt.cybersecurity.jcajce.spec.SkeinParameterSpec.Builder#setPersonalisation(byte[]) arbitrary} personalisation string.</li>
+ * {@link Builder#setPersonalisation(Date, String, String) recommended format} or
+ * {@link Builder#setPersonalisation(byte[]) arbitrary} personalisation string.</li>
  * </ul>
  *
  * @see ru.mipt.cybersecurity.crypto.digests.SkeinEngine
@@ -146,7 +146,7 @@ public class SkeinParameterSpec
     }
 
     /**
-     * A builder for {@link ru.mipt.cybersecurity.jcajce.spec.SkeinParameterSpec}.
+     * A builder for {@link SkeinParameterSpec}.
      */
     public static class Builder
     {
@@ -169,10 +169,10 @@ public class SkeinParameterSpec
         /**
          * Sets a parameters to apply to the Skein hash function.<br>
          * Parameter types must be in the range 0,5..62, and cannot use the value {@value
-         * ru.mipt.cybersecurity.jcajce.spec.SkeinParameterSpec#PARAM_TYPE_MESSAGE} (reserved for message body).
+         * SkeinParameterSpec#PARAM_TYPE_MESSAGE} (reserved for message body).
          * <p>
-         * Parameters with type &lt; {@value ru.mipt.cybersecurity.jcajce.spec.SkeinParameterSpec#PARAM_TYPE_MESSAGE} are processed before
-         * the message content, parameters with type &gt; {@value ru.mipt.cybersecurity.jcajce.spec.SkeinParameterSpec#PARAM_TYPE_MESSAGE}
+         * Parameters with type &lt; {@value SkeinParameterSpec#PARAM_TYPE_MESSAGE} are processed before
+         * the message content, parameters with type &gt; {@value SkeinParameterSpec#PARAM_TYPE_MESSAGE}
          * are processed after the message and prior to output.
          * </p>
          *
@@ -201,7 +201,7 @@ public class SkeinParameterSpec
         }
 
         /**
-         * Sets the {@link ru.mipt.cybersecurity.jcajce.spec.SkeinParameterSpec#PARAM_TYPE_KEY} parameter.
+         * Sets the {@link SkeinParameterSpec#PARAM_TYPE_KEY} parameter.
          */
         public Builder setKey(byte[] key)
         {
@@ -209,7 +209,7 @@ public class SkeinParameterSpec
         }
 
         /**
-         * Sets the {@link ru.mipt.cybersecurity.jcajce.spec.SkeinParameterSpec#PARAM_TYPE_PERSONALISATION} parameter.
+         * Sets the {@link SkeinParameterSpec#PARAM_TYPE_PERSONALISATION} parameter.
          */
         public Builder setPersonalisation(byte[] personalisation)
         {
@@ -286,7 +286,7 @@ public class SkeinParameterSpec
         }
 
         /**
-         * Sets the {@link ru.mipt.cybersecurity.jcajce.spec.SkeinParameterSpec#PARAM_TYPE_KEY_IDENTIFIER} parameter.
+         * Sets the {@link SkeinParameterSpec#PARAM_TYPE_KEY_IDENTIFIER} parameter.
          *
          * @return the current builder instance.
          */
@@ -296,7 +296,7 @@ public class SkeinParameterSpec
         }
 
         /**
-         * Sets the {@link ru.mipt.cybersecurity.jcajce.spec.SkeinParameterSpec#PARAM_TYPE_KEY_IDENTIFIER} parameter.
+         * Sets the {@link SkeinParameterSpec#PARAM_TYPE_KEY_IDENTIFIER} parameter.
          *
          * @return the current builder instance.
          */
@@ -306,7 +306,7 @@ public class SkeinParameterSpec
         }
 
         /**
-         * Sets the {@link ru.mipt.cybersecurity.jcajce.spec.SkeinParameterSpec#PARAM_TYPE_NONCE} parameter.
+         * Sets the {@link SkeinParameterSpec#PARAM_TYPE_NONCE} parameter.
          *
          * @return the current builder instance.
          */
@@ -316,7 +316,7 @@ public class SkeinParameterSpec
         }
 
         /**
-         * Constructs a new {@link ru.mipt.cybersecurity.jcajce.spec.SkeinParameterSpec} instance with the parameters provided to this
+         * Constructs a new {@link SkeinParameterSpec} instance with the parameters provided to this
          * builder.
          */
         public SkeinParameterSpec build()

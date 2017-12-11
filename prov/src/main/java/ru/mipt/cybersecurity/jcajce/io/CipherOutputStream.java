@@ -45,7 +45,7 @@ public class CipherOutputStream
      * Writes the specified byte to this output stream.
      *
      * @param b the <code>byte</code>.
-     * @throws java.io.IOException if an I/O error occurs.
+     * @throws IOException if an I/O error occurs.
      */
     public void write(int b)
         throws IOException
@@ -61,7 +61,7 @@ public class CipherOutputStream
      * @param b   the data.
      * @param off the start offset in the data.
      * @param len the number of bytes to write.
-     * @throws java.io.IOException if an I/O error occurs.
+     * @throws IOException if an I/O error occurs.
      */
     public void write(byte[] b, int off, int len)
         throws IOException
@@ -82,7 +82,7 @@ public class CipherOutputStream
      * of bytes written using one of the <code>write</code> methods is less than the cipher's block
      * size, no bytes will be written out.
      * </p>
-     * @throws java.io.IOException if an I/O error occurs.
+     * @throws IOException if an I/O error occurs.
      */
     public void flush()
         throws IOException
@@ -100,7 +100,7 @@ public class CipherOutputStream
      * This method resets the encapsulated cipher object to its initial state and calls the
      * <code>close</code> method of the underlying output stream.
      * </p>
-     * @throws java.io.IOException if an I/O error occurs.
+     * @throws IOException if an I/O error occurs.
      * @throws InvalidCipherTextIOException if the data written to this stream was invalid
      * ciphertext (e.g. the cipher is an AEAD cipher and the ciphertext tag check
      * fails).

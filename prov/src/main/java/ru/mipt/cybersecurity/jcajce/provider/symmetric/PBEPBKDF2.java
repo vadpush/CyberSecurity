@@ -194,7 +194,7 @@ public class PBEPBKDF2
                     int digest = getDigestCode(spec.getPrf().getAlgorithm());
                     int keySize = pbeSpec.getKeyLength();
                     int ivSize = -1;    // JDK 1,2 and earlier does not understand simplified version.
-                    CipherParameters param = PBE.Util.makePBEMacParameters(pbeSpec, scheme, digest, keySize);
+                    CipherParameters param = Util.makePBEMacParameters(pbeSpec, scheme, digest, keySize);
 
                     return new BCPBEKey(this.algName, this.algOid, scheme, digest, keySize, ivSize, pbeSpec, param);
                 }
@@ -203,7 +203,7 @@ public class PBEPBKDF2
                     int digest = defaultDigest;
                     int keySize = pbeSpec.getKeyLength();
                     int ivSize = -1;    // JDK 1,2 and earlier does not understand simplified version.
-                    CipherParameters param = PBE.Util.makePBEMacParameters(pbeSpec, scheme, digest, keySize);
+                    CipherParameters param = Util.makePBEMacParameters(pbeSpec, scheme, digest, keySize);
 
                     return new BCPBEKey(this.algName, this.algOid, scheme, digest, keySize, ivSize, pbeSpec, param);
                 }

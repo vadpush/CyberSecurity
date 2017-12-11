@@ -37,7 +37,7 @@ import ru.mipt.cybersecurity.jce.X509Principal;
 
 /**
  * class to produce an X.509 Version 1 certificate.
- * @deprecated use org.bouncycastle.cert.X509v1CertificateBuilder.
+ * @deprecated use ru.mipt.cybersecurity.cert.X509v1CertificateBuilder.
  */
 public class X509V1CertificateGenerator
 {
