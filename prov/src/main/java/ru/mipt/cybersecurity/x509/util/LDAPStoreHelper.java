@@ -48,7 +48,7 @@ import ru.mipt.cybersecurity.x509.X509CertificatePair;
  * attribute certificates and cross certificates from a LDAP location.
  * <p>
  * At first a search is performed in the ldap*AttributeNames of the
- * {@link ru.mipt.cybersecurity.jce.X509LDAPCertStoreParameters} with the given
+ * {@link X509LDAPCertStoreParameters} with the given
  * information of the subject (for all kind of certificates) or issuer (for
  * CRLs), respectively, if a {@link ru.mipt.cybersecurity.x509.X509CertStoreSelector} or
  * {@link ru.mipt.cybersecurity.x509.X509AttributeCertificate} is given with that

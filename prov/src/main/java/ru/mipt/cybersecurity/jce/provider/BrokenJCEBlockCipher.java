@@ -232,7 +232,7 @@ public class BrokenJCEBlockCipher
         //
         if (key instanceof BCPBEKey)
         {
-            param = BrokenPBE.Util.makePBEParameters((BCPBEKey)key, params, pbeType, pbeHash,
+            param = Util.makePBEParameters((BCPBEKey)key, params, pbeType, pbeHash,
                         cipher.getUnderlyingCipher().getAlgorithmName(), pbeKeySize, pbeIvSize);
 
             if (pbeIvSize != 0)
@@ -469,7 +469,7 @@ public class BrokenJCEBlockCipher
 
     protected byte[] engineWrap(
         Key     key) 
-    throws IllegalBlockSizeException, java.security.InvalidKeyException
+    throws IllegalBlockSizeException, InvalidKeyException
     {
         byte[] encoded = key.getEncoded();
         if (encoded == null)

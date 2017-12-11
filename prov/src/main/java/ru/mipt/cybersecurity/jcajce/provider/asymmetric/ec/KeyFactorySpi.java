@@ -88,33 +88,33 @@ public class KeyFactorySpi
                return new java.security.spec.ECPrivateKeySpec(k.getS(), EC5Util.convertSpec(EC5Util.convertCurve(implicitSpec.getCurve(), implicitSpec.getSeed()), implicitSpec)); 
            }
        }
-       else if (spec.isAssignableFrom(ru.mipt.cybersecurity.jce.spec.ECPublicKeySpec.class) && key instanceof ECPublicKey)
+       else if (spec.isAssignableFrom(ECPublicKeySpec.class) && key instanceof ECPublicKey)
        {
            ECPublicKey k = (ECPublicKey)key;
            if (k.getParams() != null)
            {
-               return new ru.mipt.cybersecurity.jce.spec.ECPublicKeySpec(EC5Util.convertPoint(k.getParams(), k.getW(), false), EC5Util.convertSpec(k.getParams(), false));
+               return new ECPublicKeySpec(EC5Util.convertPoint(k.getParams(), k.getW(), false), EC5Util.convertSpec(k.getParams(), false));
            }
            else
            {
                ECParameterSpec implicitSpec = BouncyCastleProvider.CONFIGURATION.getEcImplicitlyCa();
 
-               return new ru.mipt.cybersecurity.jce.spec.ECPublicKeySpec(EC5Util.convertPoint(k.getParams(), k.getW(), false), implicitSpec);
+               return new ECPublicKeySpec(EC5Util.convertPoint(k.getParams(), k.getW(), false), implicitSpec);
            }
        }
-       else if (spec.isAssignableFrom(ru.mipt.cybersecurity.jce.spec.ECPrivateKeySpec.class) && key instanceof ECPrivateKey)
+       else if (spec.isAssignableFrom(ECPrivateKeySpec.class) && key instanceof ECPrivateKey)
        {
            ECPrivateKey k = (ECPrivateKey)key;
 
            if (k.getParams() != null)
            {
-               return new ru.mipt.cybersecurity.jce.spec.ECPrivateKeySpec(k.getS(), EC5Util.convertSpec(k.getParams(), false));
+               return new ECPrivateKeySpec(k.getS(), EC5Util.convertSpec(k.getParams(), false));
            }
            else
            {
                ECParameterSpec implicitSpec = BouncyCastleProvider.CONFIGURATION.getEcImplicitlyCa();
 
-               return new ru.mipt.cybersecurity.jce.spec.ECPrivateKeySpec(k.getS(), implicitSpec);
+               return new ECPrivateKeySpec(k.getS(), implicitSpec);
            }
        }
 

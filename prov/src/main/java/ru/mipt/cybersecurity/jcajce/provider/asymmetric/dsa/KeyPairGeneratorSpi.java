@@ -106,7 +106,7 @@ public class KeyPairGeneratorSpi
                         if (strength == 1024)
                         {
                             pGen = new DSAParametersGenerator();
-                            if (Properties.isOverrideSet("org.bouncycastle.dsa.FIPS186-2for1024bits"))
+                            if (Properties.isOverrideSet("ru.mipt.cybersecurity.dsa.FIPS186-2for1024bits"))
                             {
                                 pGen.init(strength, certainty, random);
                             }

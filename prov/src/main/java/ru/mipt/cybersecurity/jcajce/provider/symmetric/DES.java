@@ -334,11 +334,11 @@ public final class DES
 
                 if (forCipher)
                 {
-                    param = PBE.Util.makePBEParameters(pbeSpec, scheme, digest, keySize, ivSize);
+                    param = Util.makePBEParameters(pbeSpec, scheme, digest, keySize, ivSize);
                 }
                 else
                 {
-                    param = PBE.Util.makePBEMacParameters(pbeSpec, scheme, digest, keySize);
+                    param = Util.makePBEMacParameters(pbeSpec, scheme, digest, keySize);
                 }
 
                 KeyParameter kParam;

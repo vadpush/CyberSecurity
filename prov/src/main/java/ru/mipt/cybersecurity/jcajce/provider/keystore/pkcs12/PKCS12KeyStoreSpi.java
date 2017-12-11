@@ -113,7 +113,7 @@ public class PKCS12KeyStoreSpi
     extends KeyStoreSpi
     implements PKCSObjectIdentifiers, X509ObjectIdentifiers, BCKeyStore
 {
-    static final String PKCS12_MAX_IT_COUNT_PROPERTY = "org.bouncycastle.pkcs12.max_it_count";
+    static final String PKCS12_MAX_IT_COUNT_PROPERTY = "ru.mipt.cybersecurity.pkcs12.max_it_count";
 
     private final JcaJceHelper helper = new BCJcaJceHelper();
 

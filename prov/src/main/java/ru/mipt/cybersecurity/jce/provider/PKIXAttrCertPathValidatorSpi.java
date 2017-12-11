@@ -1,6 +1,8 @@
 package ru.mipt.cybersecurity.jce.provider;
 
 import java.security.InvalidAlgorithmParameterException;
+import java.security.Provider;
+import java.security.Security;
 import java.security.cert.CertPath;
 import java.security.cert.CertPathParameters;
 import java.security.cert.CertPathValidatorException;
@@ -48,16 +50,16 @@ public class PKIXAttrCertPathValidatorSpi
      * necessary to correctly validate this attribute certificate.
      * <p>
      * The attribute certificate issuer must be added to the trusted attribute
-     * issuers with {@link ru.mipt.cybersecurity.x509.ExtendedPKIXParameters#setTrustedACIssuers(java.util.Set)}.
+     * issuers with {@link ru.mipt.cybersecurity.x509.ExtendedPKIXParameters#setTrustedACIssuers(Set)}.
      * 
      * @param certPath The certificate path which belongs to the attribute
      *            certificate issuer public key certificate.
      * @param params The PKIX parameters.
      * @return A <code>PKIXCertPathValidatorResult</code> of the result of
      *         validating the <code>certPath</code>.
-     * @throws java.security.InvalidAlgorithmParameterException if <code>params</code> is
+     * @throws InvalidAlgorithmParameterException if <code>params</code> is
      *             inappropriate for this validator.
-     * @throws java.security.cert.CertPathValidatorException if the verification fails.
+     * @throws CertPathValidatorException if the verification fails.
      */
     public CertPathValidatorResult engineValidate(CertPath certPath,
         CertPathParameters params) throws CertPathValidatorException,

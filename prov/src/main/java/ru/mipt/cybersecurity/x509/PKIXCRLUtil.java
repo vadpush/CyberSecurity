@@ -93,10 +93,10 @@ class PKIXCRLUtil
      * @param crlSelect a {@link X509CRLStoreSelector} object that will be used
      *            to select the CRLs
      * @param crlStores a List containing only
-     *            {@link ru.mipt.cybersecurity.x509.X509Store  X509Store} objects.
+     *            {@link X509Store  X509Store} objects.
      *            These are used to search for CRLs
      *
-     * @return a Collection of all found {@link java.security.cert.X509CRL X509CRL} objects. May be
+     * @return a Collection of all found {@link X509CRL X509CRL} objects. May be
      *         empty but never <code>null</code>.
      */
     private final Collection findCRLs(X509CRLStoreSelector crlSelect,

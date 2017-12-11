@@ -11,9 +11,9 @@ import ru.mipt.cybersecurity.util.Selector;
  * This class is a Selector implementation for X.509 certificates.
  * 
  * @see ru.mipt.cybersecurity.util.Selector
- * @see ru.mipt.cybersecurity.x509.X509Store
+ * @see X509Store
  * @see ru.mipt.cybersecurity.jce.provider.X509StoreCertCollection
- * @deprecated use the classes under org.bouncycastle.cert.selector
+ * @deprecated use the classes under ru.mipt.cybersecurity.cert.selector
  */
 public class X509CertStoreSelector
     extends X509CertSelector

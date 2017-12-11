@@ -67,7 +67,7 @@ import ru.mipt.cybersecurity.util.Strings;
 import ru.mipt.cybersecurity.util.encoders.Hex;
 
 /**
- * @deprecated Do not use this class directly - either use org.bouncycastle.cert (bcpkix) or CertificateFactory.
+ * @deprecated Do not use this class directly - either use ru.mipt.cybersecurity.cert (bcpkix) or CertificateFactory.
  */
 public class X509CertificateObject
     extends X509Certificate

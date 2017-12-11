@@ -8,7 +8,7 @@ import ru.mipt.cybersecurity.pqc.jcajce.provider.rainbow.RainbowKeyFactorySpi;
 
 public class Rainbow
 {
-    private static final String PREFIX = "ru.mipt.cybersecurity.pqc.jcajce.provider" + ".rainbow.";
+    private static final String PREFIX = "ru.mipt.cybersecurity.jcajce.provider" + ".rainbow.";
 
     public static class Mappings
         extends AsymmetricAlgorithmProvider

@@ -8,7 +8,7 @@ import ru.mipt.cybersecurity.pqc.jcajce.provider.newhope.NHKeyFactorySpi;
 
 public class NH
 {
-    private static final String PREFIX = "ru.mipt.cybersecurity.pqc.jcajce.provider" + ".newhope.";
+    private static final String PREFIX = "ru.mipt.cybersecurity.jcajce.provider" + ".newhope.";
 
     public static class Mappings
         extends AsymmetricAlgorithmProvider

@@ -8,7 +8,7 @@ import ru.mipt.cybersecurity.pqc.jcajce.provider.sphincs.Sphincs256KeyFactorySpi
 
 public class SPHINCS
 {
-    private static final String PREFIX = "ru.mipt.cybersecurity.pqc.jcajce.provider" + ".sphincs.";
+    private static final String PREFIX = "ru.mipt.cybersecurity.jcajce.provider" + ".sphincs.";
 
     public static class Mappings
         extends AsymmetricAlgorithmProvider

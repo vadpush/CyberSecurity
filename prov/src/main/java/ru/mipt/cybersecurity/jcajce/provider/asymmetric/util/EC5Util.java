@@ -102,7 +102,7 @@ public class EC5Util
 
     public static ECDomainParameters getDomainParameters(
         ProviderConfiguration configuration,
-        java.security.spec.ECParameterSpec params)
+        ECParameterSpec params)
     {
         ECDomainParameters domainParameters;
 

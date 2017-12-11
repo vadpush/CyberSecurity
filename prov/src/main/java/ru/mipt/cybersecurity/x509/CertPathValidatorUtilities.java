@@ -708,7 +708,7 @@ class CertPathValidatorUtilities
      * @param certStores a List containing only {@link X509Store} objects. These
      *                   are used to search for certificates.
      * @return a Collection of all found {@link X509Certificate} or
-     *         {@link ru.mipt.cybersecurity.x509.X509AttributeCertificate} objects.
+     *         {@link X509AttributeCertificate} objects.
      *         May be empty but never <code>null</code>.
      */
     protected static Collection findCertificates(X509CertStoreSelector certSelect,
@@ -1235,7 +1235,7 @@ class CertPathValidatorUtilities
      *
      * @param dp          The distribution point for which the complete CRL
      * @param cert        The <code>X509Certificate</code> or
-     *                    {@link ru.mipt.cybersecurity.x509.X509AttributeCertificate} for
+     *                    {@link X509AttributeCertificate} for
      *                    which the CRL should be searched.
      * @param currentDate The date for which the delta CRLs must be valid.
      * @param paramsPKIX  The extended PKIX parameters.
