@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.security.SecureRandom;
 
+import ru.mipt.cybersecurity.crypto.CryptoException;
 import ru.mipt.cybersecurity.crypto.KeyGenerationParameters;
 import ru.mipt.cybersecurity.crypto.engines.DESedeEngine;
 import ru.mipt.cybersecurity.crypto.generators.DESedeKeyGenerator;
@@ -324,23 +325,16 @@ public class DESExample extends Object
                 }
             }
 
-            try
+            /*
+             * Now, process the bytes that are still buffered
+             * within the cipher.
+             */
+            outL = cipher.doFinal(outblock, 0);
+            if (outL > 0)
             {
-                /*
-                 * Now, process the bytes that are still buffered
-                 * within the cipher.
-                 */
-                outL = cipher.doFinal(outblock, 0);
-                if (outL > 0)
-                {
-                    rv = Hex.encode(outblock, 0, outL);
-                    out.write(rv, 0, rv.length);
-                    out.write('\n');
-                }
-            }
-            catch (CryptoException ce)
-            {
-
+                rv = Hex.encode(outblock, 0, outL);
+                out.write(rv, 0, rv.length);
+                out.write('\n');
             }
         }
         catch (IOException ioeread)
@@ -393,21 +387,14 @@ public class DESExample extends Object
                 }
             }
 
-            try
+            /*
+             * Now, process the bytes that are still buffered
+             * within the cipher.
+             */
+            outL = cipher.doFinal(outblock, 0);
+            if (outL > 0)
             {
-                /*
-                 * Now, process the bytes that are still buffered
-                 * within the cipher.
-                 */
-                outL = cipher.doFinal(outblock, 0);
-                if (outL > 0)
-                {
-                    out.write(outblock, 0, outL);
-                }
-            }
-            catch (CryptoException ce)
-            {
-
+                out.write(outblock, 0, outL);
             }
         }
         catch (IOException ioeread)

@@ -1,27 +1,18 @@
 package ru.mipt.cybersecurity.crypto.engines;
 
-import java.util.Enumeration;
-import java.util.Hashtable;
-
 import ru.mipt.cybersecurity.crypto.BlockCipher;
 import ru.mipt.cybersecurity.crypto.CipherParameters;
 import ru.mipt.cybersecurity.crypto.DataLengthException;
 import ru.mipt.cybersecurity.crypto.OutputLengthException;
 import ru.mipt.cybersecurity.crypto.params.KeyParameter;
 import ru.mipt.cybersecurity.crypto.params.ParametersWithSBox;
-import ru.mipt.cybersecurity.util.Arrays;
-import ru.mipt.cybersecurity.util.Strings;
-import ru.mipt.cybersecurity.crypto.util.MultGalua;
-
-import static jdk.nashorn.internal.objects.Global.print;
 
 /**
  * implementation of GOST 28147-14 (Kuznyechik)
  */
 
 
-public class GOST28147_14Engine implements BlockCipher
-{
+public class GOST28147_14Engine implements BlockCipher {
     protected static final int  BLOCK_SIZE = 16;
     private char[]               workingKey = null;
     private boolean forEncryption;
@@ -81,7 +72,7 @@ public class GOST28147_14Engine implements BlockCipher
     private void funcX( char[] a, char[] b,  char[] outdata) {
         int i;
 
-        for(i = 0; i < 16; ++i) {
+        for(i = 0; i < BLOCK_SIZE; ++i) {
             outdata[i] = (char) (a[i] ^ b[i]);
         }
 
@@ -91,9 +82,7 @@ public class GOST28147_14Engine implements BlockCipher
     }
 
     private void funcS( char[] indata,  char[] outdata) {
-        int i = 0;
-
-        for(i = 0; i < 16; ++i)
+        for(int i = 0; i < BLOCK_SIZE; ++i)
             outdata[i] = kPi[indata[i]];
 
         System.out.println("funcS: input: " + indata);
@@ -102,9 +91,7 @@ public class GOST28147_14Engine implements BlockCipher
 
 
     private void funcReverseS( char[] indata,  char[] outdata) {
-    int i;
-
-    for(i = 0; i < 16; ++i)
+    for(int i = 0; i < BLOCK_SIZE; ++i)
         outdata[i] = kReversePi[indata[i]];
 
         System.out.println("funcReverseS: input: " + indata);
@@ -112,40 +99,53 @@ public class GOST28147_14Engine implements BlockCipher
     }
 
 
+    private char multGF(char a, char b) {
+        char c = 0;
+        char hiBit;
+
+        for(int i = 0; i < 8; ++i) {
+            if((b & 1) == 1)
+                c ^= a;
+            hiBit = (char)(a & 0x80);
+            a <<= 1;
+            if (hiBit == 1)
+                a ^= 0xc3;
+            b >>= 1;
+        }
+        return c;
+    }
+
     private void funcR( char[] indata, char[] outdata) {
-        int i;
         char sum = 0;
 
-        for(i = 0; i < 16; ++i)
-            sum ^= MultGalua.multiply((char) (indata[i]*256 + kB[i]));
+        for(int i = 0; i < BLOCK_SIZE; ++i)
+            sum ^= multGF(indata[i], kB[i]);
 
 
         outdata[0] = sum;
-        System.arraycopy(indata, 0, outdata, 1, 15);
-
+        System.arraycopy(indata, 0, outdata, 1, BLOCK_SIZE-1);
 
         System.out.println("funcR: input: " + indata);
         System.out.println("funcR: output: " + outdata);
     }
 
     private void funcReverseR(char[] indata,  char[] outdata) {
-        char tmp[] = new char[16];
+        char tmp[] = new char[BLOCK_SIZE];
         char sum = 0;
-        int i;
 
         //void *memcpy(void *dst, const void *src, size_t n);
         //System.arraycopy(Object src, int srcPos, Object dest,int destPos, int length);
 
         // memcpy(tmp, indata+1, 15);
-        System.arraycopy(indata , 1, tmp, 0, 15);
+        System.arraycopy(indata , 1, tmp, 0, BLOCK_SIZE-1);
 
         tmp[15] = indata[0];
 
-        for(i = 0; i < 16; ++i)
-            sum ^= MultGalua.multiply((char) (tmp[i]*256 + kB[i]));
+        for(int i = 0; i < BLOCK_SIZE; ++i)
+            sum ^= multGF(tmp[i], kB[i]);
 
         //memcpy(outdata, tmp, 15);
-        System.arraycopy(tmp , 0, outdata, 0, 16);
+        System.arraycopy(tmp , 0, outdata, 0, BLOCK_SIZE-1);
 
         outdata[15] = sum;
 
@@ -155,17 +155,15 @@ public class GOST28147_14Engine implements BlockCipher
 
 
     private void funcL(char[] indata, char[] outdata) {
-        char tmp[] = new char[16];
-        int i = 0;
+        char tmp[] = new char[BLOCK_SIZE];
 
         //memcpy(tmp, indata, 16);
-        System.arraycopy(indata , 0, tmp, 0, 16);
+        System.arraycopy(indata , 0, tmp, 0, BLOCK_SIZE);
 
-
-        for(i = 0; i < 16; ++i) {
+        for(int i = 0; i < BLOCK_SIZE; ++i) {
             funcR(tmp, outdata);
             //memcpy(tmp, outdata, 16);
-            System.arraycopy(outdata , 0, tmp, 0, 16);
+            System.arraycopy(outdata , 0, tmp, 0, BLOCK_SIZE);
         }
 
         System.out.println("funcL: input: " + indata);
@@ -174,28 +172,25 @@ public class GOST28147_14Engine implements BlockCipher
 
 
     private void funcReverseL(char[] indata, char[] outdata) {
-        char[] tmp = new char[16];
-        int i;
+        char[] tmp = new char[BLOCK_SIZE];
 
         //memcpy(tmp, indata, 16);
-        System.arraycopy(indata , 0, tmp, 0, 16);
+        System.arraycopy(indata , 0, tmp, 0, BLOCK_SIZE);
 
-
-
-        for(i = 0; i < 16; ++i) {
+        for(int i = 0; i < BLOCK_SIZE; ++i) {
             funcReverseR(tmp, outdata);
             //memcpy(tmp, outdata, 16);
-            System.arraycopy(outdata , 0, tmp, 0, 16);
+            System.arraycopy(outdata , 0, tmp, 0, BLOCK_SIZE);
         }
-
 
         System.out.println("funcReverseL: input: " + indata);
         System.out.println("funcReverseL: output: " + outdata);
     }
 
+
     private void funcLSX(char[] a, char[] b, char[] outdata) {
-        char[] temp1 = new char[16];
-        char[] temp2 = new char[16];
+        char[] temp1 = new char[BLOCK_SIZE];
+        char[] temp2 = new char[BLOCK_SIZE];
 
         funcX(a, b, temp1);
         funcS(temp1, temp2);
@@ -208,8 +203,8 @@ public class GOST28147_14Engine implements BlockCipher
 
 
     private void funcReverseLSX(char[] a, char[] b, char[] outdata) {
-        char[] temp1 = new char[16];
-        char[] temp2 = new char[16];
+        char[] temp1 = new char[BLOCK_SIZE];
+        char[] temp2 = new char[BLOCK_SIZE];
 
         funcX(a, b, temp1);
         funcReverseL(temp1, temp2);
@@ -221,17 +216,17 @@ public class GOST28147_14Engine implements BlockCipher
     }
 
     private void funcF(char[] inputKey, char[] inputKeySecond, char[] iterationConst, char[] outputKey, char[] outputKeySecond) {
-        char[] temp1 = new char[16];
-        char[] temp2 = new char[16];
+        char[] temp1 = new char[BLOCK_SIZE];
+        char[] temp2 = new char[BLOCK_SIZE];
 
         funcLSX(inputKey, iterationConst, temp1);
         funcX(temp1, inputKeySecond, temp2);
 
         //memcpy(outputKeySecond, inputKey, 16);
-        System.arraycopy(inputKey , 0, outputKeySecond, 0, 16);
+        System.arraycopy(inputKey , 0, outputKeySecond, 0, BLOCK_SIZE);
 
         //memcpy(outputKey, temp2, 16);
-        System.arraycopy(temp2 , 0, outputKey, 0, 16);
+        System.arraycopy(temp2 , 0, outputKey, 0, BLOCK_SIZE);
 
         System.out.println("funcF: input key: " + inputKey);
         System.out.println("funcF: input key: " + inputKeySecond);
@@ -241,27 +236,27 @@ public class GOST28147_14Engine implements BlockCipher
     }
 
     private void funcC(char number, char[] output) {
-        char[] tempI = new char[16];
+        char[] tempI = new char[BLOCK_SIZE];
 
         //memset( tempI, 0, 15 );
 
         java.util.Arrays.fill(tempI, (char) 0);
-        tempI[15] = number;
+        tempI[BLOCK_SIZE-1] = number;
         funcL(tempI, output);
     }
 
     public void expandKey(char[] masterKey, char[] keys) {
-        char[] C = new char[16];
-        char[] temp1 = new char[16];
-        char[] temp2 = new char[16];
+        char[] C = new char[BLOCK_SIZE];
+        char[] temp1 = new char[BLOCK_SIZE];
+        char[] temp2 = new char[BLOCK_SIZE];
         char j, i;
 
         //memcpy(keys, masterKey, 16);
-        System.arraycopy(masterKey , 0, keys, 0, 16);
+        System.arraycopy(masterKey , 0, keys, 0, BLOCK_SIZE);
 
 
         //memcpy(keys + 16, masterKey + 16, 16);
-        System.arraycopy(masterKey , 16, keys, 16, 16); //TODO: 16?
+        System.arraycopy(masterKey , 16, keys, BLOCK_SIZE, BLOCK_SIZE); //TODO: 16?
 
 
         System.out.println("ExpandKey: master key: " + masterKey);
@@ -269,12 +264,10 @@ public class GOST28147_14Engine implements BlockCipher
 
         for(j = 0; j < 4; ++j) {
             //memcpy(temp1, keys + j * 2 * 16, 16);
-            // System.arraycopy(keys , j * 2 * 16, temp1, 0, 16);
-
+            System.arraycopy(keys , j * 2 * BLOCK_SIZE, temp1, 0, BLOCK_SIZE);
 
             //memcpy(temp2, keys + (j * 2 + 1) * 16, 16);
-            System.arraycopy(keys , (j * 2 + 1) * 16, temp2, 0, 16);
-
+            System.arraycopy(keys , (j * 2 + 1) * BLOCK_SIZE, temp2, 0, BLOCK_SIZE);
 
             for( i = 1; i < 8; ++i ) {
                 funcC((char) (j*8+i), C);
@@ -285,68 +278,66 @@ public class GOST28147_14Engine implements BlockCipher
             funcF(temp1, temp2, C, temp1, temp2);
 
             //memcpy(keys + (j * 2 + 2) * 16, temp1, 16);
-            System.arraycopy(temp1 , 0, keys, (j * 2 + 2) * 16, 16);
+            System.arraycopy(temp1 , 0, keys, (j * 2 + 2) * BLOCK_SIZE, BLOCK_SIZE);
 
             //memcpy(keys + (j * 2 + 3) * 16, temp2, 16);
-            System.arraycopy(temp2 , 0, keys, (j * 2 + 3) * 16, 16);
-
+            System.arraycopy(temp2 , 0, keys, (j * 2 + 3) * BLOCK_SIZE, BLOCK_SIZE);
 
             System.out.println("ExpandKey: output key: " + keys);
         }
     }
 
-    private  void encrypt(char[] plainText, char[] chipherText, char[] keys, int blockIndex) {
-        char[] xTemp = new char[16];
-        char[] yTemp = new char[16];
+    private  void encrypt(char[] plainText, char[] chipherText) {
+        char[] xTemp = new char[BLOCK_SIZE];
+        char[] yTemp = new char[BLOCK_SIZE];
         int i;
 
         //memcpy(xTemp, plainText, 16);
-        System.arraycopy(plainText , 0, xTemp, 0, 16);
+        System.arraycopy(plainText , 0, xTemp, 0, BLOCK_SIZE);
 
-        if(blockIndex < 9) {
+        for(i = 0; i < 9; ++i) {
             char[] tempKeys = new char[BLOCK_SIZE];
-            System.arraycopy(keys, BLOCK_SIZE*blockIndex, tempKeys, 0, 16);
+            System.arraycopy(workingKey, BLOCK_SIZE*i, tempKeys, 0, BLOCK_SIZE);
 
             funcLSX(xTemp, tempKeys, yTemp);
 
             //memcpy(xTemp, yTemp, 16);
-            System.arraycopy(yTemp, 0, xTemp, 0, 16);
+            System.arraycopy(yTemp, 0, xTemp, 0, BLOCK_SIZE);
         }
 
         char[] tempKeys = new char[16];
-        System.arraycopy(keys, 9*16, tempKeys, 0, 16);
-
-
+        System.arraycopy(workingKey, 9*BLOCK_SIZE, tempKeys, 0, BLOCK_SIZE);
         funcX(yTemp, tempKeys, chipherText);
 
-        System.out.println("encrypt: key: " + keys);
+
+        System.out.println("encrypt: key: " + workingKey);
         System.out.println("encrypt: plain text: " + plainText);
         System.out.println("encrypt: chipher text: " + chipherText);
     }
 
 
 
-    private void decrypt(char[] chipherText, char[] plainText, char[] keys) {
-        char[] xTemp = new char[16];
-        char[] yTemp = new char[16];
+    private void decrypt(char[] chipherText, char[] plainText) {
+        char[] xTemp = new char[BLOCK_SIZE];
+        char[] yTemp = new char[BLOCK_SIZE];
         int i;
 
         //memcpy(xTemp, chipherText, 16);
-        System.arraycopy(chipherText, 0, xTemp, 0, 16);
+        System.arraycopy(chipherText, 0, xTemp, 0, BLOCK_SIZE);
 
         for (i = 0; i < 9; ++i) {
-            char[] tempKeys = new char[16];
-            System.arraycopy(keys, (9 - i) * 16, tempKeys, 0, 16);
+            char[] tempKeys = new char[BLOCK_SIZE];
+            System.arraycopy(workingKey, (9 - i) * BLOCK_SIZE, tempKeys, 0, BLOCK_SIZE);
 
             funcReverseLSX(xTemp, tempKeys, yTemp);
 
             //memcpy(xTemp, yTemp, 16);
-            System.arraycopy(yTemp, 0, xTemp, 0, 16);
+            System.arraycopy(yTemp, 0, xTemp, 0, BLOCK_SIZE);
         }
-        funcX(yTemp, keys, plainText);
+        funcX(yTemp, workingKey, plainText);
 
 
-        System.out.println("decrypt: key: " + keys);
+        System.out.println("decrypt: key: " + workingKey);
         System.out.println("decrypt: chipher text : " + chipherText);
         System.out.println("decrypt: plain text: " + plainText);
     }
@@ -391,29 +382,18 @@ public class GOST28147_14Engine implements BlockCipher
 
     private char[] generateWorkingKey(
             boolean forEncryption,
-            byte[]  userKey)
-    {
+            byte[]  userKey) {
         this.forEncryption = forEncryption;
 
-        if (userKey.length != 32)
-        {
+        if (userKey.length != 32) {
             throw new IllegalArgumentException("Key length invalid. Key needs to be 32 byte - 256 bit!!!");
         }
 
         char key[] = new char[10*BLOCK_SIZE];
-        expandKey(bytesToChar(userKey), key);
+        expandKey(bytesToChars(userKey), key);
 
         return key;
     }
-
-    private char[] bytesToChar(byte[]  in) {
-        char[] answ = new char[in.length];
-        for(int i = 0; i < in.length; i++)
-            answ[i] = (char)(in[i] & 0xFF);
-
-        return answ;
-    }
-
 
     public String getAlgorithmName() {
         return null;
@@ -424,22 +404,19 @@ public class GOST28147_14Engine implements BlockCipher
     }
 
     public int processBlock(byte[] in, int inOff, byte[] out, int outOff) throws DataLengthException, IllegalStateException {
-        if (workingKey == null)
-        {
+        if (workingKey == null) {
             throw new IllegalStateException("GOST28147 engine not initialised");
         }
 
-        if ((inOff + BLOCK_SIZE) > in.length)
-        {
+        if ((inOff + BLOCK_SIZE) > in.length) {
             throw new DataLengthException("input buffer too short");
         }
 
-        if ((outOff + BLOCK_SIZE) > out.length)
-        {
+        if ((outOff + BLOCK_SIZE) > out.length) {
             throw new OutputLengthException("output buffer too short");
         }
 
-        GOST28147_14Func(workingKey, in, inOff/BLOCK_SIZE, out, outOff);
+        GOST28147_14Func(workingKey, in, inOff, out, outOff);
 
         return BLOCK_SIZE;
     }
@@ -447,29 +424,55 @@ public class GOST28147_14Engine implements BlockCipher
     private void GOST28147_14Func(
             char[]   workingKey,
             byte[]  in,
-            int     blockIndex,
+            int     inOff,
             byte[]  out,
-            int     outOff)
-    {
+            int     outOff) {
 
-        char[] charIn = bytesToChar(in);
+        char[] charIn = bytesToChars(in, inOff);
         char[] charOut = new char[BLOCK_SIZE];
 
-
-        if (this.forEncryption)
-        {
-            encrypt(charIn, charOut, workingKey);
+        if (this.forEncryption) {
+            encrypt(charIn, charOut);
         }
-        else //decrypt
-        {
-
+        else { //decrypt
+            decrypt(charIn, charOut);
         }
 
-
-
-        intTobytes(N1, out, outOff);
-        intTobytes(N2, out, outOff + 4);
+        charsToBytes(charOut, out, outOff);
     }
+
+
+    private char[] bytesToChars(byte[]  in) {
+        char[] answ = new char[in.length];
+        for(int i = 0; i < in.length; i++)
+            answ[i] = (char)(in[i] & 0xFF);
+
+        return answ;
+    }
+
+    private char[] bytesToChars(byte[] in, int off) {
+        byte[] tmp = new byte[BLOCK_SIZE];
+        System.arraycopy(in, off, tmp, 0, BLOCK_SIZE);
+
+        return bytesToChars(tmp);
+    }
+
+
+    private byte[] charsToBytes(char[] in) {
+        byte[] answ = new byte[in.length];
+        for(int i = 0; i < in.length; i++)
+            answ[i] = (byte)(in[i] & 0xFF);
+
+        return answ;
+    }
+
+
+    private void charsToBytes(char[] in, byte[] out, int OutOff) {
+        byte[] tmp = charsToBytes(in);
+
+        System.arraycopy(tmp, 0, out, OutOff, BLOCK_SIZE);
+    }
+
 
     public void reset() {
 
