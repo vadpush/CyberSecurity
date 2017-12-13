@@ -20,8 +20,7 @@ public class GOST28147_14Engine implements BlockCipher {
 
 
     /* Нелинейное биективное преобразование множества двоичных векторов. */
-    private static char kPi[] =
-    {
+    private static char kPi[] = {
             252, 238, 221,  17, 207, 110,  49,  22, 251, 196, 250, 218,  35, 197,   4,  77,
             233, 119, 240, 219, 147,  46, 153, 186,  23,  54, 241, 187,  20, 205,  95, 193,
             249,  24, 101,  90, 226,  92, 239,  33, 129,  28,  60,  66,	139,   1, 142,  79,
@@ -41,8 +40,7 @@ public class GOST28147_14Engine implements BlockCipher {
     };
 
 /* Обратное нелинейное биективное преобразование множества двоичных векторов. */
-    private static char kReversePi[] =
-        {
+    private static char kReversePi[] = {
                 0xa5, 0x2d, 0x32, 0x8f, 0x0e, 0x30, 0x38, 0xc0, 0x54, 0xe6, 0x9e, 0x39, 0x55, 0x7e, 0x52, 0x91,
                 0x64, 0x03, 0x57, 0x5a, 0x1c, 0x60, 0x07, 0x18, 0x21, 0x72, 0xa8, 0xd1, 0x29, 0xc6, 0xa4, 0x3f,
                 0xe0, 0x27, 0x8d, 0x0c, 0x82, 0xea, 0xae, 0xb4, 0x9a, 0x63, 0x49, 0xe5, 0x42, 0xe4, 0x15, 0xb7,
@@ -64,55 +62,37 @@ public class GOST28147_14Engine implements BlockCipher {
     /*Коэффициенты умножения в преобразовании l */
     private static char kB[] = {148, 32, 133, 16, 194, 192, 1, 251, 1, 192, 194, 16, 133, 32, 148, 1};
 
-    /** Преобразование X
-     *
-     */
-
 
     private void funcX( char[] a, char[] b,  char[] outdata) {
-        int i;
-
-        for(i = 0; i < BLOCK_SIZE; ++i) {
+        for(int i = 0; i < BLOCK_SIZE; ++i) {
             outdata[i] = (char) (a[i] ^ b[i]);
         }
-
-        System.out.println("funcX: a: " + a);
-        System.out.println("funcX: b: " + b);
-        System.out.println("funcX: result: " + outdata);
     }
 
     private void funcS( char[] indata,  char[] outdata) {
         for(int i = 0; i < BLOCK_SIZE; ++i)
             outdata[i] = kPi[indata[i]];
-
-        System.out.println("funcS: input: " + indata);
-        System.out.println("funcS: output: " + outdata);
     }
-
 
     private void funcReverseS( char[] indata,  char[] outdata) {
     for(int i = 0; i < BLOCK_SIZE; ++i)
         outdata[i] = kReversePi[indata[i]];
-
-        System.out.println("funcReverseS: input: " + indata);
-        System.out.println("funcReverseS: output: "+ outdata);
     }
-
 
     private char multGF(char a, char b) {
         char c = 0;
         char hiBit;
 
-        for(int i = 0; i < 8; ++i) {
-            if((b & 1) == 1)
+        while(b != 0) {
+            if((b & 1) != 0)
                 c ^= a;
             hiBit = (char)(a & 0x80);
             a <<= 1;
-            if (hiBit == 1)
+            if (hiBit != 0)
                 a ^= 0xc3;
             b >>= 1;
         }
-        return c;
+        return (char) (c & 0xFF);
     }
 
     private void funcR( char[] indata, char[] outdata) {
@@ -121,12 +101,8 @@ public class GOST28147_14Engine implements BlockCipher {
         for(int i = 0; i < BLOCK_SIZE; ++i)
             sum ^= multGF(indata[i], kB[i]);
 
-
         outdata[0] = sum;
         System.arraycopy(indata, 0, outdata, 1, BLOCK_SIZE-1);
-
-        System.out.println("funcR: input: " + indata);
-        System.out.println("funcR: output: " + outdata);
     }
 
     private void funcReverseR(char[] indata,  char[] outdata) {
@@ -148,9 +124,6 @@ public class GOST28147_14Engine implements BlockCipher {
         System.arraycopy(tmp , 0, outdata, 0, BLOCK_SIZE-1);
 
         outdata[15] = sum;
-
-        System.out.println("funcReverseR: input: " + indata);
-        System.out.println("funcReverseR: output: " + outdata);
     }
 
 
@@ -163,11 +136,8 @@ public class GOST28147_14Engine implements BlockCipher {
         for(int i = 0; i < BLOCK_SIZE; ++i) {
             funcR(tmp, outdata);
             //memcpy(tmp, outdata, 16);
-            System.arraycopy(outdata , 0, tmp, 0, BLOCK_SIZE);
+            System.arraycopy(outdata, 0, tmp, 0, BLOCK_SIZE);
         }
-
-        System.out.println("funcL: input: " + indata);
-        System.out.println("funcL: output: " + outdata);
     }
 
 
@@ -182,9 +152,6 @@ public class GOST28147_14Engine implements BlockCipher {
             //memcpy(tmp, outdata, 16);
             System.arraycopy(outdata , 0, tmp, 0, BLOCK_SIZE);
         }
-
-        System.out.println("funcReverseL: input: " + indata);
-        System.out.println("funcReverseL: output: " + outdata);
     }
 
 
@@ -195,10 +162,6 @@ public class GOST28147_14Engine implements BlockCipher {
         funcX(a, b, temp1);
         funcS(temp1, temp2);
         funcL(temp2, outdata);
-
-        System.out.println("funcLSX: a: " + a);
-        System.out.println("funcLSX: b: " +  b);
-        System.out.println("funcLSX: output: " + outdata);
     }
 
 
@@ -209,10 +172,6 @@ public class GOST28147_14Engine implements BlockCipher {
         funcX(a, b, temp1);
         funcReverseL(temp1, temp2);
         funcReverseS(temp2, outdata);
-
-        System.out.println("funcReverseLSX: a: " + a);
-        System.out.println("funcReverseLSX: b: " + b);
-        System.out.println("funcReverseLSX: output: " + outdata);
     }
 
     private void funcF(char[] inputKey, char[] inputKeySecond, char[] iterationConst, char[] outputKey, char[] outputKeySecond) {
@@ -227,12 +186,6 @@ public class GOST28147_14Engine implements BlockCipher {
 
         //memcpy(outputKey, temp2, 16);
         System.arraycopy(temp2 , 0, outputKey, 0, BLOCK_SIZE);
-
-        System.out.println("funcF: input key: " + inputKey);
-        System.out.println("funcF: input key: " + inputKeySecond);
-        System.out.println("funcF: iterration const: " + iterationConst);
-        System.out.println("funcF: output key: " + outputKey);
-        System.out.println("funcF: output key: " + outputKeySecond);
     }
 
     private void funcC(char number, char[] output) {
@@ -253,14 +206,8 @@ public class GOST28147_14Engine implements BlockCipher {
 
         //memcpy(keys, masterKey, 16);
         System.arraycopy(masterKey , 0, keys, 0, BLOCK_SIZE);
-
-
         //memcpy(keys + 16, masterKey + 16, 16);
         System.arraycopy(masterKey , 16, keys, BLOCK_SIZE, BLOCK_SIZE); //TODO: 16?
-
-
-        System.out.println("ExpandKey: master key: " + masterKey);
-        System.out.println("ExpandKey: output key: " + keys);
 
         for(j = 0; j < 4; ++j) {
             //memcpy(temp1, keys + j * 2 * 16, 16);
@@ -279,11 +226,8 @@ public class GOST28147_14Engine implements BlockCipher {
 
             //memcpy(keys + (j * 2 + 2) * 16, temp1, 16);
             System.arraycopy(temp1 , 0, keys, (j * 2 + 2) * BLOCK_SIZE, BLOCK_SIZE);
-
             //memcpy(keys + (j * 2 + 3) * 16, temp2, 16);
             System.arraycopy(temp2 , 0, keys, (j * 2 + 3) * BLOCK_SIZE, BLOCK_SIZE);
-
-            System.out.println("ExpandKey: output key: " + keys);
         }
     }
 
@@ -308,11 +252,6 @@ public class GOST28147_14Engine implements BlockCipher {
         char[] tempKeys = new char[16];
         System.arraycopy(workingKey, 9*BLOCK_SIZE, tempKeys, 0, BLOCK_SIZE);
         funcX(yTemp, tempKeys, chipherText);
-
-
-        System.out.println("encrypt: key: " + workingKey);
-        System.out.println("encrypt: plain text: " + plainText);
-        System.out.println("encrypt: chipher text: " + chipherText);
     }
 
 
@@ -335,46 +274,13 @@ public class GOST28147_14Engine implements BlockCipher {
             System.arraycopy(yTemp, 0, xTemp, 0, BLOCK_SIZE);
         }
         funcX(yTemp, workingKey, plainText);
-
-
-        System.out.println("decrypt: key: " + workingKey);
-        System.out.println("decrypt: chipher text : " + chipherText);
-        System.out.println("decrypt: plain text: " + plainText);
     }
 
 
-
     public void init(boolean forEncryption, CipherParameters params) {
-            if (params instanceof ParametersWithSBox)
-            {
-               /* ParametersWithSBox   param = (ParametersWithSBox)params;
-
-                //
-                // Set the S-Box
-                //
-                byte[] sBox = param.getSBox();
-                if (sBox.length != Sbox_Default.length)
-                {
-                    throw new IllegalArgumentException("invalid S-box passed to GOST28147 init");
-                }
-                this.S = Arrays.clone(sBox);
-
-                //
-                // set key if there is one
-                //
-                if (param.getParameters() != null)
-                {
-                    workingKey = generateWorkingKey(forEncryption,
-                            ((KeyParameter)param.getParameters()).getKey());
-                }*/ //TODO: Do we need it?
-            }
-            else if (params instanceof KeyParameter)
-            {
-                workingKey = generateWorkingKey(forEncryption,
-                        ((KeyParameter)params).getKey());
-            }
-            else if (params != null)
-            {
+        if (params instanceof KeyParameter) {
+            workingKey = generateWorkingKey(forEncryption, ((KeyParameter)params).getKey());
+        } else if (params != null) {
                 throw new IllegalArgumentException("invalid parameter passed to GOST28147 init - " + params.getClass().getName());
             }
     }
@@ -388,7 +294,6 @@ public class GOST28147_14Engine implements BlockCipher {
         if (userKey.length != 32) {
             throw new IllegalArgumentException("Key length invalid. Key needs to be 32 byte - 256 bit!!!");
         }
-
         char key[] = new char[10*BLOCK_SIZE];
         expandKey(bytesToChars(userKey), key);
 
@@ -396,7 +301,7 @@ public class GOST28147_14Engine implements BlockCipher {
     }
 
     public String getAlgorithmName() {
-        return null;
+        return "GOST28147-14";
     }
 
     public int getBlockSize() {
@@ -475,6 +380,68 @@ public class GOST28147_14Engine implements BlockCipher {
 
 
     public void reset() {
+
+    }
+
+
+
+
+    private void testS() {
+        char kSData[][] =
+        {
+            {0xff, 0xee, 0xdd, 0xcc, 0xbb, 0xaa, 0x99, 0x88, 0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x00},
+            {0xb6, 0x6c, 0xd8, 0x88, 0x7d, 0x38, 0xe8, 0xd7, 0x77, 0x65, 0xae, 0xea, 0x0c, 0x9a, 0x7e, 0xfc},
+            {0x55, 0x9d, 0x8d, 0xd7, 0xbd, 0x06, 0xcb, 0xfe, 0x7e, 0x7b, 0x26, 0x25, 0x23, 0x28, 0x0d, 0x39},
+            {0x0c, 0x33, 0x22, 0xfe, 0xd5, 0x31, 0xe4, 0x63, 0x0d, 0x80, 0xef, 0x5c, 0x5a, 0x81, 0xc5, 0x0b},
+            {0x23, 0xae, 0x65, 0x63, 0x3f, 0x84, 0x2d, 0x29, 0xc5, 0xdf, 0x52, 0x9c, 0x13, 0xf5, 0xac, 0xda}
+        };
+
+        char[] tmp = new char[16];
+
+        for(int i = 0; i < 4; ++i)
+        {
+            funcS(kSData[i], tmp);
+
+            System.out.println("Expected S: ");
+            for(char c : tmp)
+                System.out.print(" c" +  (int)c);
+            System.out.println("");
+            System.out.println("Real S: ");
+            for(char c : kSData[i+1])
+                System.out.print(" c" +  (int)c);
+        }
+    }
+
+    private void testR() {
+        char kRData[][] =
+        {
+            {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00},
+            {0x94, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01},
+            {0xa5, 0x94, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00},
+            {0x64, 0xa5, 0x94, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00},
+            {0x0d, 0x64, 0xa5, 0x94, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
+        };
+        char[] tmp = new char[16];
+
+        for(int i =0; i < 4; ++i)
+        {
+            funcR(kRData[i], tmp);
+            System.out.println("");
+            System.out.println("Expected R: ");
+            for(char c : kRData[i+1])
+                System.out.print(" c" +  (int)c);
+            System.out.println("");
+            System.out.println("Real R: ");
+            for(char c : tmp)
+                System.out.print(" c" +  (int)c);
+        }
+
+
+    }
+
+    public static void main(String[] args) {
+        new  GOST28147_14Engine().testS();
+        new  GOST28147_14Engine().testR();
 
     }
 }

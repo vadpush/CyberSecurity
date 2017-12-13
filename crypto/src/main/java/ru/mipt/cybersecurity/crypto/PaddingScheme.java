@@ -18,7 +18,7 @@
  */
 
 
-package ru.mipt.cybersecurity.interf;
+package ru.mipt.cybersecurity.crypto;
 
 /**
  * A {@code CipherPaddingScheme} represents well-known

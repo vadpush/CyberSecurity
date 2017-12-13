@@ -1,8 +1,7 @@
-package ru.mipt.cybersecurity.interf;
+package ru.mipt.cybersecurity.crypto;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import ru.mipt.cybersecurity.crypto.CryptoException;
 import ru.mipt.cybersecurity.util.ByteSource;
 import ru.mipt.cybersecurity.util.StringUtils;
 

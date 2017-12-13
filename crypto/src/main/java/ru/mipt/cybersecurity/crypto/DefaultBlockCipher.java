@@ -1,4 +1,4 @@
-package ru.mipt.cybersecurity.interf;
+package ru.mipt.cybersecurity.crypto;
 import ru.mipt.cybersecurity.util.StringUtils;
 
 
