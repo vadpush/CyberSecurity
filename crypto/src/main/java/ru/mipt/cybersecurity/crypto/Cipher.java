@@ -1,6 +1,5 @@
-package ru.mipt.cybersecurity.interf;
+package ru.mipt.cybersecurity.crypto;
 
-import ru.mipt.cybersecurity.crypto.CryptoException;
 import ru.mipt.cybersecurity.util.ByteSource;
 
 import java.io.InputStream;

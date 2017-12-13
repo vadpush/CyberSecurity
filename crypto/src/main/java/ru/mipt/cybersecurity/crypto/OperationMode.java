@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package ru.mipt.cybersecurity.interf;
+package ru.mipt.cybersecurity.crypto;
 
 /**
  * A cipher <a href="http://en.wikipedia.org/wiki/Block_cipher_modes_of_operation">mode of operation</a>

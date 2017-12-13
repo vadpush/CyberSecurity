@@ -1,4 +1,4 @@
-package ru.mipt.cybersecurity.interf;
+package ru.mipt.cybersecurity.crypto;
 
 public class AesCipher extends DefaultBlockCipher {
     private static final String ALGORITHM_NAME = "AES";
