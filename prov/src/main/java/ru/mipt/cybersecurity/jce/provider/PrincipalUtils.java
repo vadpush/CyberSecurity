@@ -2,6 +2,7 @@ package ru.mipt.cybersecurity.jce.provider;
 
 import java.security.cert.TrustAnchor;
 import java.security.cert.X509CRL;
+import java.security.cert.X509CRLEntry;
 import java.security.cert.X509Certificate;
 
 import javax.security.auth.x500.X500Principal;

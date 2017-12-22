@@ -25,7 +25,7 @@ import javax.crypto.SecretKeyFactory;
 public interface JcaJceHelper
 {
     Cipher createCipher(
-        String algorithm)
+            String algorithm)
         throws NoSuchAlgorithmException, NoSuchPaddingException, NoSuchProviderException;
 
     Mac createMac(String algorithm)

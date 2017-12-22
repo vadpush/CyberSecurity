@@ -2,6 +2,7 @@ package ru.mipt.cybersecurity.crypto.tls;
 
 import java.io.IOException;
 
+import ru.mipt.cybersecurity.crypto.CryptoException;
 import ru.mipt.cybersecurity.crypto.params.AsymmetricKeyParameter;
 import ru.mipt.cybersecurity.crypto.params.DSAPrivateKeyParameters;
 import ru.mipt.cybersecurity.crypto.params.ECPrivateKeyParameters;

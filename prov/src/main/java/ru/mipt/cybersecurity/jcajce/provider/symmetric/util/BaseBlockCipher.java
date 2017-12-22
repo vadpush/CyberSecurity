@@ -550,7 +550,7 @@ public class BaseBlockCipher
                 }
                 else if (pbeKeyParam == null)
                 {
-                    param = PBE.Util.makePBEParameters(k.getEncoded(), PKCS12, digest, keySizeInBits, ivLength * 8, pbeSpec, cipher.getAlgorithmName());
+                    param = Util.makePBEParameters(k.getEncoded(), PKCS12, digest, keySizeInBits, ivLength * 8, pbeSpec, cipher.getAlgorithmName());
                 }
                 else
                 {
@@ -559,7 +559,7 @@ public class BaseBlockCipher
             }
             else
             {
-                param = PBE.Util.makePBEParameters(k.getEncoded(), PKCS12, digest, keySizeInBits, ivLength * 8, pbeSpec, cipher.getAlgorithmName());
+                param = Util.makePBEParameters(k.getEncoded(), PKCS12, digest, keySizeInBits, ivLength * 8, pbeSpec, cipher.getAlgorithmName());
             }
             if (param instanceof ParametersWithIV)
             {
@@ -579,7 +579,7 @@ public class BaseBlockCipher
                 pbeSpec = new PBEParameterSpec(((PBKDF1KeyWithParameters)k).getSalt(), ((PBKDF1KeyWithParameters)k).getIterationCount());
             }
 
-            param = PBE.Util.makePBEParameters(k.getEncoded(), PKCS5S1, digest, keySizeInBits, ivLength * 8, pbeSpec, cipher.getAlgorithmName());
+            param = Util.makePBEParameters(k.getEncoded(), PKCS5S1, digest, keySizeInBits, ivLength * 8, pbeSpec, cipher.getAlgorithmName());
             if (param instanceof ParametersWithIV)
             {
                 ivParam = (ParametersWithIV)param;
@@ -605,7 +605,7 @@ public class BaseBlockCipher
             else if (params instanceof PBEParameterSpec)
             {
                 pbeSpec = (PBEParameterSpec)params;
-                param = PBE.Util.makePBEParameters(k, params, cipher.getUnderlyingCipher().getAlgorithmName());
+                param = Util.makePBEParameters(k, params, cipher.getUnderlyingCipher().getAlgorithmName());
             }
             else
             {
@@ -626,7 +626,7 @@ public class BaseBlockCipher
                 pbeSpec = new PBEParameterSpec(k.getSalt(), k.getIterationCount());
             }
 
-            param = PBE.Util.makePBEParameters(k.getEncoded(), scheme, digest, keySizeInBits, ivLength * 8, pbeSpec, cipher.getAlgorithmName());
+            param = Util.makePBEParameters(k.getEncoded(), scheme, digest, keySizeInBits, ivLength * 8, pbeSpec, cipher.getAlgorithmName());
             if (param instanceof ParametersWithIV)
             {
                 ivParam = (ParametersWithIV)param;

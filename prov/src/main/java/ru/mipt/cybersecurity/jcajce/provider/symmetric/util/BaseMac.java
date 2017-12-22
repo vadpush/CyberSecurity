@@ -140,7 +140,7 @@ public class BaseMac
                 }
             }
             // TODO: add correct handling for other digests
-            param = PBE.Util.makePBEMacParameters(k, PKCS12, digest, keySize, pbeSpec);
+            param = Util.makePBEMacParameters(k, PKCS12, digest, keySize, pbeSpec);
         }
         else if (key instanceof BCPBEKey)
         {
@@ -152,7 +152,7 @@ public class BaseMac
             }
             else if (params instanceof PBEParameterSpec)
             {
-                param = PBE.Util.makePBEMacParameters(k, params);
+                param = Util.makePBEMacParameters(k, params);
             }
             else
             {

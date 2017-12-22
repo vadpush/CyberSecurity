@@ -9,7 +9,7 @@ import ru.mipt.cybersecurity.pqc.jcajce.provider.xmss.XMSSMTKeyFactorySpi;
 
 public class XMSS
 {
-    private static final String PREFIX = "ru.mipt.cybersecurity.pqc.jcajce.provider" + ".xmss.";
+    private static final String PREFIX = "ru.mipt.cybersecurity.jcajce.provider" + ".xmss.";
 
     public static class Mappings
         extends AsymmetricAlgorithmProvider

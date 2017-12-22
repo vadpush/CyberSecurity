@@ -6,7 +6,7 @@ import ru.mipt.cybersecurity.pqc.asn1.PQCObjectIdentifiers;
 
 public class McEliece
 {
-    private static final String PREFIX = "ru.mipt.cybersecurity.pqc.jcajce.provider" + ".mceliece.";
+    private static final String PREFIX = "ru.mipt.cybersecurity.jcajce.provider" + ".mceliece.";
 
     public static class Mappings
         extends AsymmetricAlgorithmProvider

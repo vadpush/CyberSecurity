@@ -34,7 +34,7 @@ public class BouncyCastlePQCProvider
     /*
     * Configurable symmetric ciphers
     */
-    private static final String ALGORITHM_PACKAGE = "ru.mipt.cybersecurity.pqc.jcajce.provider.";
+    private static final String ALGORITHM_PACKAGE = "ru.mipt.cybersecurity.jcajce.provider.";
     private static final String[] ALGORITHMS =
         {
             "Rainbow", "McEliece", "SPHINCS", "NH", "XMSS"

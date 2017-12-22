@@ -18,7 +18,6 @@
  */
 package ru.mipt.cybersecurity.util;
 
-import org.apache.shiro.ShiroException;
 
 /**
  * Shiro container-agnostic interface that indicates that this object requires initialization.
@@ -30,9 +29,8 @@ public interface Initializable {
     /**
      * Initializes this object.
      *
-     * @throws org.apache.shiro.ShiroException
      *          if an exception occurs during initialization.
      */
-    void init() throws ShiroException;
+    void init() throws RuntimeException;
 
 }

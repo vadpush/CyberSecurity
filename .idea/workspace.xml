@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6179920a-4b57-4209-adb6-ecd5a6c09390" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/util/MultGalua.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/test/java/ru/mipt/cybersecurity/crypto/test/GOST28147_14Test.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/engines/Kuznyechik.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/engines/Kuznyechik.java" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/engines/GOST28147_14Engine.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/engines/GOST28147_14Engine.java" />
+      <change beforePath="$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/interf/AbstractSymmetricCipher.java" afterPath="$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/crypto/AbstractSymmetricCipher.java" />
+      <change beforePath="$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/interf/AesCipher.java" afterPath="$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/crypto/AesCipher.java" />
+      <change beforePath="$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/interf/Cipher.java" afterPath="$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/crypto/Cipher.java" />
+      <change beforePath="$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/interf/DefaultBlockCipher.java" afterPath="$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/crypto/DefaultBlockCipher.java" />
+      <change beforePath="$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/interf/EngineCipher.java" afterPath="$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/crypto/EngineCipher.java" />
+      <change beforePath="$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/interf/OperationMode.java" afterPath="$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/crypto/OperationMode.java" />
+      <change beforePath="$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/interf/PaddingScheme.java" afterPath="$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/crypto/PaddingScheme.java" />
+      <change beforePath="$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/interf/package-info.java" afterPath="$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/crypto/package-info.java" />
     </list>
     <ignored path="CyberSecurity.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -16,6 +24,14 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/CyberSecurity$GOST28147_14Test.coverage" NAME="GOST28147_14Test Coverage Results" MODIFIED="1513015853316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ru.mipt.cybersecurity.crypto.test.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/CyberSecurity$GOST28147Test.coverage" NAME="GOST28147Test Coverage Results" MODIFIED="1513017481084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ru.mipt.cybersecurity.crypto.test.*</FILTER>
+    </SUITE>
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -23,124 +39,143 @@
     <favorites_list name="CyberSecurity" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="DefaultBlockCipher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/crypto/DefaultBlockCipher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AESEngine.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/engines/AESEngine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7585">
-              <caret line="169" column="27" lean-forward="false" selection-start-line="169" selection-start-column="27" selection-end-line="169" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlockCipher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/BlockCipher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GOST28147Engine.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/engines/GOST28147Engine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Kuznyechik.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/engines/Kuznyechik.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="344" column="67" lean-forward="false" selection-start-line="344" selection-start-column="67" selection-end-line="344" selection-end-column="67" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#12694#12695#0" expanded="true" />
-                <element signature="e#12721#12722#0" expanded="true" />
-                <element signature="e#12754#12755#0" expanded="true" />
-                <element signature="e#12778#12779#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Global.class" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/nashorn.jar!/jdk/nashorn/internal/objects/Global.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="815" column="25" lean-forward="false" selection-start-line="815" selection-start-column="25" selection-end-line="815" selection-end-column="25" />
-              <folding>
-                <element signature="e#27715#27716#0" expanded="true" />
-                <element signature="e#27782#27783#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MultGalua.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/util/MultGalua.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-147215">
-              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-              <folding>
-                <element signature="e#671932#671933#0" expanded="true" />
-                <element signature="e#671967#671968#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PBKDF2Config.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/util/PBKDF2Config.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GOST28147WrapEngine.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/engines/GOST28147WrapEngine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cipher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/crypto/Cipher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2358">
-              <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5323383">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+          <file leaf-file-name="CipherTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/src/test/java/ru/mipt/cybersecurity/crypto/test/CipherTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="612">
+                  <caret line="37" column="24" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="33" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Hex.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/util/encoders/Hex.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2286">
+                  <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GOST28147_14Test.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/core/src/test/java/ru/mipt/cybersecurity/crypto/test/GOST28147_14Test.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="249">
+                  <caret line="94" column="34" lean-forward="true" selection-start-line="94" selection-start-column="34" selection-end-line="94" selection-end-column="34" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#3535#3536#0" expanded="true" />
+                    <element signature="e#3566#3567#0" expanded="true" />
+                    <element signature="e#3603#3604#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GOST28147Engine.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/engines/GOST28147Engine.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="265">
+                  <caret line="50" column="40" lean-forward="false" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
+                  <folding>
+                    <element signature="e#8500#8501#0" expanded="true" />
+                    <element signature="e#8534#8535#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="KeyParameter.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/params/KeyParameter.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="396">
+                  <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="GOST28147_14Engine.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/engines/GOST28147_14Engine.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-3252">
+                  <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+                  <folding>
+                    <element signature="e#11755#11756#0" expanded="true" />
+                    <element signature="e#11792#11793#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GOST28147Test.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/src/test/java/ru/mipt/cybersecurity/crypto/test/GOST28147Test.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="3510">
+                  <caret line="210" column="60" lean-forward="false" selection-start-line="210" selection-start-column="41" selection-end-line="210" selection-end-column="60" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#11298#11299#0" expanded="true" />
+                    <element signature="e#11381#11382#0" expanded="true" />
+                    <element signature="e#17679#17680#0" expanded="true" />
+                    <element signature="e#17713#17714#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BufferedBlockCipher.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/BufferedBlockCipher.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="810">
+                  <caret line="45" column="29" lean-forward="false" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="29" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BlockCipherVectorTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/src/test/java/ru/mipt/cybersecurity/crypto/test/BlockCipherVectorTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="252">
+                  <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="29" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SimpleTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/util/test/SimpleTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="3582">
+                  <caret line="204" column="25" lean-forward="false" selection-start-line="204" selection-start-column="25" selection-end-line="204" selection-end-column="25" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/util/test/Test.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="108">
+                  <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -151,8 +186,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>org.bouncycastle</find>
       <find>GOST</find>
+      <find>test.java.org.bouncycastle</find>
+      <find>org.bouncycastle</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -161,6 +197,10 @@
     <dirStrings>
       <dir>$PROJECT_DIR$/core/src/main/java/ru/mipt.cybersecurity</dir>
       <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/core/src/test/java/org/bouncycastle</dir>
+      <dir>$PROJECT_DIR$/core/src/test/java/ru/mipt/cybersecurity</dir>
+      <dir>$PROJECT_DIR$/prov</dir>
+      <dir>$PROJECT_DIR$/prov/src/test/java</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -181,17 +221,59 @@
         <option value="$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/crypto/EngineCipher.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/util/MultGalua.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/engines/Kuznyechik.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/engines/KuznyechikEngine.java" />
+        <option value="$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/ECDH/ECDH.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/agreement/srp/SRP6Client.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/agreement/srp/SRP6Server.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/agreement/jpake/JPAKEUtil.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/signers/ISO9796d2PSSSigner.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/signers/ISO9796d2Signer.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/signers/SM2Signer.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/tls/TlsSigner.java" />
+        <option value="$PROJECT_DIR$/core/src/test/java/org/bouncycastle/crypto/test/SRP6Test.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/signers/X931Signer.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/agreement/srp/SRP6Util.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/signers/GenericSigner.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/tls/AbstractTlsSigner.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/tls/TlsRSASigner.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/agreement/jpake/JPAKEParticipant.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/tls/TlsDSASigner.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/signers/RSADigestSigner.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/tls/TlsSRPKeyExchange.java" />
+        <option value="$PROJECT_DIR$/prov/src/main/java/ru/mipt/cybersecurity/jcajce/provider/asymmetric/rsa/PSSSignatureSpi.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/signers/PSSSigner.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/examples/JPAKEExample.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/tls/DefaultTlsSignerCredentials.java" />
+        <option value="$PROJECT_DIR$/prov/src/main/java/ru/mipt/cybersecurity/jcajce/provider/asymmetric/ec/GMSignatureSpi.java" />
+        <option value="$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/codec/CodecSupport.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/examples/DESExample.java" />
+        <option value="$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/util/LifecycleUtils.java" />
+        <option value="$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/util/Initializable.java" />
+        <option value="$PROJECT_DIR$/core/src/test/java/ru/mipt/cybersecurity/bouncycastle/crypto/test/AESLightTest.java" />
+        <option value="$PROJECT_DIR$/core/src/test/java/ru/mipt/cybersecurity/crypto/test/AESLightTest.java" />
+        <option value="$PROJECT_DIR$/core/src/test/java/ru/mipt/cybersecurity/crypto/test/AESFastTest.java" />
+        <option value="$PROJECT_DIR$/core/src/ru/mipt/cybersecurity/asn1/test/RegressionTest.java" />
+        <option value="$PROJECT_DIR$/core/src/test/test/RegressionTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/core/src/test/java/ru/mipt/cybersecurity/crypto/agreement/test/JPAKEParticipantTest.java" />
+        <option value="$PROJECT_DIR$/core/src/test/java/ru/mipt/cybersecurity/crypto/test/GOST28147Test.java" />
+        <option value="$PROJECT_DIR$/prov/src/main/java/ru/mipt/cybersecurity/pqc/jcajce/spec/XMSSParameterSpec.java" />
+        <option value="$PROJECT_DIR$/prov/src/main/java/ru/mipt/cybersecurity/jcajce/PBKDF1KeyWithParameters.java" />
+        <option value="$PROJECT_DIR$/prov/src/test/java/ru/mipt/cybersecurity/test/nist/AllTests.java" />
+        <option value="$PROJECT_DIR$/prov/src/test/java/ru/mipt/cybersecurity/jce/provider/test/AEADTest.java" />
+        <option value="$PROJECT_DIR$/core/src/test/java/ru/mipt/cybersecurity/crypto/test/GOST28147_14Test.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/engines/GOST28147_14Engine.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1372" />
-    <option name="y" value="116" />
-    <option name="width" value="1018" />
-    <option name="height" value="720" />
+    <option name="x" value="1466" />
+    <option name="y" value="-4" />
+    <option name="width" value="1016" />
+    <option name="height" value="768" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -204,163 +286,33 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="CyberSecurity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CyberSecurity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CyberSecurity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CyberSecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CyberSecurity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CyberSecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CyberSecurity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CyberSecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CyberSecurity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CyberSecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CyberSecurity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CyberSecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cybersecurity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CyberSecurity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CyberSecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cybersecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="crypto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CyberSecurity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CyberSecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cybersecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="crypto" type="462c0819:PsiDirectoryNode" />
-              <item name="engines" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CyberSecurity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CyberSecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cybersecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="crypto" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CyberSecurity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CyberSecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cybersecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="i18n" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CyberSecurity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CyberSecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="crypto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CyberSecurity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CyberSecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="crypto" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CyberSecurity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CyberSecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="crypto" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CyberSecurity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CyberSecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="crypto" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cybersecurity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CyberSecurity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CyberSecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="crypto" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cybersecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="crypto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CyberSecurity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CyberSecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="crypto" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cybersecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="ECDH" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CyberSecurity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CyberSecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="crypto" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cybersecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="ECDH" type="462c0819:PsiDirectoryNode" />
-              <item name="ECDH.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AndroidView" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="ics" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/prov/src/test/java/ru/mipt/cybersecurity" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="ru.mipt.cybersecurity" />
+      <recent name="org.bouncycastle.jcajce.provider" />
+      <recent name="test.java.ru.mipt.cybersecurity.crypto" />
+      <recent name="test" />
+      <recent name="ru.mipt.cybersecurity.asn1.test" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/prov/src/test" />
+      <recent name="$PROJECT_DIR$/prov/src/test/java" />
+      <recent name="$PROJECT_DIR$/prov/src" />
+      <recent name="$PROJECT_DIR$/prov/src/main/java/ru/mipt/cybersecurity" />
+      <recent name="$PROJECT_DIR$/prov" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -375,13 +327,89 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.GOST28147_14Test">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
+    </configuration>
+    <configuration name="AESTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ru.mipt.cybersecurity.crypto.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ru.mipt.cybersecurity.crypto.test.AESTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="CyberSecurity" />
+      <envs />
+    </configuration>
+    <configuration name="GOST28147Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ru.mipt.cybersecurity.crypto.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ru.mipt.cybersecurity.crypto.test.GOST28147Test" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="CyberSecurity" />
+      <envs />
+    </configuration>
+    <configuration name="GOST28147_14Engine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ru.mipt.cybersecurity.crypto.engines.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ru.mipt.cybersecurity.crypto.engines.GOST28147_14Engine" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="CyberSecurity" />
+      <envs />
+    </configuration>
+    <configuration name="GOST28147_14Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ru.mipt.cybersecurity.crypto.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ru.mipt.cybersecurity.crypto.test.GOST28147_14Test" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="CyberSecurity" />
+      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -406,6 +434,31 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="test in CyberSecurity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="CyberSecurity" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -615,6 +668,22 @@
       <listeners />
       <method />
     </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.test in CyberSecurity" />
+      <item index="1" class="java.lang.String" itemvalue="Application.AESTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.GOST28147_14Test" />
+      <item index="3" class="java.lang.String" itemvalue="Application.GOST28147Test" />
+      <item index="4" class="java.lang.String" itemvalue="Application.GOST28147_14Engine" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.GOST28147_14Test" />
+        <item index="1" class="java.lang.String" itemvalue="Application.GOST28147_14Engine" />
+        <item index="2" class="java.lang.String" itemvalue="Application.GOST28147Test" />
+        <item index="3" class="java.lang.String" itemvalue="Application.AESTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.test in CyberSecurity" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -630,39 +699,107 @@
       <option name="presentableId" value="Default" />
       <updated>1510229246471</updated>
     </task>
+    <task id="LOCAL-00001" summary="Kuznyechik">
+      <created>1512679503047</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1512679503047</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Kuznyechik">
+      <created>1512807999360</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1512807999360</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Stable version without tests">
+      <created>1513001022746</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1513001022746</updated>
+    </task>
+    <task id="LOCAL-00004" summary="stable tests">
+      <created>1513007766005</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1513007766005</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="1089" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.49585405" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277487" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5041459" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.49806523" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29005235" sideWeight="0.49806523" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.49585405" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24851751" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22111663" sideWeight="0.49447078" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22111663" sideWeight="0.5055292" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.49585405" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5041459" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.49585405" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32879582" sideWeight="0.49806523" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.49806523" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.49585405" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22111663" sideWeight="0.49447078" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.49585405" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22111663" sideWeight="0.5055292" order="4" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -675,6 +812,14 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Kuznyechik" />
+    <MESSAGE value="Stable version without tests" />
+    <MESSAGE value="stable tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="stable tests" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -684,277 +829,327 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/diffiehellman/Run.java" />
-    <entry file="file://$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/diffiehellman/SideA.java" />
-    <entry file="file://$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/diffiehellman/SideB.java" />
-    <entry file="file://$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/diffiehellman/Spy.java" />
-    <entry file="file://$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/diffiehellman/TransportPublicKey.java" />
-    <entry file="file://$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/diffiehellman/CipherMessage.java" />
-    <entry file="file://$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/diffiehellman/Base64.java" />
-    <entry file="file://$PROJECT_DIR$/newProjectCyberSecurity/out/production/newProjectCyberSecurity/Main.class">
+    <entry file="file://$PROJECT_DIR$/prov/src/main/java/ru/mipt/cybersecurity/pqc/jcajce/spec/XMSSParameterSpec.java" />
+    <entry file="file://$PROJECT_DIR$/core/src/test/java/ru/mipt/cybersecurity/crypto/test/AESFastTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/ECDH/ECDH.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt.cybersecurity/crypto/BlockCipher.java" />
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt.cybersecurity/crypto/AsymmetricBlockCipher.java" />
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt.cybersecurity/pqc/asn1/GMSSPublicKey.java" />
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt.cybersecurity/pqc/asn1/McEliecePublicKey.java" />
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt.cybersecurity/asn1/ASN1ApplicationSpecific.java" />
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt.cybersecurity/util/BigIntegers.java" />
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt.cybersecurity/util/Integers.java" />
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt.cybersecurity/pqc/crypto/mceliece/McElieceCCA2KeyGenerationParameters.java" />
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt.cybersecurity/pqc/crypto/gmss/GMSSKeyGenerationParameters.java" />
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt.cybersecurity/crypto/commitments/GeneralHashCommitter.java" />
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt.cybersecurity/crypto/commitments/HashCommitter.java" />
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/iana/AEADAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/AsymmetricCipherKeyPair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="7" lean-forward="false" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/pqc/crypto/ExchangePairGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/pqc/crypto/DigestingStateAwareMessageSigner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
+        <state relative-caret-position="162">
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/pqc/crypto/MessageEncryptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/ec/ECElGamalDecryptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prov/src/main/java/ru/mipt/cybersecurity/jce/ECPointUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/i18n/MissingEntryException.java">
+    <entry file="file://$PROJECT_DIR$/core/src/test/java/ru/mipt/cybersecurity/crypto/test/AEADTestUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/i18n/LocalizedMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="32" column="40" lean-forward="false" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/i18n/LocalizedException.java">
+    <entry file="file://$PROJECT_DIR$/prov/src/test/java/ru/mipt/cybersecurity/test/PrivateConstructorTest.java" />
+    <entry file="file://$PROJECT_DIR$/prov/src/main/java/ru/mipt/cybersecurity/jcajce/PBKDF1Key.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/crypto/CryptoException.java" />
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/CryptoException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/crypto/EngineCipher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4050">
-          <caret line="260" column="13" lean-forward="false" selection-start-line="260" selection-start-column="13" selection-end-line="260" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/crypto/OperationMode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="40" column="12" lean-forward="false" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/crypto/package-info.java">
+    <entry file="file://$PROJECT_DIR$/prov/src/test/java/ru/mipt/cybersecurity/test/AESTest.java" />
+    <entry file="file://$PROJECT_DIR$/prov/src/test/java/ru/mipt/cybersecurity/test/AllTests.java" />
+    <entry file="file://$PROJECT_DIR$/prov/src/test/java/ru/mipt/cybersecurity/test/AESSICTest.java" />
+    <entry file="file://$PROJECT_DIR$/prov/src/test/java/ru/mipt/cybersecurity/test/nist/AllTests.java" />
+    <entry file="file://$PROJECT_DIR$/prov/src/test/java/ru/mipt/cybersecurity/jcajce/provider/test/AllTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#314#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/crypto/PaddingScheme.java">
+    <entry file="file://$PROJECT_DIR$/prov/src/test/java/ru/mipt/cybersecurity/pqc/jcajce/provider/test/AllTests.java" />
+    <entry file="file://$PROJECT_DIR$/prov/src/test/java/ru/mipt/cybersecurity/pqc/jcajce/provider/test/KeyStoreTest.java" />
+    <entry file="file://$PROJECT_DIR$/prov/src/test/java/ru/mipt/cybersecurity/jce/provider/test/nist/AllTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="38" column="12" lean-forward="false" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/crypto/AbstractSymmetricCipher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="32" column="6" lean-forward="false" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/crypto/AesCipher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/i18n/ErrorBundle.java">
+    <entry file="file://$PROJECT_DIR$/prov/src/test/java/ru/mipt/cybersecurity/jce/provider/test/AEADTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/i18n/LocaleString.java">
+    <entry file="file://$PROJECT_DIR$/prov/src/test/java/ru/mipt/cybersecurity/jce/provider/test/ARIATest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="39" column="44" lean-forward="false" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prov/src/main/java/ru/mipt/cybersecurity/pqc/jcajce/provider/rainbow/RainbowKeysToParams.java" />
+    <entry file="file://$PROJECT_DIR$/prov/src/test/java/ru/mipt/cybersecurity/jce/provider/test/RSATest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="54" column="13" lean-forward="false" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prov/src/test/java/ru/mipt/cybersecurity/jce/provider/test/NISTCertPathTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prov/src/main/java/ru/mipt/cybersecurity/jcajce/provider/newhope/NHKeyPairGeneratorSpi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="13" column="7" lean-forward="false" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prov/src/main/java/ru/mipt/cybersecurity/pqc/jcajce/interfaces/NHPrivateKey.java" />
+    <entry file="file://$PROJECT_DIR$/prov/src/main/java/ru/mipt/cybersecurity/jcajce/provider/rainbow/BCRainbowPublicKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="27" column="11" lean-forward="false" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prov/src/main/java/ru/mipt/cybersecurity/jcajce/interfaces/NHPublicKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prov/src/main/java/ru/mipt/cybersecurity/jcajce/interfaces/NHPrivateKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prov/src/main/java/ru/mipt/cybersecurity/jcajce/interfaces/SPHINCSKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prov/src/main/java/ru/mipt/cybersecurity/jce/provider/BouncyCastleProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="53" column="19" lean-forward="false" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prov/src/main/java/ru/mipt/cybersecurity/jce/MultiCertStoreParameters.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prov/src/main/java/ru/mipt/cybersecurity/jce/ECPointUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prov/src/test/java/ru/mipt/cybersecurity/jcajce/provider/test/HybridRandomProviderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="13" column="65" lean-forward="true" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newProjectCyberSecurity/src/Run.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newProjectCyberSecurity/src/SideA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newProjectCyberSecurity/src/TransportPublicKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/test/java/ru/mipt/cybersecurity/crypto/test/SHA1DigestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/test/java/ru/mipt/cybersecurity/crypto/test/GOST3411_2012_256DigestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/test/java/ru/mipt/cybersecurity/crypto/test/GOST3411_2012_512DigestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/test/java/ru/mipt/cybersecurity/crypto/test/GOST28147MacTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/crypto/Cipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2358">
-          <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1242">
+          <caret line="72" column="17" lean-forward="false" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crypto/src/main/java/ru/mipt/cybersecurity/crypto/DefaultBlockCipher.java">
+    <entry file="file://$PROJECT_DIR$/core/src/test/java/ru/mipt/cybersecurity/crypto/test/AESLightTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/test/java/ru/mipt/cybersecurity/crypto/test/AESTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/test/java/ru/mipt/cybersecurity/crypto/test/GOST3411DigestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/CipherParameters.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/test/java/ru/mipt/cybersecurity/crypto/test/CipherTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="37" column="24" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/BlockCipher.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/util/encoders/Hex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state relative-caret-position="2286">
+          <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/engines/GOST28147WrapEngine.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/params/KeyParameter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="396">
+          <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/engines/AESEngine.java">
+    <entry file="file://$PROJECT_DIR$/core/src/test/java/ru/mipt/cybersecurity/crypto/test/GOST28147Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7585">
-          <caret line="169" column="27" lean-forward="false" selection-start-line="169" selection-start-column="27" selection-end-line="169" selection-end-column="27" />
+        <state relative-caret-position="3510">
+          <caret line="210" column="60" lean-forward="false" selection-start-line="210" selection-start-column="41" selection-end-line="210" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#11298#11299#0" expanded="true" />
+            <element signature="e#11381#11382#0" expanded="true" />
+            <element signature="e#17679#17680#0" expanded="true" />
+            <element signature="e#17713#17714#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/util/PBKDF2Config.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/BufferedBlockCipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="810">
+          <caret line="45" column="29" lean-forward="false" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/util/MultGalua.java">
+    <entry file="file://$PROJECT_DIR$/core/src/test/java/ru/mipt/cybersecurity/crypto/test/BlockCipherVectorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-147215">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding>
-            <element signature="e#671932#671933#0" expanded="true" />
-            <element signature="e#671967#671968#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="252">
+          <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/nashorn.jar!/jdk/nashorn/internal/objects/Global.class">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/util/test/SimpleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="815" column="25" lean-forward="false" selection-start-line="815" selection-start-column="25" selection-end-line="815" selection-end-column="25" />
-          <folding>
-            <element signature="e#27715#27716#0" expanded="true" />
-            <element signature="e#27782#27783#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="3582">
+          <caret line="204" column="25" lean-forward="false" selection-start-line="204" selection-start-column="25" selection-end-line="204" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/util/test/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/engines/GOST28147Engine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+        <state relative-caret-position="265">
+          <caret line="50" column="40" lean-forward="false" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#8500#8501#0" expanded="true" />
+            <element signature="e#8534#8535#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/engines/Kuznyechik.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/mipt/cybersecurity/crypto/engines/GOST28147_14Engine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="344" column="67" lean-forward="false" selection-start-line="344" selection-start-column="67" selection-end-line="344" selection-end-column="67" />
+        <state relative-caret-position="-3252">
+          <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding>
+            <element signature="e#11755#11756#0" expanded="true" />
+            <element signature="e#11792#11793#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/test/java/ru/mipt/cybersecurity/crypto/test/GOST28147_14Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="94" column="34" lean-forward="true" selection-start-line="94" selection-start-column="34" selection-end-line="94" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#12694#12695#0" expanded="true" />
-            <element signature="e#12721#12722#0" expanded="true" />
-            <element signature="e#12754#12755#0" expanded="true" />
-            <element signature="e#12778#12779#0" expanded="true" />
+            <element signature="e#3535#3536#0" expanded="true" />
+            <element signature="e#3566#3567#0" expanded="true" />
+            <element signature="e#3603#3604#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -962,6 +1157,78 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>CyberSecurity</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: junit:junit:3.8.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ScopeChooserConfigurable.UI">
         <settings>
           <splitter-proportions>

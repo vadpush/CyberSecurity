@@ -53,7 +53,7 @@ import ru.mipt.cybersecurity.util.encoders.Hex;
  * CRL Number
  * Delta CRL Indicator (critical)
  * Issuing Distribution Point (critical)
- * @deprecated Do not use this class directly - either use org.bouncycastle.cert (bcpkix) or CertificateFactory.
+ * @deprecated Do not use this class directly - either use ru.mipt.cybersecurity.cert (bcpkix) or CertificateFactory.
  */
 public class X509CRLObject
     extends X509CRL

@@ -172,7 +172,7 @@ public class BaseStreamCipher
                 pbeSpec = new PBEParameterSpec(((PKCS12KeyWithParameters)k).getSalt(), ((PKCS12KeyWithParameters)k).getIterationCount());
             }
 
-            param = PBE.Util.makePBEParameters(k.getEncoded(), PKCS12, digest, keySizeInBits, ivLength * 8, pbeSpec, cipher.getAlgorithmName());
+            param = Util.makePBEParameters(k.getEncoded(), PKCS12, digest, keySizeInBits, ivLength * 8, pbeSpec, cipher.getAlgorithmName());
         }
         else if (key instanceof BCPBEKey)
         {
@@ -194,7 +194,7 @@ public class BaseStreamCipher
             }
             else if (params instanceof PBEParameterSpec)
             {
-                param = PBE.Util.makePBEParameters(k, params, cipher.getAlgorithmName());
+                param = Util.makePBEParameters(k, params, cipher.getAlgorithmName());
                 pbeSpec = (PBEParameterSpec)params;
             }
             else

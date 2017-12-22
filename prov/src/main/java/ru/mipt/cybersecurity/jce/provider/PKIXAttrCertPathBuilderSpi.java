@@ -1,5 +1,6 @@
 package ru.mipt.cybersecurity.jce.provider;
 
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.security.InvalidAlgorithmParameterException;
 import java.security.Principal;
@@ -9,6 +10,10 @@ import java.security.cert.CertPathBuilderResult;
 import java.security.cert.CertPathBuilderSpi;
 import java.security.cert.CertPathParameters;
 import java.security.cert.CertPathValidator;
+import java.security.cert.CertStore;
+import java.security.cert.CertStoreException;
+import java.security.cert.Certificate;
+import java.security.cert.CertificateException;
 import java.security.cert.CertificateFactory;
 import java.security.cert.CertificateParsingException;
 import java.security.cert.PKIXBuilderParameters;
@@ -28,6 +33,7 @@ import ru.mipt.cybersecurity.asn1.x509.Extension;
 import ru.mipt.cybersecurity.jcajce.PKIXCertStoreSelector;
 import ru.mipt.cybersecurity.jcajce.PKIXExtendedBuilderParameters;
 import ru.mipt.cybersecurity.jce.exception.ExtCertPathBuilderException;
+import ru.mipt.cybersecurity.util.Encodable;
 import ru.mipt.cybersecurity.util.Selector;
 import ru.mipt.cybersecurity.util.Store;
 import ru.mipt.cybersecurity.util.StoreException;
@@ -36,6 +42,7 @@ import ru.mipt.cybersecurity.x509.ExtendedPKIXParameters;
 import ru.mipt.cybersecurity.x509.X509AttributeCertStoreSelector;
 import ru.mipt.cybersecurity.x509.X509AttributeCertificate;
 import ru.mipt.cybersecurity.x509.X509CertStoreSelector;
+import ru.mipt.cybersecurity.x509.X509Store;
 
 public class PKIXAttrCertPathBuilderSpi
     extends CertPathBuilderSpi

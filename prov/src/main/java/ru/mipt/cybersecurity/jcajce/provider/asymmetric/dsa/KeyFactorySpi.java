@@ -35,9 +35,9 @@ public class KeyFactorySpi
 
             return new DSAPublicKeySpec(k.getY(), k.getParams().getP(), k.getParams().getQ(), k.getParams().getG());
         }
-        else if (spec.isAssignableFrom(DSAPrivateKeySpec.class) && key instanceof java.security.interfaces.DSAPrivateKey)
+        else if (spec.isAssignableFrom(DSAPrivateKeySpec.class) && key instanceof DSAPrivateKey)
         {
-            java.security.interfaces.DSAPrivateKey k = (java.security.interfaces.DSAPrivateKey)key;
+            DSAPrivateKey k = (DSAPrivateKey)key;
 
             return new DSAPrivateKeySpec(k.getX(), k.getParams().getP(), k.getParams().getQ(), k.getParams().getG());
         }

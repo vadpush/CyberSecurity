@@ -68,7 +68,7 @@ import ru.mipt.cybersecurity.util.Strings;
  *    values  SET SIZE(1..MAX) OF ATTRIBUTE.&amp;Type({IOSet}{\@type})
  *  }
  * </pre>
- * @deprecated use classes in org.bouncycastle.pkcs.
+ * @deprecated use classes in ru.mipt.cybersecurity.pkcs.
  */
 public class PKCS10CertificationRequest
     extends CertificationRequest
